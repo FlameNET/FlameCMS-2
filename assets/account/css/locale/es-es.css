@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+#navigation #page-menu li { margin-right: 6px; }
+
+ul.wow-services li.category { line-height: 19px; }
+
+/* payment */
+#payment-toggle .form-row label strong { letter-spacing: -1px; }
+
+.security-details .authenticator { height: 260px; }
+
+#add-game { font-size:14px; }
+
+/* payment success page */
+.product-action-description { width: 320px; }
+
+/* wallet */
+.wallet-container .info-section dt { line-height: 12px; }
