@@ -1,18 +1,13 @@
-## Apocalypse Core Team 
+## Luis Cortés
 	
 WebSite Battle.net<br>
 En desarrollo proyecto continuo commits diarios<br>
-Desarrolladores Activos
 
-# ¿Quiénes Somos?
-ApocalypseCore Teams es un grupo encargado de desarrollar Emuladores y Web´s para servidores privados de World Of WarCraft.
-+ [Shadez](https://github.com/Shadez/) source 
 + [One](https://github.com/oneluiz/)
-+ [Yasha](https://github.com/Zoldycks)
 
-[ApocalypseCore](http://apocalypsecore.tk/)
++[Qualtiva](https://qualtiva.com/)
 <br/>
-[Foros](http://apocalypsecore.tk/foro) Soon - Pronto
++[Foros](https://qualtiva.com/noticias)
 
 ## Version: v2
 Use of this CMS is at your own risk.
@@ -21,21 +16,13 @@ Since it is in development.
 #Server Requirements
 PHP version 5.2.4 or newer.
 
-#Cambios para esta revisión
-+ Estilo de la web WoW, Battle.net y Account
-+ Media, Community
-+ Actualizar sección "Game Guide"
-
-#Cambios siempre activos
-+ Actulización del SlideShow
-
 # ![logo](http://apocalypsecore.tk/images/ac.png)
 <br>
 ## License 
 
 (The GNU License)
 
-		= Apocalypse Core Team -- General information =
+		= Luis Cortés -- General information =
 
 	Copyright (C) 2014 (http://apocalypsecore.tk/) ApocalypseCore Team
 
