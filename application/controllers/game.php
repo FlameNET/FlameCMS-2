@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Guide_game extends CI_Controller {
+class Game extends CI_Controller {
 	/*
 	 *  BattleCMS | Load Models file
 	 **/
@@ -27,7 +27,7 @@ class Guide_game extends CI_Controller {
 	    /*
 		 * BattleCMS | Load view file
 		 **/
-		$this->load->view('wow/headers/header_guide_game', $data);
+		$this->load->view('wow/headers/header_game', $data);
 		$this->load->view('wow/home', $data);
 		$this->load->view('wow/footer/footer_home', $data);
 	}

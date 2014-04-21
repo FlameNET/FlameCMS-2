@@ -23,36 +23,31 @@
 </select>
 <span class="inline-message " id="country-message"> </span>
 </span>
-<button class="ui-button button1" type="submit" id="country-submit" tabindex="1"><span class="button-left"><span class="button-right">Cambiar país</span></span></button>
+<button class="ui-button button1" type="submit" id="country-submit" tabindex="1">
+	<span class="button-left"><span class="button-right"><?php echo lang('country:submit');?></span></span>
+</button>
 </span>
 </div>
 <div class="input-row input-row-note" id="country-warning" style="display: none">
 <div class="input-note border-5 glow-shadow">
 <div id="countryGlobal" class="input-note-content">
-<p class="caption">Si cambias el país, aparecerán campos de texto diferentes sobre la creación de la cuenta y la dirección postal que quizás no concuerden con tu situación actual. ¿Deseas continuar?</p>
+<p class="caption"><?php echo lang('country:warning'); ?><p>
 <p>
-<a class="ui-button button1" href="tos.html"
-tabindex="1"><span class="button-left"><span class="button-right">Cambiar país</span></span></a>
-<a class="ui-cancel "
-href="tos.html"
-tabindex="1">
-<span>
-Cancelar </span>
-</a>
+	<a class="ui-button button1" href="tos.html" tabindex="1"><span class="button-left"><span class="button-right"><?php echo lang('country:submit');?></span></span></a>
+	<a class="ui-cancel" href="tos.html" tabindex="1">
+		<span><?php echo lang('cancelar'); ?></span>
+	</a>
 </p>
 </div>
 <div id="countryCHINA" class="input-note-content">
-<p class="caption">You are on the Taiwanese regional Battle.net website. Only account holders who have a Taiwanese World of Warcraft account should create a Battle.net account here. If you have a Chinese World of Warcraft account, go to Battle.net China instead.</p>
+<p class="caption"><?php echo lang('country:china'); ?></p>
 <p>
-<a class="ui-button button1" href="https://tw.battle.net/account/creation/tos.html?style=LOBBY&amp;theme&amp;country=CHINA"
-id="stayTaiwan" tabindex="1"><span class="button-left"><span class="button-right">YES, I HAVE A TAIWANESE WORLD OF WARCRAFT ACCOUNT</span></span></a><br />
-<a class="ui-button button1" href="http://www.battlenet.com.cn/account/creation/tos.html"
-id="gotoChina" tabindex="1"><span class="button-left"><span class="button-right">GO TO BATTLE.NET IN CHINA</span></span></a>
-<a class="ui-cancel "
-href="tos.html"
-tabindex="1">
-<span>
-Cancelar </span>
+<a class="ui-button button1" href="https://tw.battle.net/account/creation/tos.html?style=LOBBY&amp;theme&amp;country=CHINA"	id="stayTaiwan" tabindex="1">
+<span class="button-left"><span class="button-right"><?php echo lang('stay:Taiwan'); ?></span></span></a><br />
+<a class="ui-button button1" href="http://www.battlenet.com.cn/account/creation/tos.html" id="gotoChina" tabindex="1">
+<span class="button-left"><span class="button-right"><?php echo lang('go:to:China'); ?></span></span></a>
+<a class="ui-cancel" href="tos.html" tabindex="1">
+<span><?php echo lang('cancelar'); ?></span>
 </a>
 </p>
 </div>
@@ -142,19 +137,17 @@ countrySubmit.style.display = 'none';
 <div class="input-row input-row-text">
 <span class="input-left">
 <label for="emailAddress">
-<span class="label-text">
-Dirección e-mail:
-</span>
+<span class="label-text"><?php echo lang('email:Address'); ?>:</span>
 <span class="input-required">*</span>
 </label>
 </span><!--
 --><span class="input-right">
 <span class="input-text input-text-small">
-<input type="email" name="emailAddress" value="" id="emailAddress" class="small border-5 glow-shadow-2" autocomplete="off" onpaste="return false;" maxlength="320" tabindex="1" required="required" placeholder="Dirección e-mail" />
+<input type="email" name="emailAddress" value="" id="emailAddress" class="small border-5 glow-shadow-2" autocomplete="off" onpaste="return false;" maxlength="320" tabindex="1" required="required" placeholder="<?php echo lang('email:Address'); ?>" />
 <span class="inline-message " id="emailAddress-message"> </span>
 </span>
 <span class="input-text input-text-small">
-<input type="email" name="emailAddressConfirmation" value="" id="emailAddressConfirmation" class="small border-5 glow-shadow-2" autocomplete="off" onpaste="return false;" maxlength="320" tabindex="1" required="required" placeholder="Vuelve a escribir tu dirección e-mail" />
+<input type="email" name="emailAddressConfirmation" value="" id="emailAddressConfirmation" class="small border-5 glow-shadow-2" autocomplete="off" onpaste="return false;" maxlength="320" tabindex="1" required="required" placeholder="<?php echo lang('email:Address:Confirmation'); ?>" />
 <span class="inline-message " id="emailAddressConfirmation-message"> </span>
 </span>
 </span>
@@ -162,19 +155,17 @@ Dirección e-mail:
 <div class="input-row input-row-text">
 <span class="input-left">
 <label for="password">
-<span class="label-text">
-Contraseña:
-</span>
+<span class="label-text"><?php echo lang('password'); ?>:</span>
 <span class="input-required">*</span>
 </label>
 </span><!--
 --><span class="input-right">
 <span class="input-text input-text-small">
-<input type="password" id="password" name="password" value="" class="small border-5 glow-shadow-2" autocomplete="off" onpaste="return false;" maxlength="16" tabindex="1" required="required" placeholder="Contraseña" />
+<input type="password" id="password" name="password" value="" class="small border-5 glow-shadow-2" autocomplete="off" onpaste="return false;" maxlength="16" tabindex="1" required="required" placeholder="<?php echo lang('password'); ?>" />
 <span class="inline-message " id="password-message"> </span>
 </span>
 <span class="input-text input-text-small">
-<input type="password" id="rePassword" name="rePassword" value="" class="small border-5 glow-shadow-2" autocomplete="off" onpaste="return false;" maxlength="16" tabindex="1" required="required" placeholder="Vuelve a escribir tu contrsaeña" />
+<input type="password" id="rePassword" name="rePassword" value="" class="small border-5 glow-shadow-2" autocomplete="off" onpaste="return false;" maxlength="16" tabindex="1" required="required" placeholder="<?php echo lang('re:Password'); ?>" />
 <span class="inline-message " id="rePassword-message"> </span>
 </span>
 </span>
@@ -182,12 +173,12 @@ Contraseña:
 <div class="input-row input-row-note" id="password-strength" style="display: none">
 <div class="input-note border-5 glow-shadow">
 <div class="input-note-left">
-<p class="caption">Por razones de seguridad, te recomendamos que escojas una contraseña única que no estés utilizando ya para otras cuentas en Internet.</p>
+<p class="caption"><?php echo lang('password:strength'); ?></p>
 </div>
 <div class="input-note-right border-5">
 <div class="password-strength">
 <span class="password-result">
-Seguridad de contraseña:
+<?php echo lang('password:result'); ?>
 <strong id="password-result"></strong>
 </span>
 <span class="password-rating"><span class="rating rating-default" id="password-rating"></span></span>
@@ -195,23 +186,23 @@ Seguridad de contraseña:
 <ul class="password-level" id="password-level">
 <li id="password-level-0">
 <span class="icon-16"></span>
-<span class="icon-16-label">Tu contraseña debe tener entre 8 y 16 caracteres.</span>
+<span class="icon-16-label"><?php echo lang('password:level:0'); ?></span>
 </li>
 <li id="password-level-1">
 <span class="icon-16"></span>
-<span class="icon-16-label">Tu contraseña solo debe tener caracteres alfabéticos (A–Z), caracteres numéricos (0–9), y puntuación.</span>
+<span class="icon-16-label"><?php echo lang('password:level:1'); ?></span>
 </li>
 <li id="password-level-2">
 <span class="icon-16"></span>
-<span class="icon-16-label">Tu contraseña debe tener al menos un carácter alfabético y uno numérico.</span>
+<span class="icon-16-label"><?php echo lang('password:level:2'); ?></span>
 </li>
 <li id="password-level-3">
 <span class="icon-16"></span>
-<span class="icon-16-label">No puedes usar el nombre de cuenta como contraseña.</span>
+<span class="icon-16-label"><?php echo lang('password:level:3'); ?></span>
 </li>
 <li id="password-level-4">
 <span class="icon-16"></span>
-<span class="icon-16-label">No coinciden las contraseñas.</span>
+<span class="icon-16-label"><?php echo lang('password:level:4'); ?></span>
 </li>
 </ul>
 </div>
@@ -222,35 +213,33 @@ Seguridad de contraseña:
 <div class="input-row input-row-select">
 <span class="input-left">
 <label for="question1">
-<span class="label-text">
-Pregunta y respuesta secreta:
-</span>
+<span class="label-text"><?php echo lang('question'); ?></span>
 <span class="input-required">*</span>
 </label>
 </span><!--
 --><span class="input-right">
 <span class="input-select input-select-small">
 <select name="question1" id="question1" class="small border-5 glow-shadow-2" tabindex="1" required="required">
-<option value="" selected="selected">Selecciona una pregunta</option>
-<option value="11">¿Cuál era tu apodo de la infancia?</option>
-<option value="12">¿Cuál era el apellido de tu primer jefe?</option>
-<option value="13">¿Cómo se llamaba el chico o la chica con quien tuviste tu segundo beso?</option>
-<option value="14">¿Cómo se llamaba tu segunda mascota?</option>
-<option value="15">¿Quién era tu héroe de la infancia?</option>
-<option value="16">¿Cuál era el apellido de tu profesor favorito?</option>
-<option value="17">De niño/a, ¿qué querías ser de mayor?</option>
-<option value="18">Si pudieras cambiar de nombre, ¿cuál sería?</option>
+<option value="" selected="selected"><?php echo lang('question:selected'); ?></option>
+<option value="11"><?php echo lang('question:1'); ?></option>
+<option value="12"><?php echo lang('question:2'); ?></option>
+<option value="13"><?php echo lang('question:3'); ?></option>
+<option value="14"><?php echo lang('question:4'); ?></option>
+<option value="15"><?php echo lang('question:5'); ?></option>
+<option value="16"><?php echo lang('question:6'); ?></option>
+<option value="17"><?php echo lang('question:7'); ?></option>
+<option value="18"><?php echo lang('question:8'); ?></option>
 </select>
 <span class="inline-message no-text-clear" id="question1-message"> </span>
 </span>
 <span class="input-text input-text-small">
-<input type="text" name="answer1" value="" id="answer1" class="small border-5 glow-shadow-2" autocomplete="off" maxlength="100" tabindex="1" required="required" placeholder="Respuesta" />
+<input type="text" name="answer1" value="" id="answer1" class="small border-5 glow-shadow-2" autocomplete="off" maxlength="100" tabindex="1" required="required" placeholder="<?php echo lang('answer'); ?>" />
 <span class="inline-message no-text-clear" id="answer1-message"> </span>
 </span>
 </span>
 </div>
 <div class="input-row input-row-note question-info" id="question-info" style="display: none;">
-<span id="question1-message" class="inline-message no-text-clear">Esta información se utilizará para asegurar la seguridad de tu cuenta, como por ejemplo al reiniciar la contraseña.</span>
+<span id="question1-message" class="inline-message no-text-clear"><?php echo lang('question:message'); ?></span>
 </div>
 <div class="input-row input-row-checkbox input-row-important">
 <span class="input-left">
@@ -262,7 +251,7 @@ Pregunta y respuesta secreta:
 <label for="agreedToToU">
 <input type="checkbox" name="agreedToToU" value="true" id="agreedToToU" tabindex="1" required="required" />
 <span class="label-text">
-Al marcar la casilla, aceptas las <a href="http://us.blizzard.com/es-es/company/about/termsofuse.html" onclick="window.open(this.href); return false;">Condiciones de Uso</a> aplicables a tu país de residencia, y en caso de ser menor de 18 años, reconoces y confirmas que tus padres o tutores legales han revisado y aceptado también las Condiciones de Uso en tu nombre.<span class="input-required">*</span>
+<?php echo lang('agreed:To:Tos'); ?><span class="input-required">*</span>
 </span>
 </label>
 </span>
@@ -277,7 +266,9 @@ Al marcar la casilla, aceptas las <a href="http://us.blizzard.com/es-es/company/
 <label for="blizzardNewsletter">
 <input type="checkbox" name="blizzardNewsletter" value="true" id="blizzardNewsletter" tabindex="1" checked="checked" />
 <span class="label-text">
-Regístrate para recibir noticias y ofertas especiales de Blizzard Entertainment.<span class="input-required"></span>
+<?php foreach ($version as $cms_item): ?>
+<?php echo lang('blizzard:News:letter') . $cms_item['title_CMS']; ?>.<span class="input-required"></span>
+<?php endforeach ?>
 </span>
 </label>
 </span>
@@ -285,12 +276,9 @@ Regístrate para recibir noticias y ofertas especiales de Blizzard Entertainment.
 <div class="submit-row">
 <div class="input-left"> </div>
 <div class="input-right">
-<button class="ui-button button1" type="submit" id="creation-submit" tabindex="1"><span class="button-left"><span class="button-right">Crear una cuenta gratis</span></span></button>
-<a class="ui-cancel "
-href="http://us.battle.net/"
-tabindex="1">
-<span>
-Cancelar </span>
+<button class="ui-button button1" type="submit" id="creation-submit" tabindex="1"><span class="button-left"><span class="button-right"><?php echo lang('creation:submit'); ?></span></span></button>
+<a class="ui-cancel" href="<?php echo base_url(); ?>" tabindex="1">
+<span><?php echo lang('cancelar'); ?></span>
 </a>
 </div>
 </div>

@@ -17,11 +17,10 @@
 <head xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
 <meta http-equiv="imagetoolbar" content="false" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<meta charset="utf8">
 <!-- YOU CAN TOUCH NOW -->
 <!-- (If you know what you're doing) -->
 <!-- Description of CMS -->
-<meta name="description" content="BattleCMS 2 is a free CMS developed by One for World of Warcraft Emulated Servers!" />
+<meta name="description" content="BattleCMS is a free CMS developed by One for World of Warcraft Emulated Servers!" />
 <!-- Description of CMS END -->
 <?php foreach ($version as $cms_item): ?>
 <title><?php echo $cms_item['title_CMS'] ?></title>
@@ -29,7 +28,6 @@
 <link rel="shortcut icon" href="<?php echo base_url();?>assets/images/meta/favicon.ico" />
 <!-- The Styles & Javascripts of the CMS -->
 <!-- Le Styles -->
-<link rel="shortcut icon" href="<?php echo base_url();?>assets/images/meta/favicon.ico" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo base_url();?>assets/css/common-game-site.css" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo base_url();?>assets/css/wow.css" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo base_url();?>assets/css/lightbox.css" />
@@ -74,7 +72,9 @@ _gaq.push(['_trackPageview']);
 </script>
 <!-- The Styles & Javascripts of the CMS END -->
 </head>
-<body class="en-gb homepage news">
+<?php foreach ($version as $cms_item): ?>
+<body class="<?php echo $cms_item['lang_css'] ?> homepage news">
+<?php endforeach ?>
 <div id="wrapper">
 <!-- User Panel -->
 <div id="service">
@@ -327,7 +327,7 @@ Core.bindTrackEvent('.explore-nav li a', category);
 <a class="menu-active"<?=anchor('home', '<span itemprop="name">'.lang('menu:home').'</span>')?>
 </li>
 <li class="menu-game" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-<?=anchor('guide_game', '<span itemprop="name">'.lang('menu:game').'</span>')?>
+<?=anchor('game', '<span itemprop="name">'.lang('menu:game').'</span>')?>
 </li>
 <li class="menu-community" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
 <?=anchor('community', '<span itemprop="name">'.lang('menu:community').'</span>')?>

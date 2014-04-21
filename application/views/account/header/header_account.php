@@ -25,6 +25,7 @@
 <?php foreach ($version as $cms_item): ?>
 <title><?php echo lang('account:of'); ?> <?php echo $cms_item['title_CMS']; ?></title>
 <?php endforeach ?>
+<link rel="shortcut icon" href="<?php echo base_url();?>assets/images/meta/favicon.ico" />
 <!-- The Styles & Javascripts of the CMS -->
 <!-- Le Styles -->
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo base_url();?>assets/account/local-common/css/common.css" />

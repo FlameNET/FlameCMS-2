@@ -17,7 +17,6 @@
 <head xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
 <meta http-equiv="imagetoolbar" content="false" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<meta charset="utf8">
 <!-- YOU CAN TOUCH NOW -->
 <!-- (If you know what you're doing) -->
 <!-- Description of CMS -->
@@ -29,13 +28,12 @@
 <link rel="shortcut icon" href="<?php echo base_url();?>assets/images/meta/favicon.ico" />
 <!-- The Styles & Javascripts of the CMS -->
 <!-- Le Styles -->
-<link rel="shortcut icon" href="<?php echo base_url();?>assets/images/meta/favicon.ico" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo base_url();?>assets/css/common-game-site.css" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo base_url();?>assets/css/wow.css" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo base_url();?>assets/css/lightbox.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php echo base_url();?>assets/css/community/community.css" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo base_url();?>assets/css/cms.min.css" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo base_url();?>assets/css/cms.css" />
-<link rel="stylesheet" type="text/css" media="all" href="<?php echo base_url();?>assets/css/locale/en-gb.css" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo base_url();?>assets/css/legal/ratings.css" />
 <!-- Le Javascripts -->
 <script type="text/javascript" src="<?php echo base_url();?>assets/js/third-party.js"></script>
@@ -74,7 +72,9 @@ _gaq.push(['_trackPageview']);
 </script>
 <!-- The Styles & Javascripts of the CMS END -->
 </head>
-<body class="en-gb homepage news">
+<?php foreach ($version as $cms_item): ?>
+<body class="<?php echo $cms_item['lang_css'] ?> community-home">
+<?php endforeach ?>
 <div id="wrapper">
 <!-- User Panel -->
 <div id="service">
@@ -327,7 +327,7 @@ Core.bindTrackEvent('.explore-nav li a', category);
 <?=anchor('home', '<span itemprop="name">'.lang('menu:home').'</span>')?>
 </li>
 <li class="menu-game" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-<?=anchor('guide_game', '<span itemprop="name">'.lang('menu:game').'</span>')?>
+<?=anchor('game', '<span itemprop="name">'.lang('menu:game').'</span>')?>
 </li>
 <li class="menu-community" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
 <a class="menu-active"<?=anchor('community', '<span itemprop="name">'.lang('menu:community').'</span>')?>
@@ -351,4 +351,3 @@ Core.bindTrackEvent('.explore-nav li a', category);
 </div>
 </div>
 <!-- Header END -->
-</div>

@@ -2,15 +2,15 @@
 <div id="sitemap">
 <div class="column">
 <h3 class="bnet">
-<a href="" tabindex="100" data-action="Flame.net Home - Flame.net Home">Flame.net Home</a>
+<a href="" tabindex="100" data-action="Battle.net Home - Battle.net Home">Battle.net Home</a>
 </h3>
 <ul>
-<li><a href="what-is/" data-action="Flame.net Home - What is Flame.net?">What is Flame.net?</a></li>
-<li><a href="shop/" data-action="Flame.net Home - Shop">Shop</a></li>
-<li><a href="account/management/" data-action="Flame.net Home - Account">Account</a></li>
-<li><a href="support/" data-action="Flame.net Home - Support">Support</a></li>
-<li><a href="realid/" data-action="Flame.net Home - Real ID">Real ID</a></li>
-<li><a href="battletag/" data-action="Flame.net Home - BattleTag">BattleTag</a></li>
+<li><a href="what-is/" data-action="Battle.net Home - What is Battle.net?">What is Battle.net?</a></li>
+<li><a href="shop/" data-action="Battle.net Home - Shop">Shop</a></li>
+<li><a href="account/management/" data-action="Battle.net Home - Account">Account</a></li>
+<li><a href="support/" data-action="Battle.net Home - Support">Support</a></li>
+<li><a href="realid/" data-action="Battle.net Home - Real ID">Real ID</a></li>
+<li><a href="battletag/" data-action="Battle.net Home - BattleTag">BattleTag</a></li>
 </ul>
 </div>
 <div class="column">
@@ -64,42 +64,149 @@
 <span class="clear"><!-- --></span>
 </div>
 <div class="lower-footer-wrapper">
-<div class="lower-footer">
-<div id="copyright">
-<a href="javascript:;" tabindex="100" id="change-language">
-<span>Europe - English (EU)</span>
-</a>
-<span class="legal-links">
-<a onclick="return Core.open(this);" href="http://eu.blizzard.com/company/about/termsofuse.html" tabindex="100" data-action="Footer - Terms of Use">Terms of Use</a>
-<a onclick="return Core.open(this);" href="http://eu.blizzard.com/company/legal/" tabindex="100" data-action="Footer - Legal">Legal</a>
-<a onclick="return Core.open(this);" href="http://eu.blizzard.com/company/about/privacy.html" tabindex="100" data-action="Footer - Privacy Policy">Privacy Policy</a>
-<a onclick="return Core.open(this);" href="http://eu.blizzard.com/company/about/infringementnotice.html" tabindex="100" data-action="Footer - Copyright Infringement">Copyright Infringement</a>
-<a target="_blank" href="http://eu.blizzard.com/company/about/contact.html" tabindex="100">Contact Us</a>
-</span>
-©2014 Blizzard Entertainment, Inc. All rights reserved
-</div>
-<div id="international"></div>
-<div id="legal">
-<!-- legal:true eu-en-gb id:WORLD_OF_WARCRAFT_MISTS_OF_PANDARIA ratings:true -->
-<div id="legal-ratings" class="png-fix">
-<div class="product-rating pegi-rating clearfix">
-<a href="http://www.pegi.info/" tabindex="1" rel="external" target="_blank">
-<img class="pegi-logo" src="assets/images/icons/legal/12.png" alt="PEGI 12" title="" width="65" height="65" />
-</a>
-<img class="pegi-descriptor-image" src="assets/images/icons/legal/bad-language.png" alt="Bad Language" title="Game contains bad language." width="65" height="65" />
-<img class="pegi-descriptor-image" src="assets/images/icons/legal/violence.png" alt="Violence" title="Game contains depictions of violence." width="65" height="65" />
-<img class="pegi-descriptor-image" src="assets/images/icons/legal/online-gameplay.png" alt="Online Gameplay" title="Game can be played online." width="65" height="65" />
-</div>
-</div>
-<div id="blizzard" class="png-fix">
-<a href="http://eu.blizzard.com/" tabindex="100"><img src="assets/images/logos/flame.png" alt="" /></a>
-</div>
-<span class="clear"><!-- --></span>
-</div>
-</div>
-<div id="marketing-trackers">
-<div class="marketing-cover"></div>
-</div>
+	<div class="lower-footer">
+		<div id="copyright">
+			<a href="javascript:;" tabindex="100" id="change-language" class="">
+			<span>América - Español (AL)</span>
+			</a>
+			<span>©2014 Blizzard Entertainment, Inc. Todos los derechos reservados.</span>
+			<a onclick="return Core.open(this);" href="company/about/termsofuse.html" tabindex="100" data-action="Footer - Terms of Use">Condiciones de Uso</a>
+			<a onclick="return Core.open(this);" href="company/legal/" tabindex="100" data-action="Footer - Legal">Legal</a>
+			<a onclick="return Core.open(this);" href="company/about/privacy.html" tabindex="100" data-action="Footer - Privacy Policy">Política de Privacidad</a>
+			<a onclick="return Core.open(this);" href="company/about/infringementnotice.html" tabindex="100" data-action="Footer - Copyright Infringement">Derechos de autor</a>
+		</div>
+		<div id="international" style="display: block;">
+			<div class="column">
+				<h3>América</h3>
+				<ul>
+					<li>
+					<?=anchor($this->lang->switch_uri('en'), 'English (US)'); ?>
+					</li>
+					<li>
+					<?=anchor($this->lang->switch_uri('es'), 'Español (AL)'); ?>
+					</li>
+					<li>
+					<?=anchor($this->lang->switch_uri('pt'), 'Português (AL)'); ?>
+					</li>
+				</ul>
+			</div>
+			<div class="column">
+				<h3>Europa</h3>
+				<ul>
+					<li>
+					<?=anchor($this->lang->switch_uri('de'), 'Deutsch'); ?>
+					</li>
+					<li>
+					<?=anchor($this->lang->switch_uri('en'), 'English (EU)'); ?>
+					</li>
+					<li>
+					<?=anchor($this->lang->switch_uri('es'), 'Español (EU)'); ?>
+					</li>
+					<li>
+					<?=anchor($this->lang->switch_uri('fr'), 'Français'); ?>
+					</li>
+					<li>
+					<?=anchor($this->lang->switch_uri('it'), 'Italian'); ?>
+					</li>
+					<li>
+					<?=anchor($this->lang->switch_uri('pt'), 'Português (EU)'); ?>
+					</li>
+					<li>
+					<?=anchor($this->lang->switch_uri('ru'), 'Pycc&#1082;&#1080;&#1081;'); ?>
+					</li>
+				</ul>
+			</div>
+			<div class="column">
+				<h3>Corea</h3>
+				<ul>
+					<li>
+					<?=anchor($this->lang->switch_uri('ko'), '&#54620;&#44397;&#51032;'); ?>
+					</li>
+				</ul>
+			</div>
+			<div class="column">
+				<h3>Taiwán</h3>
+				<ul>
+					<li>
+					<?=anchor($this->lang->switch_uri('tw'), '&#32321;&#39636;&#20013;&#25991;'); ?>
+					</li>
+				</ul>
+			</div>
+			<div class="column">
+				<h3>China</h3>
+				<ul>
+					<li>
+					<?=anchor($this->lang->switch_uri('zh'), '&#31616;&#20307;&#20013;&#25991;'); ?>
+					</li>
+				</ul>
+			</div>
+			<div class="column">
+				<h3>Sureste de Asia</h3>
+				<ul>
+					<li>
+					<?=anchor($this->lang->switch_uri('zh'), 'English (US)'); ?>
+					</li>
+				</ul>
+			</div>
+			<span class="clear">
+			<!-- -->
+			</span>
+		</div>
+		<div id="legal">
+			<div id="legal-ratings" class="us png-fix">
+				<a rel="nofollow" class="truste-link" href="//privacy-policy.truste.com/click-with-confidence/ctv/en/us.battle.net/seal_m" target="_blank">
+				<img class="legal-image" src="<?php echo base_url();?>assets/images/seal/truste.png" alt="Validar certificado de privacidad TRUSTe"/>
+				</a>
+				<!-- legal:true us-es-mx id:WORLD_OF_WARCRAFT_WARLORDS_OF_DRAENOR ratings:true -->
+				<div class="product-rating esrb-rating clearfix">
+					<a href="http://www.esrb.org/ratings/ratings_guide.jsp" tabindex="1" rel="external" target="_blank">
+					<img class="esrb-logo" src="<?php echo base_url();?>assets/images/legal/ratings/esrb/es/rp.png" alt="Clasificación de Contenido ESRB: RP&nbsp;(Clasificación pendiente)" title="" width="65" height="97"/>
+					</a>
+					<span class="esrb-disclaimer">Contenido no apto para niños.</span>
+					<span class="esrb-disclaimer">Visita www.esrb.org para más información.</span>
+				</div>
+			</div>
+			<div id="blizzard" class="png-fix">
+				<a href="http://us.blizzard.com/" tabindex="100"><img src="<?php echo base_url();?>assets/images/logos/battle.png" alt=""/></a>
+			</div>
+			<script type="text/javascript">
+//<![CDATA[
+Feedback.showForm = false;
+if (window.location.protocol === 'http:') {
+Feedback.showForm = true;
+}
+//]]>
+			</script>
+			<div class="common-feedback-buttons" style="display: block;">
+				<a id="open-feedback-form" href="javascript:void(0);" class="feedback feedback-suggestion-open"><span class="feedback-icon"></span>Sugerencias</a>
+				<a id="open-error-form" href="javascript:void(0);" class="error feedback-error-open"><span class="feedback-icon"></span>Reporte de Errores</a>
+			</div>
+			<script type="text/javascript">
+//<![CDATA[
+if (Feedback.showForm) {
+$('.common-feedback-buttons').css('display', 'block');
+Feedback.initialize();
+Feedback.titleWebsiteSuggestion = 'Sugerencias';
+Feedback.titleWebsiteFeedback = 'Reporte de Errores';
+Feedback.pageReferring = 'http://us.battle.net/wow/es/shop/';
+if (Feedback.pageReferring === '') {
+Feedback.pageReferring = window.location.href;
+}
+Feedback.feedbackError = 'Error';
+Feedback.introError = '¿Encontraste un problema en nuestras páginas? ¡Déjanos saber!';
+Feedback.introFeedback = '¡Envía tus ideas y sugerencias para el sitio web directamente a Battle.net!';
+}
+//]]>
+			</script>
+			<span class="clear">
+			<!-- -->
+			</span>
+		</div>
+	</div>
+	<div id="marketing-trackers">
+		<div class="marketing-cover">
+		</div>
+	</div>
 </div>
 <script type="text/javascript">
 //<![CDATA[
@@ -224,9 +331,9 @@ other: 'Other'
 };
 //]]>
 </script>
-<script type="text/javascript" src="assets/js/menu.js"></script>
-<script type="text/javascript" src="assets/js/wow.js"></script>
-<script type="text/javascript" src="assets/js/search-pane.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>assets/js/menu.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>assets/js/wow.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>assets/js/search-pane.js"></script>
 <script type="text/javascript">
 //<![CDATA[
 $(function() {
@@ -234,6 +341,6 @@ Menu.initialize('assets/data/menu.json');
 });
 //]]>
 </script>
-<script type="text/javascript" src="assets/js/cms.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>assets/js/cms.min.js"></script>
 </body>
 </html>

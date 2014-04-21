@@ -28,7 +28,7 @@ class Community extends CI_Controller {
 		 * BattleCMS | Load view file
 		 **/
 		$this->load->view('wow/headers/header_community', $data);
-		$this->load->view('wow/home', $data);
+		$this->load->view('wow/community', $data);
 		$this->load->view('wow/footer/footer_home', $data);
 	}
 }

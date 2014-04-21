@@ -29,7 +29,6 @@
 <link rel="shortcut icon" href="<?php echo base_url();?>assets/images/meta/favicon.ico" />
 <!-- The Styles & Javascripts of the CMS -->
 <!-- Le Styles -->
-<link rel="shortcut icon" href="<?php echo base_url();?>assets/images/meta/favicon.ico" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo base_url();?>assets/css/common-game-site.css" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo base_url();?>assets/css/wow.css" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo base_url();?>assets/css/lightbox.css" />
@@ -327,7 +326,7 @@ Core.bindTrackEvent('.explore-nav li a', category);
 <?=anchor('home', '<span itemprop="name">'.lang('menu:home').'</span>')?>
 </li>
 <li class="menu-game" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-<?=anchor('guide_game', '<span itemprop="name">'.lang('menu:game').'</span>')?>
+<?=anchor('game', '<span itemprop="name">'.lang('menu:game').'</span>')?>
 </li>
 <li class="menu-community" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
 <?=anchor('community', '<span itemprop="name">'.lang('menu:community').'</span>')?>

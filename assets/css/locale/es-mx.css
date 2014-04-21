@@ -1,0 +1,67 @@
+@charset "utf-8";
+/*new feature tip*/
+.new-feature-tip .clickable strong { letter-spacing:-0.05em; font-size:18px }
+
+/* Free WoW for SC2 promo side banner */
+.promo.promo-free-wow .free-trial {  background-image: url("http://us.battle.net/wow/static/images/sidebar/free-wow-for-sc2/es-mx.jpg") }
+
+/* Services WoW Remote page */
+.content-anchors-div .anchor-box .wrapper {min-height:148px;}
+.services-pra .summary-div .price-div .price em {font:normal 40px Arial Black, Arial, Sans-serif; font-weight:900; }
+.services-pra .summary-div .price-div .price em .refer-mark {top:5px;}
+.services-pra .summary-div .price-div .duration {top:7px;}
+
+/*arena-pass-register button*/
+.arena-pass-pvp-summary .register-now { padding: 50px 0 0; }
+
+
+/*mists of pandaria*/
+#header .mists-pre-purchase a { background-image: url(../../images/game/mist-of-pandaria/locale/es-mx/buynow-minisite-esmx.png); }
+.pandaria #menu,
+.pandaria-sub #menu,
+.pandaria #menu li a:hover,
+.pandaria-sub #menu li a:hover,
+.pandaria-sub-media #menu li a:hover,
+.pandaria #menu li a.menu-active,
+.pandaria-sub #menu li a.menu-active,
+.pandaria-sub-media #menu,
+.pandaria-sub-media #menu li a.menu-active { background-image:url("http://us.battle.net/wow/static/images/game/mist-of-pandaria/locale/es-mx/bg-navi.jpg") }
+.pandaria .bottom .monk { background-image: url("http://us.battle.net/wow/static/images/game/mist-of-pandaria/locale/es-mx/bg-main-feature.png") }
+.pandaria .bottom .pandaren, .pandaria .bottom .pandaren { background-image:url("http://us.battle.net/wow/static/images/game/mist-of-pandaria/locale/es-mx/bg-main-feature.png") }
+.pandaria .bottom .talent-calculator { background-image:url("http://us.battle.net/wow/static/images/game/mist-of-pandaria/locale/es-mx/bg-main-feature.png") }
+
+.ie6 #header .back-to-community a { background-image: url("http://us.battle.net/wow/static/images/game/mist-of-pandaria/locale/es-mx/back-to-community.gif") }
+
+.ie6 .pandaria .bottom .monk,
+.ie6 .pandaria .bottom .pandaren, .pandaria .bottom .pandaren,
+.ie6 .pandaria .bottom .talent-calculator { background-image:url("http://us.battle.net/wow/static/images/game/mist-of-pandaria/locale/es-mx/bg-main-feature.gif") }
+
+/*Facebook Tab New Scroll of Resurrection*/
+.facebook-new-scroll-of-resurrection .wrapper{ background-image: url('http://us.battle.net/wow/static/images/gate/facebook-new-scroll-of-resurrection/es-mx/background.jpg'); }
+.facebook-new-scroll-of-resurrection .wrapper a.resurrect-a-friend:hover{ background: url('http://us.battle.net/wow/static/images/gate/facebook-new-scroll-of-resurrection/es-mx/button-hover.jpg') 6px 3px no-repeat; }
+
+/* Mists of Pandaria - Digital Deluxe */
+#mop-digital-deluxe .collectors-edition-link .collectors-edition-text { font-size: 15px; }
+
+/* Facebook Choose Your Path Tab */
+.facebook-choose-your-path .displayer .logo { background-image: url('http://us.battle.net/wow/static/images/social/facebook/choose-your-path/es-mx/patch-logo-5-4-small.png'); }
+.facebook-choose-your-path .container .displayer .content .mop-content .patch-logo { background-image: url('http://us.battle.net/wow/static/images/social/facebook/choose-your-path/es-mx/patch-logo-5-4-small.png'); }
+.facebook-choose-your-path .container .displayer .content .starter-content .starter-logo { background-image: url('http://us.battle.net/wow/static/images/social/facebook/choose-your-path/es-mx/starter-logo.png'); }
+.facebook-choose-your-path .container .displayer .content  .direction-left { background-image: url('http://us.battle.net/wow/static/images/social/facebook/choose-your-path/es-mx/back-left.png'); }
+.facebook-choose-your-path .container .displayer .content  .direction-right { background-image: url('http://us.battle.net/wow/static/images/social/facebook/choose-your-path/es-mx/back-right.png'); }
+.facebook-choose-your-path .container .displayer .content .title { background-image: url('http://us.battle.net/wow/static/images/social/facebook/choose-your-path/es-mx/bg-title.png'); }
+.facebook-choose-your-path .container .displayer .content .mop-content .descrip { background-image: url('http://us.battle.net/wow/static/images/social/facebook/choose-your-path/es-mx/content-mop-text.png'); }
+.facebook-choose-your-path .container .displayer .content .starter-content .descrip { background-image: url('http://us.battle.net/wow/static/images/social/facebook/choose-your-path/es-mx/content-starter-text.png'); }
+.facebook-choose-your-path .container .displayer .content .mop-content .button , .facebook-choose-your-path .container .displayer .content .center-buttons .mop { background-image: url('http://us.battle.net/wow/static/images/social/facebook/choose-your-path/es-mx/buttons-sprite.png'); }
+.facebook-choose-your-path .container .displayer .content .starter-content .top-button { background-image: url('http://us.battle.net/wow/static/images/social/facebook/choose-your-path/es-mx/buttons-sprite.png'); }
+.facebook-choose-your-path .container .displayer .content .starter-content .top-button:hover { background-image: url('http://us.battle.net/wow/static/images/social/facebook/choose-your-path/es-mx/buttons-sprite.png'); }
+.facebook-choose-your-path .container .displayer .content .starter-content .bottom-button { background-image: url('http://us.battle.net/wow/static/images/social/facebook/choose-your-path/es-mx/content-starter-buyit.png'); height: 24px; }
+.facebook-choose-your-path .container .displayer .content .captions { background-image: url('http://us.battle.net/wow/static/images/social/facebook/choose-your-path/es-mx/bg-captions.png'); }
+/* Guide Pet Battles */
+.pet-battles .how-to li h2 span{ background-image: url("http://us.battle.net/wow/static/images/game/guide/pet-battles/steps-titles/steps-titles-mx.png"); }
+.pet-battles .team .links-gallery a { margin-left: 170px; }
+.pet-battles .how-to li.step2 p { font-size: 13px; line-height: 18px; }
+
+/* VAS Pages */
+.character-transfer .page-titles h2 { font-size: 46px; }
+.summary-div .page-titles span {font-size: 46px; line-height: 60px; color: #efe3d2; }

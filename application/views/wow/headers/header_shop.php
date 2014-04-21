@@ -29,7 +29,6 @@
 <link rel="shortcut icon" href="<?php echo base_url();?>assets/images/meta/favicon.ico" />
 <!-- The Styles & Javascripts of the CMS -->
 <!-- Le Styles -->
-<link rel="shortcut icon" href="<?php echo base_url();?>assets/images/meta/favicon.ico" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo base_url();?>assets/css/common-game-site.css" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo base_url();?>assets/css/wow.css" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo base_url();?>assets/css/lightbox.css" />
@@ -74,7 +73,9 @@ _gaq.push(['_trackPageview']);
 </script>
 <!-- The Styles & Javascripts of the CMS END -->
 </head>
-<body class="en-gb homepage news">
+<?php foreach ($version as $cms_item): ?>
+<body class="<?php echo $cms_item['lang_css'] ?> homepage news">
+<?php endforeach ?>
 <div id="wrapper">
 <!-- User Panel -->
 <div id="service">
@@ -327,7 +328,7 @@ Core.bindTrackEvent('.explore-nav li a', category);
 <?=anchor('home', '<span itemprop="name">'.lang('menu:home').'</span>')?>
 </li>
 <li class="menu-game" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-<?=anchor('guide_game', '<span itemprop="name">'.lang('menu:game').'</span>')?>
+<?=anchor('game', '<span itemprop="name">'.lang('menu:game').'</span>')?>
 </li>
 <li class="menu-community" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
 <?=anchor('community', '<span itemprop="name">'.lang('menu:community').'</span>')?>
