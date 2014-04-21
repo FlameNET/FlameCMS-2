@@ -24,8 +24,9 @@
 <meta name="description" content="BattleCMS 2 is a free CMS developed by One for World of Warcraft Emulated Servers!" />
 <!-- Description of CMS END -->
 <?php foreach ($version as $cms_item): ?>
-<title><?php echo $cms_item['title_CMS'] ?> - <?php echo lang('menu:forum')?></title>
+<title><?php echo $cms_item['title_CMS'] ?></title>
 <?php endforeach ?>
+<link rel="shortcut icon" href="<?php echo base_url();?>assets/images/meta/favicon.ico" />
 <!-- The Styles & Javascripts of the CMS -->
 <!-- Le Styles -->
 <link rel="shortcut icon" href="<?php echo base_url();?>assets/images/meta/favicon.ico" />
@@ -323,7 +324,7 @@ Core.bindTrackEvent('.explore-nav li a', category);
 <div class="header-plate">
 <ul class="menu" id="menu">
 <li class="menu-home" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-<?=anchor('home', '<span itemprop="name">'.lang('menu:home').'</span>')?>
+<a class="menu-active"<?=anchor('home', '<span itemprop="name">'.lang('menu:home').'</span>')?>
 </li>
 <li class="menu-game" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
 <?=anchor('guide_game', '<span itemprop="name">'.lang('menu:game').'</span>')?>
@@ -335,7 +336,7 @@ Core.bindTrackEvent('.explore-nav li a', category);
 <?=anchor('media', '<span itemprop="name">'.lang('menu:media').'</span>')?>
 </li>
 <li class="menu-forums" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-<a class="menu-active"<?=anchor('forum', '<span itemprop="name">'.lang('menu:forum').'</span>')?>
+<?=anchor('forum', '<span itemprop="name">'.lang('menu:forum').'</span>')?>
 </li>
 <li class="menu-services" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
 <?=anchor('shop', '<span itemprop="name">'.lang('menu:shop').'</span>')?>

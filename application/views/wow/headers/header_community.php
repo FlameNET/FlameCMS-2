@@ -21,11 +21,12 @@
 <!-- YOU CAN TOUCH NOW -->
 <!-- (If you know what you're doing) -->
 <!-- Description of CMS -->
-<meta name="description" content="BattleCMS 2 is a free CMS developed by One for World of Warcraft Emulated Servers!" />
+<meta name="description" content="BattleCMS is a free CMS developed by One for World of Warcraft Emulated Servers!" />
 <!-- Description of CMS END -->
 <?php foreach ($version as $cms_item): ?>
-<title><?php echo $cms_item['title_CMS'] ?> - <?php echo lang('menu:game')?></title>
+<title><?php echo $cms_item['title_CMS'] ?> - <?php echo lang('menu:community')?></title>
 <?php endforeach ?>
+<link rel="shortcut icon" href="<?php echo base_url();?>assets/images/meta/favicon.ico" />
 <!-- The Styles & Javascripts of the CMS -->
 <!-- Le Styles -->
 <link rel="shortcut icon" href="<?php echo base_url();?>assets/images/meta/favicon.ico" />
@@ -326,10 +327,10 @@ Core.bindTrackEvent('.explore-nav li a', category);
 <?=anchor('home', '<span itemprop="name">'.lang('menu:home').'</span>')?>
 </li>
 <li class="menu-game" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-<a class="menu-active"<?=anchor('guide_game', '<span itemprop="name">'.lang('menu:game').'</span>')?>
+<?=anchor('guide_game', '<span itemprop="name">'.lang('menu:game').'</span>')?>
 </li>
 <li class="menu-community" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-<?=anchor('community', '<span itemprop="name">'.lang('menu:community').'</span>')?>
+<a class="menu-active"<?=anchor('community', '<span itemprop="name">'.lang('menu:community').'</span>')?>
 </li>
 <li class="menu-media" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
 <?=anchor('media', '<span itemprop="name">'.lang('menu:media').'</span>')?>

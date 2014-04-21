@@ -27,9 +27,9 @@ class Media extends CI_Controller {
 	    /*
 		 * BattleCMS | Load view file
 		 **/
-		$this->load->view('headers/header_media', $data);
-		$this->load->view('home', $data);
-		$this->load->view('footer/footer_home', $data);
+		$this->load->view('wow/headers/header_media', $data);
+		$this->load->view('wow/home', $data);
+		$this->load->view('wow/footer/footer_home', $data);
 	}
 }
 
