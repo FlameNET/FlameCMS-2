@@ -28,10 +28,10 @@ $lang['9']		= "Latest Blizzard Posts";
 $lang['10']		= "Load more";
 $lang['11']		= "on";
 $lang['search']		= "Search characters, items, forums and more…";
-$lang['menu:home']		= "Home";
-$lang['menu:game']		= "Game Guide";
-$lang['menu:community']	= "Community";
-$lang['menu:media']		= "Media";
-$lang['menu:forum']		= "Forums";
-$lang['menu:shop']		= "Shop";
+$lang['menu:home']		= "Principal";
+$lang['menu:game']		= "Juego";
+$lang['menu:community']	= "Comunidad";
+$lang['menu:media']		= "Medios";
+$lang['menu:forum']		= "Foros";
+$lang['menu:shop']		= "Tienda";
 

@@ -22,9 +22,15 @@ class MY_Lang extends CI_Lang {
   // languages
   private $languages = array(
     'en' => 'english',
-    'de' => 'german',
     'fr' => 'french',
-    'es' => 'spanish'
+    'es' => 'spanish',
+    'pt' => 'portugues',
+    'de' => 'deutsch',
+    'it' => 'italiano',
+    'ru' => 'russian',
+    'ko' => 'korea',
+    'tw' => 'taiwan',
+    'cn' => 'china'
   );
  
   // special URIs (not localized)
@@ -180,7 +186,7 @@ class MY_Lang extends CI_Lang {
   }
 
 
-/**
+	/**
      * Same behavior as the parent method, but it can load the first defined 
      * lang configuration to fill other languages gaps. This is very useful
      * because you don't have to update all your lang files during development

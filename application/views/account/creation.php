@@ -125,7 +125,7 @@ countrySubmit.style.display = 'none';
 </span><!--
 --><span class="input-right">
 <span class="input-text input-text-small">
-<input type="text" name="firstname" value="" id="firstname" class="small border-5 glow-shadow-2" autocomplete="off" maxlength="32" tabindex="1" required="required" placeholder="<?php echo lang('name'); ?>" />
+<input type="text" name="firstname" value="" id="firstname" class="small border-5 glow-shadow-2" autocomplete="off" maxlength="32" tabindex="1" required="required" placeholder="<?php echo lang('first:name'); ?>" />
 <span class="inline-message " id="firstname-message"> </span>
 </span>
 <span class="input-text input-text-small">
@@ -143,7 +143,7 @@ countrySubmit.style.display = 'none';
 </span><!--
 --><span class="input-right">
 <span class="input-text input-text-small">
-<input type="email" name="emailAddress" value="" id="emailAddress" class="small border-5 glow-shadow-2" autocomplete="off" onpaste="return false;" maxlength="320" tabindex="1" required="required" placeholder="<?php echo lang('email:Address'); ?>" />
+<input type="email" name="emailAddress" value="" id="emailAddress" class="small border-5 glow-shadow-2" autocomplete="off" onpaste="return false;" maxlength="320" tabindex="1" required="required" placeholder="<?php echo lang('email:Address:2'); ?>" />
 <span class="inline-message " id="emailAddress-message"> </span>
 </span>
 <span class="input-text input-text-small">
@@ -161,7 +161,7 @@ countrySubmit.style.display = 'none';
 </span><!--
 --><span class="input-right">
 <span class="input-text input-text-small">
-<input type="password" id="password" name="password" value="" class="small border-5 glow-shadow-2" autocomplete="off" onpaste="return false;" maxlength="16" tabindex="1" required="required" placeholder="<?php echo lang('password'); ?>" />
+<input type="password" id="password" name="password" value="" class="small border-5 glow-shadow-2" autocomplete="off" onpaste="return false;" maxlength="16" tabindex="1" required="required" placeholder="<?php echo lang('password:enter'); ?>" />
 <span class="inline-message " id="password-message"> </span>
 </span>
 <span class="input-text input-text-small">
@@ -266,9 +266,7 @@ countrySubmit.style.display = 'none';
 <label for="blizzardNewsletter">
 <input type="checkbox" name="blizzardNewsletter" value="true" id="blizzardNewsletter" tabindex="1" checked="checked" />
 <span class="label-text">
-<?php foreach ($version as $cms_item): ?>
-<?php echo lang('blizzard:News:letter') . $cms_item['title_CMS']; ?>.<span class="input-required"></span>
-<?php endforeach ?>
+<?php echo lang('blizzard:News:letter'); ?><span class="input-required"></span>
 </span>
 </label>
 </span>

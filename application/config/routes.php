@@ -43,11 +43,11 @@ $route['404_override'] = '';
 /**
  * URI like '/en/home' -> use controller 'home'
  */
-$route['^(en|de|fr|es)/(.+)$'] = "$2";
+$route['^(en|de|fr|es|pt|it|ru|ko|tw|cn)/(.+)$'] = "$2";
 /**
  * '/en', '/de', '/fr' and '/nl' URIs -> use default controller
  */
-$route['^(en|de|fr|es)$'] = $route['default_controller'];
+$route['^(en|de|fr|es|pt|it|ru|ko|tw|cn)$'] = $route['default_controller'];
 
 /**
  * URLS CMS
