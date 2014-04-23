@@ -66,7 +66,7 @@
 <div class="lower-footer-wrapper">
 	<div class="lower-footer">
 		<div id="copyright">
-			<a href="javascript:;" tabindex="100" id="change-language" class="">
+			<a href="javascript:;" tabindex="100" id="change-language" class="open">
 			<span>América - Español (AL)</span>
 			</a>
 			<span>©2014 Blizzard Entertainment, Inc. Todos los derechos reservados.</span>
@@ -157,7 +157,6 @@
 				<a rel="nofollow" class="truste-link" href="//privacy-policy.truste.com/click-with-confidence/ctv/en/us.battle.net/seal_m" target="_blank">
 				<img class="legal-image" src="<?php echo base_url();?>assets/images/seal/truste.png" alt="Validar certificado de privacidad TRUSTe"/>
 				</a>
-				<!-- legal:true us-es-mx id:WORLD_OF_WARCRAFT_WARLORDS_OF_DRAENOR ratings:true -->
 				<div class="product-rating esrb-rating clearfix">
 					<a href="http://www.esrb.org/ratings/ratings_guide.jsp" tabindex="1" rel="external" target="_blank">
 					<img class="esrb-logo" src="<?php echo base_url();?>assets/images/legal/ratings/esrb/es/rp.png" alt="Clasificación de Contenido ESRB: RP&nbsp;(Clasificación pendiente)" title="" width="65" height="97"/>

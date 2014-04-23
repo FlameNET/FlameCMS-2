@@ -266,8 +266,8 @@ other: 'Otros'
 //]]>
 </script>
 <script type="text/javascript" src="<?php echo base_url();?>assets/account/js/bam.js"></script>
-<script type="text/javascript" src="<?php echo base_url();?>assets/account/local-common/js/common/menuc295.js?v=58"></script>
-<script type="text/javascript" src="<?php echo base_url();?>assets/account/local-common/js/third-party/jquery-ui-1.8.6.custom.minc295.js?v=58"></script>
+<script type="text/javascript" src="<?php echo base_url();?>assets/account/local-common/js/common/menu.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>assets/account/local-common/js/third-party/jquery-ui-1.8.6.custom.min.js"></script>
 <script type="text/javascript">
 //<![CDATA[
 $(function() {
