@@ -33,37 +33,95 @@
 | 				 can make your site vulnerable to SQL injection if you are using a
 | 				 multi-byte character set and are running versions lower than these.
 | 				 Sites using Latin-1 or UTF-8 database character set and collation are unaffected.
-|	['swap_pre'] A default table prefix that should be swapped with the dbprefix
+|	['swap_pre'] A website table prefix that should be swapped with the dbprefix
 |	['autoinit'] Whether or not to automatically initialize the database.
 |	['stricton'] TRUE/FALSE - forces 'Strict Mode' connections
 |							- good for ensuring strict SQL while developing
 |
 | The $active_group variable lets you choose which connection group to
-| make active.  By default there is only one group (the 'default' group).
+| make active.  By website there is only one group (the 'website' group).
 |
 | The $active_record variables lets you determine whether or not to load
 | the active record class
 */
 
-$active_group = 'default';
+$active_group = 'website';
 $active_record = TRUE;
+/**
+ * DataBase CMS
+ */
+$db['website']['hostname'] = 'localhost';
+$db['website']['username'] = '';
+$db['website']['password'] = '';
+$db['website']['database'] = '';
+$db['website']['dbdriver'] = 'mysql';
+$db['website']['dbprefix'] = '';
+$db['website']['pconnect'] = TRUE;
+$db['website']['db_debug'] = TRUE;
+$db['website']['cache_on'] = FALSE;
+$db['website']['cachedir'] = '';
+$db['website']['char_set'] = 'utf8';
+$db['website']['dbcollat'] = 'utf8_general_ci';
+$db['website']['swap_pre'] = '';
+$db['website']['autoinit'] = TRUE;
+$db['website']['stricton'] = FALSE;
 
-$db['default']['hostname'] = 'localhost';
-$db['default']['username'] = '';
-$db['default']['password'] = '';
-$db['default']['database'] = '';
-$db['default']['dbdriver'] = 'mysql';
-$db['default']['dbprefix'] = '';
-$db['default']['pconnect'] = TRUE;
-$db['default']['db_debug'] = TRUE;
-$db['default']['cache_on'] = FALSE;
-$db['default']['cachedir'] = '';
-$db['default']['char_set'] = 'utf8';
-$db['default']['dbcollat'] = 'utf8_general_ci';
-$db['default']['swap_pre'] = '';
-$db['default']['autoinit'] = TRUE;
-$db['default']['stricton'] = FALSE;
+/**
+ * DataBase Auth
+ */
+$db['auth']['hostname'] = 'localhost';
+$db['auth']['username'] = '';
+$db['auth']['password'] = '';
+$db['auth']['database'] = '';
+$db['auth']['dbdriver'] = 'mysql';
+$db['auth']['dbprefix'] = '';
+$db['auth']['pconnect'] = TRUE;
+$db['auth']['db_debug'] = TRUE;
+$db['auth']['cache_on'] = FALSE;
+$db['auth']['cachedir'] = '';
+$db['auth']['char_set'] = 'utf8';
+$db['auth']['dbcollat'] = 'utf8_general_ci';
+$db['auth']['swap_pre'] = '';
+$db['auth']['autoinit'] = TRUE;
+$db['auth']['stricton'] = FALSE;
 
+/**
+ * DataBase Characters
+ */
+$db['characters']['hostname'] = 'localhost';
+$db['characters']['username'] = '';
+$db['characters']['password'] = '';
+$db['characters']['database'] = '';
+$db['characters']['dbdriver'] = 'mysql';
+$db['characters']['dbprefix'] = '';
+$db['characters']['pconnect'] = TRUE;
+$db['characters']['db_debug'] = TRUE;
+$db['characters']['cache_on'] = FALSE;
+$db['characters']['cachedir'] = '';
+$db['characters']['char_set'] = 'utf8';
+$db['characters']['dbcollat'] = 'utf8_general_ci';
+$db['characters']['swap_pre'] = '';
+$db['characters']['autoinit'] = TRUE;
+$db['characters']['stricton'] = FALSE;
+
+/**
+ * DataBase Word
+ */
+$db['world']['hostname'] = 'localhost';
+$db['world']['username'] = '';
+$db['world']['password'] = '';
+$db['world']['database'] = '';
+$db['world']['dbdriver'] = 'mysql';
+$db['world']['dbprefix'] = '';
+$db['world']['pconnect'] = TRUE;
+$db['world']['db_debug'] = TRUE;
+$db['world']['cache_on'] = FALSE;
+$db['world']['cachedir'] = '';
+$db['world']['char_set'] = 'utf8';
+$db['world']['dbcollat'] = 'utf8_general_ci';
+$db['world']['swap_pre'] = '';
+$db['world']['autoinit'] = TRUE;
+$db['world']['stricton'] = FALSE;
 
 /* End of file database.php */
 /* Location: ./application/config/database.php */
