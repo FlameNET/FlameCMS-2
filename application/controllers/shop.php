@@ -23,7 +23,7 @@ class Shop extends CI_Controller {
 	    /**
 		 * BattleCMS | Load language file
 		 */
-	    $this->lang->load('home');
+	    $this->lang->load('wow/home');
 
 	    /**
 		 * BattleCMS | Load view file

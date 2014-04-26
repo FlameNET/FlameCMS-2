@@ -5,6 +5,7 @@ class Account extends CI_Controller {
 	public function __construct()
 	{
 		parent::__construct();
+		$this->load->library('form_validation');
 		/**
 		 *  BattleCMS | Load Models file
 		 */
@@ -25,7 +26,7 @@ class Account extends CI_Controller {
 	    /**
 		 * BattleCMS | Load language file
 		 */
-	    $this->lang->load('home');
+	    $this->lang->load('wow/home');
 	    $this->lang->load('account/creation');
 
 	    /**

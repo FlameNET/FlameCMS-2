@@ -9,11 +9,14 @@ class Community extends CI_Controller {
 		 *  BattleCMS | Load Models file
 		 */
 		$this->load->model('cms_model');
+		$this->load->model('community_model');
 	}
 
 	function index()
 	{
 		$data['version'] = $this->cms_model->get_version();
+		$data['pve_mode'] = $this->community_model->get_pve_mode();
+		$data['pvp_mode'] = $this->community_model->get_pvp_mode();
 	    /**
 		 * BattleCMS | You might want to just autoload these two helpers
 		 */
@@ -23,7 +26,8 @@ class Community extends CI_Controller {
 	    /**
 		 * BattleCMS | Load language file
 		 **/
-	    $this->lang->load('home');
+	    $this->lang->load('wow/home');
+	    $this->lang->load('wow/community');
 
 	    /**
 		 * BattleCMS | Load view file

@@ -1,4 +1,18 @@
-<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php
+/*
+ * Copyright (C) 2014 Luis Cortés <https://qualtiva.com>
+ *
+ * Do not edit or add to this file if you wish to upgrade Qualtiva to newer
+ * versions in the future. If you wish to customize Qualtiva for your
+ * needs please refer to http://www.qualtiva.com for more information.
+ *
+ * @author Luis Cortés <luis@qualtiva.com>
+ * @copyright 2013 Qualtiva
+ * International Registered Trademark & Property of Qualtiva
+ *
+ */
+
+if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class Home extends CI_Controller {
 
@@ -25,7 +39,7 @@ class Home extends CI_Controller {
 	    /**
 		 * BattleCMS | Load language file
 		 */
-	    $this->lang->load('home');
+	    $this->lang->load('wow/home');
 
 	    /**
 		 * BattleCMS | Load view file
