@@ -1,0 +1,77 @@
+		<div id="international" style="display: block;">
+			<div class="column">
+				<h3>América</h3>
+				<ul>
+					<li>
+					<?=anchor($this->lang->switch_uri('en'), 'English (US)'); ?>
+					</li>
+					<li>
+					<?=anchor($this->lang->switch_uri('es'), 'Español (AL)'); ?>
+					</li>
+					<li>
+					<?=anchor($this->lang->switch_uri('pt'), 'Português (AL)'); ?>
+					</li>
+				</ul>
+			</div>
+			<div class="column">
+				<h3>Europa</h3>
+				<ul>
+					<li>
+					<?=anchor($this->lang->switch_uri('de'), 'Deutsch'); ?>
+					</li>
+					<li>
+					<?=anchor($this->lang->switch_uri('en'), 'English (EU)'); ?>
+					</li>
+					<li>
+					<?=anchor($this->lang->switch_uri('es'), 'Español (EU)'); ?>
+					</li>
+					<li>
+					<?=anchor($this->lang->switch_uri('fr'), 'Français'); ?>
+					</li>
+					<li>
+					<?=anchor($this->lang->switch_uri('it'), 'Italian'); ?>
+					</li>
+					<li>
+					<?=anchor($this->lang->switch_uri('pt'), 'Português (EU)'); ?>
+					</li>
+					<li>
+					<?=anchor($this->lang->switch_uri('ru'), 'Pycc&#1082;&#1080;&#1081;'); ?>
+					</li>
+				</ul>
+			</div>
+			<div class="column">
+				<h3>Corea</h3>
+				<ul>
+					<li>
+					<?=anchor($this->lang->switch_uri('ko'), '&#54620;&#44397;&#51032;'); ?>
+					</li>
+				</ul>
+			</div>
+			<div class="column">
+				<h3>Taiwán</h3>
+				<ul>
+					<li>
+					<?=anchor($this->lang->switch_uri('tw'), '&#32321;&#39636;&#20013;&#25991;'); ?>
+					</li>
+				</ul>
+			</div>
+			<div class="column">
+				<h3>China</h3>
+				<ul>
+					<li>
+					<?=anchor($this->lang->switch_uri('cn'), '&#31616;&#20307;&#20013;&#25991;'); ?>
+					</li>
+				</ul>
+			</div>
+			<div class="column">
+				<h3>Sureste de Asia</h3>
+				<ul>
+					<li>
+					<?=anchor($this->lang->switch_uri('en'), 'English (US)'); ?>
+					</li>
+				</ul>
+			</div>
+			<span class="clear">
+			<!-- -->
+			</span>
+		</div>

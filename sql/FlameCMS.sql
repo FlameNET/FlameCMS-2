@@ -140,7 +140,7 @@ DROP TABLE IF EXISTS `version`;
 
 CREATE TABLE `version` (
   `version_CMS` INT(10) NOT NULL,
-  `title_CMS` VARCHAR(50) NOT NULL DEFAULT 'BattleCMS',
+  `title_CMS` VARCHAR(50) NOT NULL DEFAULT 'FlameNET',
   `version_DB` INT(10) NOT NULL,
   `updates_CMS` VARCHAR(5) NOT NULL,
   `charset` VARCHAR(25) NOT NULL,
@@ -152,7 +152,7 @@ CREATE TABLE `version` (
 LOCK TABLES `version` WRITE;
 
 INSERT  INTO `version`(`version_CMS`,`title_CMS`,`version_DB`,`updates_CMS`,`charset`,`lang_css`) VALUES
- (1,'BattleCMS',1,'0','uft8','en-gb');
+ (1,'FlameNET',1,'0','uft8','en-gb');
 
 UNLOCK TABLES;
 
