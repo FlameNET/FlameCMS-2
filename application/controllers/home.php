@@ -1,18 +1,22 @@
 <?php
 /*
- * Copyright (C) 2014 Luis Cortés <https://qualtiva.com>
+ * Copyright (C) 2014 Flame.NET Project <http://Flame.NET>
  *
- * Do not edit or add to this file if you wish to upgrade Qualtiva to newer
- * versions in the future. If you wish to customize Qualtiva for your
- * needs please refer to http://www.qualtiva.com for more information.
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
  *
- * @author Luis Cortés <luis@qualtiva.com>
- * @copyright 2013 Qualtiva
- * International Registered Trademark & Property of Qualtiva
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>. 
  *
  */
-
-if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+ if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class Home extends CI_Controller {
 
@@ -20,7 +24,7 @@ class Home extends CI_Controller {
 	{
 		parent::__construct();
 		/**
-		 *  BattleCMS | Load Models file
+		 *  FlameCMS | Load Models file
 		 */
 		$this->load->model('cms_model');
 		$this->load->model('home_model');
@@ -31,18 +35,18 @@ class Home extends CI_Controller {
 		$data['version'] = $this->cms_model->get_version();
 		$data['slideshow'] = $this->home_model->get_slideshow();
 	    /**
-		 * BattleCMS | You might want to just autoload these two helpers
+		 * FlameCMS | You might want to just autoload these two helpers
 		 */
 	    $this->load->helper('language');
 	    $this->load->helper('url');
 
 	    /**
-		 * BattleCMS | Load language file
+		 * FlameCMS | Load language file
 		 */
 	    $this->lang->load('wow/home');
 
 	    /**
-		 * BattleCMS | Load view file
+		 * FlameCMS | Load view file
 		 */
 		$this->load->view('wow/headers/header_home', $data);
 		$this->load->view('wow/home', $data);

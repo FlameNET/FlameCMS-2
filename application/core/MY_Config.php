@@ -1,13 +1,24 @@
-<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-
-/* Originaly CodeIgniter i18n library by Jérôme Jaglale
- * http://maestric.com/en/doc/php/codeigniter_i18n
- * modification by Yeb Reitsma
+<?php
+/*
+ * Copyright (C) 2014 Flame.NET Project <http://Flame.NET>
  *
- * In case you use it with the HMVC modular extention
- * uncomment this and remove the other lines
- * load the MX_Loader class
- **/
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>. 
+ *
+ */
+
+if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+
 //require APPPATH."third_party/MX/Config.php";
 
 //class MY_Config extends MX_Config {

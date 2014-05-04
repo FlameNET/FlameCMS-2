@@ -1,14 +1,19 @@
 <?php
 /*
- * Copyright (C) 2014 Luis Cortés <https://qualtiva.com>
+ * Copyright (C) 2014 Flame.NET Project <http://Flame.NET>
  *
- * Do not edit or add to this file if you wish to upgrade Qualtiva to newer
- * versions in the future. If you wish to customize Qualtiva for your
- * needs please refer to http://www.qualtiva.com for more information.
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
  *
- * @author Luis Cortés <luis@qualtiva.com>
- * @copyright 2013 Qualtiva
- * International Registered Trademark & Property of Qualtiva
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>. 
  *
  */
 
@@ -20,18 +25,18 @@ $lang['date:of:birth']              = "Date of Birth:";
 $lang['month']                      = "Month";
 $lang['day']                        = "Day";
 $lang['year']                       = "Year";
-$lang['month:print']                = "<option value='1'>Enero</option>
-							<option value='2'>Febrero</option>
-							<option value='3'>Marzo</option>
-							<option value='4'>Abril</option>
-							<option value='5'>Mayo</option>
-							<option value='6'>Junio</option>
-							<option value='7'>Julio</option>
-							<option value='8'>Agosto</option>
-							<option value='9'>Septiembre</option>
-							<option value='10'>Octubre</option>
-							<option value='11'>Noviembre</option>
-							<option value='12'>Diciembre</option>";
+$lang['month:print']                = "<option value='1'>January</option>
+							<option value='2'>February</option>
+							<option value='3'>March</option>
+							<option value='4'>April</option>
+							<option value='5'>May</option>
+							<option value='6'>June</option>
+							<option value='7'>July</option>
+							<option value='8'>August</option>
+							<option value='9'>September</option>
+							<option value='10'>October</option>
+							<option value='11'>November</option>
+							<option value='12'>December</option>";
 $lang['name']                       = "Name";
 $lang['first:name']                 = "First Name";
 $lang['last:name']                  = "Last Name";
