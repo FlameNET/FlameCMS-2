@@ -1,5 +1,11 @@
 <?php
 
+if(file_exists("install"))
+{
+	header("Location: install");
+	die();
+}
+
 /*
  *---------------------------------------------------------------
  * APPLICATION ENVIRONMENT
