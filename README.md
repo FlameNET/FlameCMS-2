@@ -1,30 +1,14 @@
-## Luis Cortés
-	
-WebSite Battle.net<br>
-En desarrollo proyecto continuo commits diarios<br>
+## Flame.NET
 
-+ [One](https://github.com/oneluiz/)
+  [Visit us]: YET TO BE DETERMINED
 
-+[Qualtiva](https://qualtiva.com/)
-<br/>
-+[Foros](https://qualtiva.com/noticias)
-
-## Version: v2
-Use of this CMS is at your own risk.
-Since it is in development.
-
-#Server Requirements
-PHP version 5.2.4 or newer.
-
-# ![logo](http://apocalypsecore.tk/images/ac.png)
-<br>
 ## License 
 
 (The GNU License)
 
-		= Luis Cortés -- General information =
+		= Flame.NET Project -- General information =
 
-	Copyright (C) 2014 (http://apocalypsecore.tk/) ApocalypseCore Team
+	Copyright (C) 2014 (YET TO BE DETERMINED) Flame.NET
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -37,6 +21,4 @@ PHP version 5.2.4 or newer.
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
-+ &copy; 2014 Blizzard Entertainment, Inc. All rights reserved
+    along with this program.  If not, see <http://www.gnu.org/licenses/>. 
