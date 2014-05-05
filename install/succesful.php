@@ -6,7 +6,7 @@ include("config.php");
 <head>
 	<link rel="stylesheet" type="text/css" href="css/FlameCMS.css">
 	<meta charset="utf-8">
-	<title><?php echo $title ?></title>
+	<title>Dashboard - <?php echo $title ?></title>
 </head>
 <body>
 	<div id="container">

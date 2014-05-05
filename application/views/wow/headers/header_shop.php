@@ -1,27 +1,12 @@
-<?php
-/*
- * Copyright (C) 2014 Luis Cortés <https://qualtiva.com>
- *
- * Do not edit or add to this file if you wish to upgrade Qualtiva to newer
- * versions in the future. If you wish to customize Qualtiva for your
- * needs please refer to http://www.qualtiva.com for more information.
- *
- * @author Luis Cortés <luis@qualtiva.com>
- * @copyright 2013 Qualtiva
- * International Registered Trademark & Property of Qualtiva
- *
- */
-?>
 <!-- DO NOT TOUCH -->
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" class="en-gb">
 <head xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
 <meta http-equiv="imagetoolbar" content="false" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<meta charset="utf8">
 <!-- YOU CAN TOUCH NOW -->
 <!-- (If you know what you're doing) -->
 <!-- Description of CMS -->
-<meta name="description" content="BattleCMS 2 is a free CMS developed by One for World of Warcraft Emulated Servers!" />
+<meta name="description" content="<?php echo lang('description:Site'); ?>" />
 <!-- Description of CMS END -->
 <?php foreach ($version as $cms_item): ?>
 <title><?php echo $cms_item['title_CMS'] ?> - <?php echo lang('menu:shop')?></title>
@@ -32,11 +17,9 @@
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo base_url();?>assets/css/common-game-site.css" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo base_url();?>assets/css/wow.css" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo base_url();?>assets/css/lightbox.css" />
-<link rel="stylesheet" type="text/css" media="all" href="<?php echo base_url();?>assets/css/cms.min.css" />
-<link rel="stylesheet" type="text/css" media="all" href="<?php echo base_url();?>assets/css/cms.css" />
-<link rel="stylesheet" type="text/css" media="all" href="<?php echo base_url();?>assets/css/locale/en-gb.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php echo base_url();?>assets/css/wiki/wiki.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php echo base_url();?>assets/css/shop/shop-index.css" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo base_url();?>assets/css/legal/ratings.css" />
-<!-- Le Javascripts -->
 <script type="text/javascript" src="<?php echo base_url();?>assets/js/third-party.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>assets/js/common-game-site.js"></script>
 <script type="text/javascript">
@@ -44,25 +27,25 @@
 var Core = Core || {},
 Login = Login || {};
 Core.staticUrl = '/wow/static';
-Core.sharedStaticUrl = 'assets/local-common';
+Core.sharedStaticUrl = '/wow/static/local-common';
 Core.baseUrl = '/wow/en';
 Core.projectUrl = '/wow';
-Core.cdnUrl = 'http://media.blizzard.com';
-Core.supportUrl = 'http://eu.battle.net/support/';
-Core.secureSupportUrl = 'https://eu.battle.net/support/';
+Core.cdnUrl = 'http://media.blizzard.com/';
+Core.supportUrl = 'http://us.battle.net/support/';
+Core.secureSupportUrl = 'https://us.battle.net/support/';
 Core.project = 'wow';
-Core.locale = 'en-gb';
+Core.locale = 'en-us';
 Core.language = 'en';
-Core.region = 'eu';
-Core.shortDateFormat = 'dd/MM/yyyy';
-Core.dateTimeFormat = 'dd/MM/yyyy HH:mm';
+Core.region = 'us';
+Core.shortDateFormat = 'MM/dd/yyyy';
+Core.dateTimeFormat = 'MM/dd/yyyy hh:mm a';
 Core.loggedIn = false;
 Core.userAgent = 'web';
-Login.embeddedUrl = 'https://eu.battle.net/login/login.frag';
+Login.embeddedUrl = 'https://us.battle.net/login/login.frag';
 var Flash = Flash || {};
 Flash.videoPlayer = 'http://media.blizzard.com/global-video-player/themes/wow/video-player.swf';
 Flash.videoBase = 'http://media.blizzard.com/wow/media/videos';
-Flash.ratingImage = 'http://media.blizzard.com/global-video-player/ratings/wow/en-gb.jpg';
+Flash.ratingImage = '../../../../media.blizzard.com/global-video-player/ratings/wow/en-us.jpg';
 Flash.expressInstall = 'http://media.blizzard.com/global-video-player/expressInstall.swf';
 var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-544112-16']);
@@ -74,7 +57,7 @@ _gaq.push(['_trackPageview']);
 <!-- The Styles & Javascripts of the CMS END -->
 </head>
 <?php foreach ($version as $cms_item): ?>
-<body class="<?php echo $cms_item['lang_css'] ?> homepage news">
+<body class="<?php echo $cms_item['lang_css'] ?> services-home">
 <?php endforeach ?>
 <div id="wrapper">
 <!-- User Panel -->

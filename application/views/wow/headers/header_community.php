@@ -1,17 +1,3 @@
-<?php
-/*
- * Copyright (C) 2014 Luis Cortés <https://qualtiva.com>
- *
- * Do not edit or add to this file if you wish to upgrade Qualtiva to newer
- * versions in the future. If you wish to customize Qualtiva for your
- * needs please refer to http://www.qualtiva.com for more information.
- *
- * @author Luis Cortés <luis@qualtiva.com>
- * @copyright 2013 Qualtiva
- * International Registered Trademark & Property of Qualtiva
- *
- */
-?>
 <!-- DO NOT TOUCH -->
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" class="en-gb">
 <head xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
@@ -20,7 +6,7 @@
 <!-- YOU CAN TOUCH NOW -->
 <!-- (If you know what you're doing) -->
 <!-- Description of CMS -->
-<meta name="description" content="BattleCMS is a free CMS developed by One for World of Warcraft Emulated Servers!" />
+<meta name="description" content="<?php echo lang('description:Site'); ?>" />
 <!-- Description of CMS END -->
 <?php foreach ($version as $cms_item): ?>
 <title><?php echo $cms_item['title_CMS'] ?> - <?php echo lang('menu:community')?></title>

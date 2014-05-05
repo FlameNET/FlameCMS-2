@@ -41,13 +41,15 @@ class Shop extends CI_Controller {
 	    /**
 		 * FlameCMS | Load language file
 		 */
+	    $this->lang->load('metas/meta');
 	    $this->lang->load('wow/home');
+	    $this->lang->load('wow/shop');
 
 	    /**
 		 * FlameCMS | Load view file
 		 */
 		$this->load->view('wow/headers/header_shop', $data);
-		$this->load->view('wow/home', $data);
+		$this->load->view('wow/shop', $data);
 		$this->load->view('wow/footer/footer_home', $data);
 	}
 }

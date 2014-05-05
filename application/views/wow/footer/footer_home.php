@@ -136,7 +136,7 @@
 				<h3>China</h3>
 				<ul>
 					<li>
-					<?=anchor($this->lang->switch_uri('zh'), '&#31616;&#20307;&#20013;&#25991;'); ?>
+					<?=anchor($this->lang->switch_uri('cn'), '&#31616;&#20307;&#20013;&#25991;'); ?>
 					</li>
 				</ul>
 			</div>
@@ -144,7 +144,7 @@
 				<h3>Sureste de Asia</h3>
 				<ul>
 					<li>
-					<?=anchor($this->lang->switch_uri('zh'), 'English (US)'); ?>
+					<?=anchor($this->lang->switch_uri('en'), 'English (US)'); ?>
 					</li>
 				</ul>
 			</div>
