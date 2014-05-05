@@ -1,13 +1,12 @@
 <?php
 
-$lang['migration_none_found']			= "No migrations were found.";
-$lang['migration_not_found']			= "This migration could not be found.";
-$lang['migration_multiple_version']		= "This are multiple migrations with the same version number: %d.";
-$lang['migration_class_doesnt_exist']	= "The migration class \"%s\" could not be found.";
-$lang['migration_missing_up_method']	= "The migration class \"%s\" is missing an 'up' method.";
-$lang['migration_missing_down_method']	= "The migration class \"%s\" is missing an 'down' method.";
-$lang['migration_invalid_filename']		= "Migration \"%s\" has an invalid filename.";
-
+$lang['migration_none_found']			= 'Не было найдено ни одной миграции.';
+$lang['migration_not_found']			= 'Не было найдено ни одной миграции с версией: %d.';
+$lang['migration_multiple_version']		= 'Имеется несколько миграций с одной версией: %d.';
+$lang['migration_class_doesnt_exist']	= 'Невозможно найти класс миграции "%s".';
+$lang['migration_missing_up_method']	= 'Класс миграции "%s" не содержит "up" метода.';
+$lang['migration_missing_down_method']	= 'Класс миграции "%s" не содержит "down" метода.';
+$lang['migration_invalid_filename']		= 'Миграция "%s" имеет недопустимое имя файла.';
 
 /* End of file migration_lang.php */
-/* Location: ./system/language/english/migration_lang.php */
+/* Location: ./system/language/russian/migration_lang.php */
