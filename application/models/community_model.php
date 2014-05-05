@@ -18,22 +18,34 @@
  */
  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Home_model extends CI_Model {
+class Community_model extends CI_Model {
 
 	public function __construct()
 	{
 		$this->load->database();
 	}
 	
-	public function get_slideshow($img = FALSE)
+	public function get_pve_mode($cms = FALSE)
 	{
-		if ($img === FALSE)
+		if ($cms === FALSE)
 		{
-			$query = $this->db->get('slideshow');
+			$query = $this->db->get('pve_mode');
 			return $query->result_array();
 		}
 		
-		$query = $this->db->get_where('slideshow', array('img' => $img));
+		$query = $this->db->get_where('pve_mode', array('pve_mode' => $cms));
+		return $query->row_array();
+	}
+
+	public function get_pvp_mode($cms = FALSE)
+	{
+		if ($cms === FALSE)
+		{
+			$query = $this->db->get('pvp_mode');
+			return $query->result_array();
+		}
+		
+		$query = $this->db->get_where('pvp_mode', array('pvp_mode' => $cms));
 		return $query->row_array();
 	}
 }
