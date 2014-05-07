@@ -17,9 +17,8 @@
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo base_url();?>assets/css/common-game-site.css" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo base_url();?>assets/css/wow.css" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo base_url();?>assets/css/lightbox.css" />
-<link rel="stylesheet" type="text/css" media="all" href="<?php echo base_url();?>assets/css/cms.min.css" />
-<link rel="stylesheet" type="text/css" media="all" href="<?php echo base_url();?>assets/css/cms.css" />
-<link rel="stylesheet" type="text/css" media="all" href="<?php echo base_url();?>assets/css/locale/en-gb.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php echo base_url();?>assets/css/wiki/wiki.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php echo base_url();?>assets/css/game/game-index.css" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo base_url();?>assets/css/legal/ratings.css" />
 <!-- Le Javascripts -->
 <script type="text/javascript" src="<?php echo base_url();?>assets/js/third-party.js"></script>
@@ -59,14 +58,14 @@ _gaq.push(['_trackPageview']);
 <!-- The Styles & Javascripts of the CMS END -->
 </head>
 <?php foreach ($version as $cms_item): ?>
-<body class="<?php echo $cms_item['lang_css'] ?> homepage news">
+<body class="<?php echo $cms_item['lang_css'] ?> game-index">
 <?php endforeach ?>
 <div id="wrapper">
 <!-- User Panel -->
 <div id="service">
 <ul class="service-bar">
 <li class="service-cell service-home">
-<a href="<?php echo base_url();?>" tabindex="50" accessKey="1" title="BattleCMS HOME" data-action=" HOME">&nbsp;</a>
+<a href="<?php echo base_url();?>" tabindex="50" accessKey="1" title="Battle.net Home" data-action="Battle.net Home"> &nbsp;</a>
 <div id="bnet-app-tooltip" style="display: none">
 <div class="tooltip-arrow"></div>
 <div class="tooltip-wrapper">
@@ -145,7 +144,7 @@ shim.style.display = 'block';
 <div class="explore-primary">
 <ul class="explore-nav">
 <li>
-<a href="http://battle.net/" tabindex="55" data-action="Explore - Flame.net Home">
+<a href="<?php echo base_url(); ?>" tabindex="55" data-action="Explore - Flame.net Home">
 <?php foreach ($version as $cms_item): ?>
 <strong class="explore-caption"><?php echo $cms_item['title_CMS'] ?> Home</strong>
 <?php endforeach ?>
@@ -197,7 +196,7 @@ shim.style.display = 'block';
 </div>
 <ul class="explore-secondary">
 <li class="explore-game explore-game-wow">
-<a href="http://battle.net/wow/" tabindex="55" data-action="Explore - wow">
+<a href="<?php echo base_url();?>" tabindex="55" data-action="Explore - wow">
 <span class="explore-game-inner">
 <strong class="explore-caption">World of Warcraft</strong>
 </span>
@@ -329,7 +328,7 @@ Core.bindTrackEvent('.explore-nav li a', category);
 </li>
 </ul>
 <div class="user-plate">
-<a href="?login" class="card-character plate-logged-out" onclick="return Login.open('https://battle.net/login/login.frag');">
+<a href="?login" class="card-character plate-logged-out" onclick="return Login.open('<?php echo base_url(); ?>login/login.frag');">
 <span class="card-portrait"></span>
 <span class="wow-login-key"></span>
 <span class="login-msg"><strong>Log in now</strong> to enhance and personalize your experience!</span>

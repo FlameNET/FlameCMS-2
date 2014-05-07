@@ -42,12 +42,13 @@ class Game extends CI_Controller {
 		 * FlameCMS | Load language file
 		 */
 	    $this->lang->load('wow/home');
+	    $this->lang->load('wow/game');
 
 	    /**
 		 * FlameCMS | Load view file
 		 */
-		$this->load->view('wow/headers/header_guide_game', $data);
-		$this->load->view('wow/home', $data);
+		$this->load->view('wow/headers/header_game', $data);
+		$this->load->view('wow/game', $data);
 		$this->load->view('wow/footer/footer_home', $data);
 	}
 }

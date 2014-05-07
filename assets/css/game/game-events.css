@@ -1,0 +1,69 @@
+/* Events Landing page */
+.game-events-index #content .content-top { background:url(../../images/game/events/bg-home-top.jpg) 0 0 no-repeat; }
+.game-events-index #content .content-bot { padding: 0 25px 80px 25px; }
+
+.game-events-index .subheader { margin: 20px 0 20px 0; float: left; overflow: hidden; }
+.game-events-index .subheader h3{ color: #f3ecc7; font-size: 18px; text-transform: uppercase; }
+.game-events-index .subheader p { color: #a4704e; font-family: Arial; font-size: 12px; letter-spacing: 0px; display: none; }
+.game-events-index .subheader p.active { display: block; }
+.game-events-index .subheader hr{ height: 1px; border: none; background: url(../../images/game/events/separator-img.jpg) top left no-repeat; }
+
+.game-events-index .wrapper { overflow: hidden; width: 944px; }
+.game-events-index .wrapper hr { float: left; width: 100%; border: 0; height: 2px; background: #483021; margin: 15px 0px 20px 0px; }
+.game-events-index .wrapper .events-top { float: left; width: 944px; padding:0; }
+.game-events-index .wrapper .events-top .weekly-events { float: left; width: 459px; }
+.game-events-index .wrapper .events-top .monthly-events { margin-left: 26px; float: left; }
+.game-events-index .wrapper .events-top .weekly-events .subheader, .game-events-index .wrapper .events-top .monthly-events .subheader,
+.game-events-index .wrapper .events-top .weekly-events, .game-events-index .wrapper .events-top .monthly-events { float: left; width: 459px; }
+.game-events-index .wrapper .events-top .weekly-events .subheader, .game-events-index .wrapper .events-top .monthly-events .subheader { height: 70px; }
+
+.game-events-index .section-title { margin: 25px 0; margin-top: 35px; }
+.game-events-index .main-header-desc { margin: 0 0 50px 0; width: 40%; color: #a4704e; line-height: 2em; }
+
+.game-events-index .yearly-events { width: 970px; margin-left: -26px; }
+.game-events-index .yearly-events a { margin-left: 26px; float: left; }
+
+.game-events-index .flag-card { cursor: pointer; width:459px; height: 153px; margin-bottom: 25px; float: left; display: inline-block; background: url(../../images/game/events/flag-cards.jpg) no-repeat;
+		-moz-box-shadow: 0 0 6px #000;
+		-webkit-box-shadow: 0 0 6px #000;
+		box-shadow: 0 0 6px #000; }
+.game-events-index .flag-card .event-name { color: #ffb100; font-size: 18px; font-weight: normal; display: block; padding-top: 11px; margin: 0px 0px 5px 186px; line-height: 18px; }
+.game-events-index .flag-card .event-type { color: #f0e29a; font-size: 11px; line-height: 13px; display: block; margin-left: 186px; }
+.game-events-index .flag-card .class-req { font-size: 11px; line-height :12px; margin-left: 186px; }
+.game-events-index .flag-card .class-req.wrath { color: #2588c0; }
+.game-events-index .flag-card .event-desc { color: #b79855; font-size: 11px; line-height: 14px; display: block; margin: 10px 25px 0 186px; }
+.game-events-index .flag-card:hover .class-type, .flag-card:hover .class-desc { color: #fff; }
+
+.game-events-index .flag-card.fishing { background-position: 0 0; }
+.game-events-index .flag-card.darkmoon-faire { background-position: -471px 0; }
+.game-events-index .flag-card.lunar-festival { background-position: 0 -163px; }
+.game-events-index .flag-card.love-is-in-the-air { background-position: -471px -163px; }
+.game-events-index .flag-card.noblegarden { background-position: 0 -326px; }
+.game-events-index .flag-card.childrens-week { background-position: -471px -326px; }
+.game-events-index .flag-card.midsummer-fire-festival { background-position: 0 -489px; }
+.game-events-index .flag-card.pirates-day { background-position: -471px -489px; }
+.game-events-index .flag-card.harvest-festival { background-position: 0 -652px; }
+.game-events-index .flag-card.brewfest { background-position: -471px -652px; }
+.game-events-index .flag-card.halloween { background-position: 0 -815px; }
+.game-events-index .flag-card.day-of-the-dead { background-position: -471px -815px; }
+.game-events-index .flag-card.pilgrims-bounty { background-position: 0 -978px; }
+.game-events-index .flag-card.wow-anniversary { background-position: -471px -978px; }
+.game-events-index .flag-card.feast-of-winter { background-position: 0 -1141px; }
+.game-events-index .flag-card.newyear { background-position: -471px -1141px; }
+
+.game-events-index .flag-card.fishing:hover { background-position: 0 -1304px; }
+.game-events-index .flag-card.darkmoon-faire:hover { background-position: -471px -1304px; }
+.game-events-index .flag-card.lunar-festival:hover { background-position: 0 -1467px; }
+.game-events-index .flag-card.love-is-in-the-air:hover { background-position: -471px -1467px; }
+.game-events-index .flag-card.noblegarden:hover { background-position: 0 -1630px; }
+.game-events-index .flag-card.childrens-week:hover { background-position: -471px -1630px; }
+.game-events-index .flag-card.midsummer-fire-festival:hover { background-position: 0 -1793px; }
+.game-events-index .flag-card.pirates-day:hover { background-position: -471px -1793px; }
+.game-events-index .flag-card.harvest-festival:hover { background-position: 0 -1956px; }
+.game-events-index .flag-card.brewfest:hover { background-position: -471px -1956px; }
+.game-events-index .flag-card.halloween:hover { background-position: 0 -2119px; }
+.game-events-index .flag-card.day-of-the-dead:hover { background-position: -471px -2119px; }
+.game-events-index .flag-card.pilgrims-bounty:hover { background-position: 0 -2282px; }
+.game-events-index .flag-card.wow-anniversary:hover { background-position: -471px -2282px; }
+.game-events-index .flag-card.feast-of-winter:hover { background-position: 0 -2445px; }
+.game-events-index .flag-card.newyear:hover { background-position: -471px -2445px; }

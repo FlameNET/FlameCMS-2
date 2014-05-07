@@ -1,0 +1,983 @@
+/**
+ * DO NOT MODIFY THIS FILE!
+ * I REPEAT -- DO NOT MAKE CHANGES TO THIS FILE!
+ * THIS FILE IS COMPILED FROM /webapp/less/game/returning-players-guide/main.less
+ * NOTHING TO SEE HERE!
+ * MOVE ALONG!
+ * CONTINUE ABOUT YOUR BUSINESS!
+ * HAVE A NICE DAY!
+ */
+
+#content .content-top {
+  background: url(../../images/game/returning-players-guide/backgrounds.jpg) 0 -4001px no-repeat;
+}
+
+.content-bot {
+  padding-bottom: 100px;
+  /* Header Styles */
+}
+
+.content-bot .section {
+  background: #190e08 url("../../images/game/returning-players-guide/section-top.jpg") 0 0 no-repeat;
+  border-bottom: 1px solid #150505;
+  border-radius: 4px;
+  -webkit-box-shadow: #0d0703 0 0 10px;
+  box-shadow: #0d0703 0 0 10px;
+  clear: both;
+  margin: 0 1px 7px;
+  padding: 0 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.content-bot .intro,
+.content-bot .highlight {
+  background: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-bottom: none;
+}
+
+.content-bot .highlight {
+  overflow: visible;
+  padding-bottom: 25px;
+}
+
+.content-bot h1 {
+  color: #efe3d2;
+  font: 52px "Palatino Linotype", Georgia, Times, sans-serif;
+  letter-spacing: -1.5px;
+  margin: 40px 0 0 0;
+  text-shadow: #241209 0 0 5px;
+  width: 410px;
+}
+
+.content-bot h2 {
+  font-size: 150%;
+  color: #efe3d2;
+  padding: 30px 0;
+  font: normal 23px/23px "palatino linotype", sans-serif;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+.content-bot h2 .icon {
+  margin-left: 10px;
+  display: inline-block;
+  height: 14px;
+  width: 14px;
+  background: url("../../images/game/returning-players-guide/rpg-icons.png") -298px -204px no-repeat;
+  border-radius: 2px;
+  border-bottom: 1px solid black;
+}
+
+.content-bot h2:active .icon {
+  border-bottom: none;
+}
+
+.content-bot h2.is-toggled .icon {
+  background-position: -312px -204px;
+}
+
+.content-bot h3 {
+  font-size: 125%;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #efe3d2;
+  margin: 2.25em 0 1.25em;
+}
+
+.de-de .content-bot h3 {
+  font-size: 105%;
+}
+
+.fr-fr .content-bot h3 {
+  font-size: 105%;
+}
+
+.it-it .content-bot h3 {
+  font-size: 105%;
+}
+
+.highlight p {
+  margin-top: 30px;
+  color: #b79855;
+  font: normal 14px/26px Arial, Sans-serif;
+  margin-top: 20px;
+  width: 440px;
+}
+
+p {
+  line-height: 26px;
+  margin-bottom: 29px;
+}
+
+.section-body {
+  margin-bottom: 30px;
+  display: none;
+}
+
+.newFeatures .right-col {
+  position: relative;
+  margin-top: 380px;
+  clear: both;
+}
+
+/* Utility classes */
+
+kbd {
+  font: inherit;
+}
+
+.emphasis {
+  font-weight: bold;
+}
+
+.is-open {
+  display: block;
+}
+
+.right-col {
+  float: right;
+}
+
+.pull-left,
+.pull-right {
+  width: 420px;
+  position: relative;
+}
+
+.pull-left {
+  float: left;
+  clear: left;
+}
+
+.pull-right {
+  float: right;
+  clear: right;
+}
+
+/* Section header backgrounds */
+
+.header-icon,
+h3.reactivate:before,
+h3.download:before,
+h3.race:before,
+h3.classes:before,
+h3.talents:before,
+h3.trainers:before,
+h3.glyphs:before,
+h3.questing:before,
+h3.dungeonFinder:before,
+h3.pvp:before,
+h3.guildPerks:before,
+h3.socialGaming:before,
+h3.petBattles:before,
+h3.transmog:before,
+h3.crossRealm:before,
+h3.accountBound:before,
+h3.story:before {
+  content: " ";
+  display: inline-block;
+  margin-bottom: -1.1em;
+  margin-right: .75em;
+  height: 42px;
+  width: 42px;
+}
+
+h3.reactivate:before {
+  background: url(../../images/game/returning-players-guide/rpg-icons.png) -106px -204px no-repeat;
+}
+
+h3.download:before {
+  background: url(../../images/game/returning-players-guide/rpg-icons.png) -148px -204px no-repeat;
+}
+
+h3.race:before {
+  background: url(../../images/game/returning-players-guide/rpg-icons.png) -64px -120px no-repeat;
+}
+
+h3.classes:before {
+  background: url(../../images/game/returning-players-guide/rpg-icons.png) -106px -120px no-repeat;
+}
+
+h3.talents:before {
+  background: url(../../images/game/returning-players-guide/rpg-icons.png) -148px -120px no-repeat;
+}
+
+h3.trainers:before {
+  background: url(../../images/game/returning-players-guide/rpg-icons.png) -190px -120px no-repeat;
+}
+
+h3.glyphs:before {
+  background: url(../../images/game/returning-players-guide/rpg-icons.png) -232px -120px no-repeat;
+}
+
+h3.questing:before {
+  background: url(../../images/game/returning-players-guide/rpg-icons.png) -64px -162px no-repeat;
+}
+
+h3.dungeonFinder:before {
+  background: url(../../images/game/returning-players-guide/rpg-icons.png) -106px -162px no-repeat;
+}
+
+h3.pvp:before {
+  background: url(../../images/game/returning-players-guide/rpg-icons.png) -148px -162px no-repeat;
+}
+
+h3.guildPerks:before {
+  background: url(../../images/game/returning-players-guide/rpg-icons.png) -190px -162px no-repeat;
+}
+
+h3.socialGaming:before {
+  background: url(../../images/game/returning-players-guide/rpg-icons.png) -232px -162px no-repeat;
+}
+
+h3.petBattles:before {
+  background: url(../../images/game/returning-players-guide/rpg-icons.png) -274px -120px no-repeat;
+}
+
+h3.transmog:before {
+  background: url(../../images/game/returning-players-guide/rpg-icons.png) -316px -120px no-repeat;
+}
+
+h3.crossRealm:before {
+  background: url(../../images/game/returning-players-guide/rpg-icons.png) -274px -162px no-repeat;
+}
+
+h3.accountBound:before {
+  background: url(../../images/game/returning-players-guide/rpg-icons.png) -316px -162px no-repeat;
+}
+
+.es-es h3.accountBound:before {
+  float: left;
+}
+
+.ru-ru h3.accountBound:before {
+  float: left;
+}
+
+h3.story:before {
+  background: url(../../images/game/returning-players-guide/rpg-icons.png) -64px -204px no-repeat;
+}
+
+/* Section backgrounds */
+
+.section-body > * {
+  z-index: 1;
+}
+
+.bg-top,
+.bg-bottom {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 0;
+  background: url(../../images/game/returning-players-guide/backgrounds.jpg) -1px 0 no-repeat;
+  z-index: 0;
+  opacity: 0;
+  -webkit-transition: opacity .2s linear;
+  transition: opacity .2s linear;
+}
+
+.bg-top {
+  top: 0;
+}
+
+.bg-bottom {
+  bottom: -2px;
+  height: 65px;
+  background: url("../../images/game/returning-players-guide/section-bottom.gif") 0 0 repeat-x;
+}
+
+.is-toggled + div .bg-top,
+.is-toggled + .is-open .bg-bottom {
+  opacity: 1;
+}
+
+.major .bg-top {
+  background: url(../../images/game/returning-players-guide/backgrounds.jpg) -1px 0 no-repeat;
+  height: 545px;
+}
+
+.major .bg-bottom {
+  background: url(../../images/game/returning-players-guide/backgrounds.jpg) 0 -569px no-repeat;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+  height: 569px;
+  bottom: auto;
+  top: 847px;
+}
+
+.de-de .major .bg-bottom {
+  top: 890px;
+}
+
+.es-es .major .bg-bottom {
+  top: 951px;
+}
+
+.es-mx .major .bg-bottom {
+  top: 950px;
+}
+
+.fr-fr .major .bg-bottom {
+  top: 947px;
+}
+
+.it-it .major .bg-bottom {
+  top: 870px;
+}
+
+.ko-kr .major .bg-bottom {
+  top: 750px;
+}
+
+.pt-br .major .bg-bottom {
+  top: 898px;
+}
+
+.pt-pt .major .bg-bottom {
+  top: 898px;
+}
+
+.ru-ru .major .bg-bottom {
+  top: 950px;
+}
+
+.zh-cn .major .bg-bottom {
+  top: 695px;
+}
+
+.zh-tw .major .bg-bottom {
+  top: 680px;
+}
+
+.newFeatures .bg-top {
+  background: url(../../images/game/returning-players-guide/backgrounds.jpg) 0 -1139px no-repeat;
+  height: 800px;
+}
+
+.gameplayUpdates .bg-top {
+  background: url(../../images/game/returning-players-guide/backgrounds.jpg) 0 -2453px no-repeat;
+  height: 500px;
+}
+
+.gameplayUpdates .bg-bottom {
+  background: url(../../images/game/returning-players-guide/backgrounds.jpg) 0 -2930px no-repeat;
+  bottom: auto;
+  top: 527px;
+  height: 661px;
+}
+
+.de-de .gameplayUpdates .bg-bottom {
+  top: 607px;
+}
+
+.es-es .gameplayUpdates .bg-bottom {
+  top: 627px;
+}
+
+.es-mx .gameplayUpdates .bg-bottom {
+  top: 570px;
+}
+
+.fr-fr .gameplayUpdates .bg-bottom {
+  top: 637px;
+}
+
+.it-it .gameplayUpdates .bg-bottom {
+  top: 590px;
+}
+
+.pt-br .gameplayUpdates .bg-bottom {
+  top: 567px;
+}
+
+.pt-pt .gameplayUpdates .bg-bottom {
+  top: 567px;
+}
+
+.ru-ru .gameplayUpdates .bg-bottom {
+  top: 627px;
+}
+
+.zh-cn .gameplayUpdates .bg-bottom {
+  top: 450px;
+}
+
+.zh-tw .gameplayUpdates .bg-bottom {
+  top: 400px;
+  background-size: 90%;
+  background-position: 0px -2580px;
+}
+
+.appendix .bg-bottom {
+  background: url(../../images/game/returning-players-guide/backgrounds.jpg) -1px -1983px no-repeat;
+  bottom: auto;
+  top: 494px;
+  height: 470px;
+}
+
+.es-es .appendix .bg-bottom {
+  top: 519px;
+}
+
+.ko-kr .appendix .bg-bottom {
+  top: 464px;
+}
+
+.zh-cn .appendix .bg-bottom {
+  top: 454px;
+}
+
+.zh-tw .appendix .bg-bottom {
+  top: 493px;
+}
+
+.call-to-action {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  width: 300px;
+  bottom: 0;
+  color: #ffb100;
+}
+
+.call-to-action .call-to-action-logo,
+.call-to-action .pre-button,
+.call-to-action .post-button,
+.call-to-action .wrap-button {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: auto;
+  text-align: right;
+}
+
+.call-to-action .wrap-button {
+  top: 215px;
+  height: 50px;
+  display: none;
+}
+
+.call-to-action .pre-button {
+  bottom: 53px;
+  color: #efe3d2;
+  font-size: 14px;
+  right: 6px;
+  text-shadow: 0 2px 20px black, 0 2px 15px black, 0 2px 10px black;
+}
+
+.call-to-action .post-button {
+  top: 53px;
+  font-size: 10px;
+  right: 6px;
+  text-shadow: 0 0 5px black, 0 0 7px black,0 0 10px black;
+}
+
+.call-to-action .call-to-action-logo {
+  position: absolute;
+  top: -1px;
+  right: -20px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width: 347px;
+  height: 209px;
+  left: -16px;
+  top: -80px;
+}
+
+.de-de .call-to-action-logo {
+  background-image: url(../../images/game/returning-players-guide/siege-of-orgrimmar_de.jpg);
+}
+
+.en-us .call-to-action-logo,
+.en-gb .call-to-action-logo {
+  background-image: url(../../images/game/returning-players-guide/siege-of-orgrimmar_en.jpg);
+}
+
+.es-es .call-to-action-logo,
+.es-mx .call-to-action-logo {
+  background-image: url(../../images/game/returning-players-guide/siege-of-orgrimmar_es.jpg);
+}
+
+.fr-fr .call-to-action-logo {
+  background-image: url(../../images/game/returning-players-guide/siege-of-orgrimmar_fr.jpg);
+}
+
+.it-it .call-to-action-logo {
+  background-image: url(../../images/game/returning-players-guide/siege-of-orgrimmar_it.jpg);
+}
+
+.ko-kr .call-to-action-logo {
+  background-image: url(../../images/game/returning-players-guide/siege-of-orgrimmar_kr.jpg);
+}
+
+.pt-br .call-to-action-logo,
+.pt-pt .call-to-action-logo {
+  background-image: url(../../images/game/returning-players-guide/siege-of-orgrimmar_pt.jpg);
+}
+
+.ru-ru .call-to-action-logo {
+  background-image: url(../../images/game/returning-players-guide/siege-of-orgrimmar_ru.jpg);
+}
+
+.zh-cn .call-to-action-logo {
+  background-image: url(../../images/game/returning-players-guide/siege-of-orgrimmar_zh-cn.jpg);
+}
+
+.zh-tw .call-to-action-logo {
+  background-image: url(../../images/game/returning-players-guide/siege-of-orgrimmar_zh-tw.jpg);
+}
+
+.download-sidebar {
+  background: #211309 url(../../images/wiki/box-bg.jpg) 0 0 no-repeat;
+  border-radius: 4px;
+  -webkit-box-shadow: #0d0703 0 0 10px;
+  box-shadow: #0d0703 0 0 10px;
+  color: #b79855;
+  font-size: 11px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  padding: 30px;
+  position: relative;
+  width: 380px;
+}
+
+.download-sidebar p {
+  margin: 0;
+}
+
+.download-sidebar .setup,
+.download-sidebar .playable,
+.download-sidebar .optimal {
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+.download-sidebar .setup {
+  color: #f10201;
+}
+
+.download-sidebar .playable {
+  color: #d8b304;
+}
+
+.download-sidebar .optimal {
+  color: #1ba103;
+}
+
+.setup-bar,
+.playable-bar,
+.optimal-bar {
+  display: block;
+  height: 40px;
+  width: 369px;
+  margin-bottom: 16px;
+  background: url(../../images/game/returning-players-guide/rpg-icons.png) 0 0 no-repeat;
+}
+
+.setup-bar {
+  background-position: 0 0px;
+}
+
+.playable-bar {
+  background-position: 0 -40px;
+}
+
+.optimal-bar {
+  background-position: 0 -80px;
+  margin-bottom: 0px;
+}
+
+.reactivate-sidebar {
+  background: #211309 url(../../images/wiki/box-bg.jpg) 0 0 no-repeat;
+  border-radius: 4px;
+  -webkit-box-shadow: #0d0703 0 0 10px;
+  box-shadow: #0d0703 0 0 10px;
+  color: #b79855;
+  font-size: 11px;
+  margin: 60px 0 30px;
+  padding: 40px;
+  padding-bottom: 60px;
+  position: relative;
+  width: 340px;
+}
+
+.account-links {
+  background: #211309 url(../../images/game/returning-players-guide/backgrounds.jpg) 0 -3606px no-repeat;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  height: 180px;
+  padding: 165px 40px 50px 151px;
+  position: absolute;
+  right: 20px;
+  top: 0;
+  z-index: 0;
+}
+
+.authenticator,
+.phoneSecure {
+  margin-top: 1px;
+  border-top: 1px solid #4b300d;
+  position: relative;
+}
+
+.authenticator h6,
+.phoneSecure h6 {
+  color: #efe3d2;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 16px 0 0;
+  position: absolute;
+}
+
+.authenticator .icon,
+.phoneSecure .icon {
+  background: url(../../images/game/returning-players-guide/rpg-icons.png) 0px -188px no-repeat;
+  height: 68px;
+  width: 63px;
+  position: absolute;
+  bottom: -1px;
+  right: 0;
+  margin-right: 20px;
+}
+
+.authenticator p,
+.phoneSecure p {
+  padding-top: 45px;
+  min-height: 0;
+  height: 26px;
+  line-height: 16px;
+  padding-bottom: 26px;
+  margin: 0;
+  width: 220px;
+}
+
+.phoneSecure {
+  border-bottom: 1px solid #4b300d;
+}
+
+.phoneSecure .icon {
+  background-position: 0px -120px;
+  bottom: 0;
+}
+
+.major-class-sidebar {
+  background: #211309 url(../../images/wiki/box-bg.jpg) 0 0 no-repeat;
+  border-radius: 4px;
+  -webkit-box-shadow: #0d0703 0 0 10px;
+  box-shadow: #0d0703 0 0 10px;
+  color: #b79855;
+}
+
+.major-class-sidebar h6 {
+  padding: 35px 30px;
+  font: 18px/18px "palatino linotype", sans-serif;
+  border-bottom: 1px solid black;
+}
+
+.major-class-sidebar p {
+  border-top: 1px solid #402413;
+  margin: 0 0 10px 0;
+  padding: 10px 30px 0px;
+}
+
+.major-class-sidebar ul {
+  padding: 0 30px 30px 50px;
+}
+
+.major-class-sidebar li {
+  position: relative;
+  float: left;
+  width: 160px;
+  padding-left: 20px;
+  display: block;
+  padding: 2px 0;
+}
+
+.major-class-sidebar i {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+  background: url(../../images/game/returning-players-guide/rpg-icons.png) 0 0 no-repeat;
+}
+
+.major-class-sidebar i.death-knight {
+  background-position: -190px -204px;
+}
+
+.major-class-sidebar i.druid {
+  background-position: -208px -204px;
+}
+
+.major-class-sidebar i.hunter {
+  background-position: -226px -204px;
+}
+
+.major-class-sidebar i.mage {
+  background-position: -244px -204px;
+}
+
+.major-class-sidebar i.monk {
+  background-position: -262px -204px;
+}
+
+.major-class-sidebar i.paladin {
+  background-position: -280px -204px;
+}
+
+.major-class-sidebar i.priest {
+  background-position: -190px -222px;
+}
+
+.major-class-sidebar i.rogue {
+  background-position: -208px -222px;
+}
+
+.major-class-sidebar i.shaman {
+  background-position: -226px -222px;
+}
+
+.major-class-sidebar i.warlock {
+  background-position: -244px -222px;
+}
+
+.major-class-sidebar i.warrior {
+  background-position: -262px -222px;
+}
+
+.gameplay-sidebar {
+  display: block;
+  background: url(../../images/game/returning-players-guide/backgrounds.jpg) -534px -3592px no-repeat;
+  height: 95px;
+  width: 431px;
+  margin-bottom: 30px;
+}
+
+.gameplay-sidebar h6,
+.gameplay-sidebar p {
+  font: 18px/18px "palatino linotype", sans-serif;
+  padding: 35px 30px 0;
+}
+
+.es-mx .gameplay-sidebar h6,
+.es-mx .gameplay-sidebar p {
+  padding: 25px 30px 0;
+  width: 200px;
+}
+
+.it-it .gameplay-sidebar h6,
+.it-it .gameplay-sidebar p {
+  padding: 25px 30px 0;
+  width: 200px;
+}
+
+.ko-kr .gameplay-sidebar h6,
+.ko-kr .gameplay-sidebar p {
+  padding: 25px 30px 0;
+  width: 150px;
+}
+
+.appendix .terms,
+.appendix .shortcuts {
+  -webkit-box-shadow: #0d0703 0 0 5px;
+  box-shadow: #0d0703 0 0 5px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  background: #1a0f08 url("../../images/game/returning-players-guide/section-top.jpg") 0 0 no-repeat;
+  padding: 20px;
+  margin-bottom: 0;
+  border-bottom: 1px solid black;
+}
+
+.appendix table {
+  -webkit-box-shadow: #0d0703 0 0 5px;
+  box-shadow: #0d0703 0 0 5px;
+  background-color: #21130a;
+  width: 100%;
+  overflow: hidden;
+  border-bottom-left-radius: 4px;
+  margin-bottom: 60px;
+  border-bottom-right-radius: 4px;
+}
+
+.appendix td {
+  padding: 10px 20px;
+  border-bottom: 1px solid #30190b;
+}
+
+.appendix .odd td {
+  border-bottom-color: #30190b;
+  background-color: #2b1507;
+}
+
+.appendix tr:first-child td {
+  border-top: 1px solid #402413;
+}
+
+.appendix .end {
+  margin-bottom: 60px;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.modal {
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.modal .btn-close {
+  background-image: url("../../images/game/timeline/timeline-sprites.png");
+  background-position: -298px -160px;
+  cursor: pointer;
+  height: 14px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 12px;
+}
+
+.modal .btn-close:hover {
+  background-position: -298px -174px;
+}
+
+.modal .backdrop {
+  background: url("../../images/game/returning-players-guide/transparent-50-black.png") 0 0 repeat;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 1010;
+}
+
+.modal .modal-content {
+  background-color: #21130a;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  left: 50%;
+  min-height: 332px;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  top: 50%;
+  width: 800px;
+  z-index: 1050;
+}
+
+.modal .modal-content.ie-old {
+  margin-left: -400px;
+  margin-top: -250px;
+}
+
+.modal .modal-content .class-background {
+  background-image: url("../../images/game/returning-players-guide/rpg-class-sprite.jpg");
+  background-repeat: no-repeat;
+  height: 331px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 800px;
+}
+
+.modal .modal-content.death-knight .class-background {
+  background-position: 0 0;
+}
+
+.modal .modal-content.druid .class-background {
+  background-position: 0 -332px;
+}
+
+.modal .modal-content.hunter .class-background {
+  background-position: 0 -664px;
+}
+
+.modal .modal-content.mage .class-background {
+  background-position: 0 -996px;
+}
+
+.modal .modal-content.paladin .class-background {
+  background-position: 0 -1328px;
+}
+
+.modal .modal-content.priest .class-background {
+  background-position: 0 -1660px;
+}
+
+.modal .modal-content.rogue .class-background {
+  background-position: 0 -1992px;
+}
+
+.modal .modal-content.shaman .class-background {
+  background-position: 0 -2324px;
+}
+
+.modal .modal-content.warlock .class-background {
+  background-position: 0 -2656px;
+}
+
+.modal .modal-content.warrior .class-background {
+  background-position: 0 -2988px;
+}
+
+.character-class-change-details {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-bottom: 20px;
+  padding-left: 320px;
+  padding-right: 60px;
+  position: relative;
+  width: 800px;
+}
+
+.character-class-change-details .character-class-change-header {
+  height: 150px;
+  position: relative;
+}
+
+.character-class-change-details .character-class-heading,
+.character-class-change-details .character-class-subheading {
+  font-family: "Palatino Linotype", serif;
+  font-weight: normal;
+  position: absolute;
+}
+
+.character-class-change-details .character-class-heading {
+  bottom: 55px;
+  color: #efe3d2;
+  font-size: 24px;
+}
+
+.character-class-change-details .character-class-subheading {
+  color: #98562a;
+  font-size: 18px;
+  font-style: italic;
+  top: 95px;
+}
+
+.character-class-change-details .character-class-change {
+  background: url("../../images/game/lore/characters/bullet.gif") 0 4px no-repeat;
+  color: #b79855;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  margin-bottom: 15px;
+  padding-left: 15px;
+  margin-top: 10px;
+}
+
+.button4 {
+  position: absolute;
+  right: 0px;
+}

@@ -1,0 +1,102 @@
+#content .content-bot { padding-bottom: 48px; overflow: hidden; }
+
+
+.game-faction .main-menu {float:left; width:232px; background:url("../../images/game/patch-notes/bg-left-body.jpg") 0 0 repeat-y; margin-bottom:60px;}
+.game-faction .main-menu .wrapper {width:232px; background:url("../../images/game/patch-notes/bg-left-bottom.jpg") 0 100% no-repeat;}
+.game-faction .main-menu #factionlist { background:url("../../images/game/patch-notes/bg-left-top.jpg") 0 0 no-repeat; padding-top:34px;}
+.game-faction .main-menu #factionlist ul {width:204px; margin:0 auto;}
+.game-faction .main-menu #factionlist ul li {clear:both; border-bottom:1px solid #4c300e;}
+.game-faction .main-menu #factionlist ul li a {display:block; width:204px; padding:13px 0;}
+.game-faction .main-menu #factionlist ul li a span {display:block;}
+.game-faction .main-menu #factionlist .faction-thumb { background: url('../../images/game/faction/faction-icons.png') no-repeat; float:left; width:45px; height:45px;  border:1px solid #352310; margin:0 11px 0 10px; border-radius:2px; }
+.game-faction .main-menu #factionlist .faction-subtitle {color:#b79855; font-size:11px; padding-right: 5px; line-height:13px; text-transform:uppercase; margin-top:0px;}
+.game-faction .main-menu #factionlist .faction-title {font-size:13px; line-height:18px;}
+.game-faction .main-menu #factionlist ul li a.current {background:url("../../images/game/patch-notes/bg-left-current.png");}
+.game-faction .main-menu #factionlist ul li a.current .faction-thumb {border:1px solid #cd9000;}
+.game-faction .main-menu #factionlist ul li a.current span {color:#fff;}
+.game-faction .main-menu #factionlist ul li a:hover .faction-thumb {border:1px solid #cd9000;}
+.game-faction .main-menu #factionlist ul li a:hover span {color:#fff;}
+.game-faction .arrow-list li { margin-bottom: 15px; padding: 0 0 0 17px ; background: url(../../images/icons/bullet2.gif) no-repeat 2px 7px; }
+
+.game-faction h4 { text-transform: uppercase; font-size: 13px; color:#EFE3D2; font-weight: normal; }
+.game-faction p { margin: 5px 0 17px 0; }
+.game-faction.index p { line-height: 24px; }
+.game-faction .content-break { height: 40px; background: url("../../images/game/faction/desc-bottom.jpg") center top no-repeat; }
+.game-faction .popular-links .link-item { width: 250px; margin: 10px 0 ; display: block; clear: both; }
+.game-faction .popular-links .link-icon { border: 1px solid #352310; display: block; float: left; width: 45px; height: 45px; border-radius: 2px; margin-right: 10px; background: url('../../images/game/faction/faction-icons.png') no-repeat;}
+.game-faction .popular-links .link-item:hover .link-icon { border: 1px solid #cd9000 }
+.game-faction .popular-links .link-item .link-title { display: block; line-height: 45px; }
+.game-faction .popular-links .link-item .link-text { color:#efc9a0; display: block; height: 4em; text-overflow: ellipsis; overflow: hidden; }
+.game-faction .popular-links .link-item:hover  .link-text { color: #fff; }
+
+.faction-contents { float:left; width:761px; line-height: 22px; }
+.faction-titles { padding: 0 24px; position: relative; z-index: 5; margin-top:265px; color:#efe3d2; font:normal 42px/45px Palatino Linotype,Sans-serif; letter-spacing:-1px; display:block}
+.faction-location { font-size: 20px; margin-bottom: 30px;font-family: "palatino linotype", serif; color:#98562a; display: block; line-height: 21px; }
+.faction-desc { padding: 0 24px; margin-top: 10px; font-size:14px; line-height:28px; color:#b79855; padding-bottom: 70px; background: url("../../images/game/faction/desc-bottom.jpg") center bottom no-repeat; }
+
+
+.index-subsection { padding: 10px 24px 40px 24px; }
+.index-subsection.left { padding-right: 420px; }
+.index-subsection.right { padding-left: 420px; }
+.index-subsection .subheader { font-size: 24px; font-family: "palatino linotype", serif; color:#EFE3D2; margin-bottom: 15px; }
+
+
+.reputation,
+.getting-started,
+.related-content { padding: 0 24px; }
+.reputation, .related-content h4 { margin: 7px 0; }
+.quartermaster-rewards { overflow: hidden; margin: 30px 24px 40px 24px; background: #211309 url("../../images/wiki/box-bg.jpg") 0 0 no-repeat; border-radius: 4px; box-shadow: #0d0703 0 0 5px; }
+.quartermaster-rewards .reward-wrapper { margin: 25px 25px 25px 264px; }
+.quartermaster-rewards .left-image { position: absolute; width: 264px;  background-repeat: no-repeat;}
+.quartermaster-rewards .label { color: #b79855; display: block; text-transform: uppercase; font-size: 11px; }
+.quartermaster-rewards h4,
+.quartermaster-rewards p,
+.quartermaster-rewards ul { position: relative; z-index: 5; }
+
+.feature-image { position: relative; z-index: 7; }
+.feature-image.gallery:hover { cursor: pointer; }
+.feature-image.float-left { margin: 5px 20px 5px 0; }
+.feature-image.float-right { margin: 5px 0 5px 20px; }
+.feature-thumbnail { display:block; width: 220px; height: 129px;}
+.feature-thumbnail .view { display: block; height: 40px; width: 60px; position: relative; top: -16px; float:right; margin-right: -10px; background: url("../../images/layout/lightbox/ui.png") -80px -158px no-repeat; }
+.feature-thumbnail:hover .view { background-position: -80px -209px; }
+
+.game-faction.index .faction-desc { padding-right: 420px; margin-top: 30px; } 
+
+/* Page specifics */
+.index #content .content-top { background: url('../../images/game/faction/bg-factions-index.jpg') no-repeat; }
+.index #what-are-factions { background: url('../../images/game/faction/what-are-factions.jpg') no-repeat center bottom; padding-bottom: 500px; }
+.index #where-start { background: url('../../images/game/faction/where-start.png') right top no-repeat; padding-bottom: 100px;  }
+
+.the-klaxxi #content .content-top { background: url('../../images/game/faction/the-klaxxi/bg-the-klaxxi.jpg') no-repeat; }
+.the-klaxxi .quartermaster-rewards { min-height: 340px;  }
+.the-klaxxi .quartermaster-rewards .left-image { margin-top:-20px; margin-left: 25px;  background: url('../../images/game/faction/the-klaxxi/reward-image.png') no-repeat; width: 398px; height: 384px; }
+.the-klaxxi .faction-contents { background: url('../../images/game/faction/the-klaxxi/bg-bottom.jpg') right bottom no-repeat; padding-bottom: 150px; }
+
+.golden-lotus #content .content-top { background: url('../../images/game/faction/golden-lotus/bg-golden-lotus.jpg') no-repeat; }
+.golden-lotus .quartermaster-rewards { min-height: 380px; }  
+.golden-lotus .quartermaster-rewards .left-image { margin-top:-40px; background: url('../../images/game/faction/golden-lotus/reward-image.png') no-repeat; height: 424px; width: 340px; }
+.golden-lotus .faction-contents { background: url('../../images/game/faction/golden-lotus/bg-bottom.jpg') right bottom no-repeat; padding-bottom: 200px; }
+
+.the-black-prince #content .content-top { background: url('../../images/game/faction/the-black-prince/bg-the-black-prince.jpg') no-repeat; }
+.the-black-prince .quartermaster-rewards { min-height: 310px;  }
+.the-black-prince .quartermaster-rewards .left-image {  background: url('../../images/game/faction/the-black-prince/reward-image.png') no-repeat; height: 350px; width :300px; }
+.the-black-prince .faction-contents { background: url('../../images/game/faction/the-black-prince/bg-bottom.jpg') right bottom no-repeat; padding-bottom: 200px; }
+
+.shaohao #content .content-top { background: url('../../images/game/faction/shaohao/bg-shaohao.jpg') no-repeat; }
+.shaohao .quartermaster-rewards { min-height: 330px; }  
+.shaohao .quartermaster-rewards .left-image { margin-top:-40px; background: url('../../images/game/faction/shaohao/reward-image.png') no-repeat; height: 424px; }
+.shaohao .faction-contents { background: url('../../images/game/faction/shaohao/bg-bottom.jpg') right bottom no-repeat; padding-bottom: 250px; }
+
+/* Icon positioning */
+.game-faction .popular-links .link-icon.golden-lotus,
+.game-faction .main-menu #factionlist .faction-thumb.golden-lotus { background-position: -45px 0;}
+
+.game-faction .popular-links .link-icon.shaohao,
+.game-faction .main-menu #factionlist .faction-thumb.shaohao { background-position: -90px 0;}
+
+.game-faction .popular-links .link-icon.the-klaxxi,
+.game-faction .main-menu #factionlist .faction-thumb.the-klaxxi { background-position: -135px 0;}
+
+.game-faction .popular-links .link-icon.the-black-prince,
+.game-faction .main-menu #factionlist .faction-thumb.the-black-prince{ background-position: -180px 0;}

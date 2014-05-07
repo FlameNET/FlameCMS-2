@@ -1,0 +1,83 @@
+
+#title-section { margin:47px 0 0 48px; min-height:210px; width:520px; }
+.en-us #title-section { width:440px; }
+#title-section .root-link { display:block; font-size:14px; }
+#title-section h4 { color:#fff; font:normal 50px/55px Palatino Linotype, Serif; letter-spacing:-1px; }
+#title-section h4 em { display:block; font-style:normal; }
+#title-section .sub-title { color:#883504; display:block; font:italic 26px Palatino Linotype, Serif; letter-spacing:-0.1px; margin-top:10px; }
+#title-section h5 { color:#efc9a0; display:block; font:italic 26px Palatino Linotype, Serif; letter-spacing:-0.1px; margin-top:10px; }
+
+#story-book { position:relative; width:100%; }
+#story-book h5 { color:#bf7c38; font-size: 2em;font:normal 30px/45px Palatino Linotype, Serif; margin-bottom:1em; text-align:center; }
+#story-book .story-content { background: url("../../images/game/lore/bg-paper-body.jpg") repeat-y; color:#efc9a0; font-size:13px; line-height:28px; margin:0 auto; width:901px; }
+#story-book .wrapper1 { background: url("../../images/game/lore/bg-paper-top1.jpg") 1px 0 no-repeat; width:100%; }
+#story-book .wrapper2 { background: url("../../images/game/lore/bg-paper-bottom1.jpg") 0 100% no-repeat; min-height:500px; padding:2px 0; width:100%; }
+#story-book .story-content .media-align-right { float:right; margin:0 -29px 15px 40px; }
+#story-book .story-content .media-align-left { float:left; margin:0 40px 15px -29px; }
+#story-book .story-content p { margin:0 auto; padding-bottom:29px; text-align:justify; width:630px; }
+#story-book .story-content p em { color:#bf7c38; display:block; font:italic 20px/28px Palatino Linotype, Serif; width:324px; }
+#story-book .story-content p em.separator { text-align: center; width: 100%; }
+#story-book .story-content .paragraph-title { color:#fff; font:normal 20px Palatino Linotype, Serif; text-align:justify; }
+#story-book .story-content a.lore-media { background-position:0 0 !important; background-repeat:no-repeat !important; display:block; margin-top:6px; width:328px; }
+#story-book .story-content a.lore-media:hover { background-position: -328px 0 !important; }
+#story-book .story-content a.lore-media .lore-media-frame { background: url("../../images/game/lore/lore-media-frame.png") 0 0 no-repeat; display:block; height:211px; position:relative; width:328px; }
+#story-book .story-content a.lore-media .lore-media-frame .media-format{ background-repeat:no-repeat; background: url("../../images/game/lore/lore-media-frame.png"); display:block; height:24px; position:absolute; right:4px; top:5px; width:24px; }
+#story-book .story-content a.screenshots .lore-media-frame .media-format{ background-position:-346px -123px; }
+#story-book .story-content a:hover.screenshots .lore-media-frame .media-format{ background-position:-346px -166px; }
+#story-book .story-content a.artwork .lore-media-frame .media-format{ background-position:-342px -12px; }
+#story-book .story-content a:hover.artwork .lore-media-frame .media-format{ background-position:-342px -55px; }
+#story-book .story-content a.videos .lore-media-frame .media-format { display:none; }
+#story-book .story-content a.videos .lore-media-frame { background-position:0 -211px !important; }
+#story-book .story-content a:hover.videos .lore-media-frame { background-position:0 100% !important; }
+#story-book .story-content a.lore-media .lore-media-title { display:inline-block; font:italic 14px/30px Palatino Linotype, Serif; margin:5px 0 0 3px; }
+#story-book .story-content a.media-align-right .lore-media-title { float:right; margin:0 3px 0 0; }
+#story-book .story-content .lore-flash-container { position:relative; }
+#story-book .story-content .lore-flash-container .flash-wrapper { left:0; position:absolute; top:0; }
+#story-book .story-content .page-number { font:normal 20px Palatino Linotype, Serif; text-align:center; margin-bottom: 1.5em; }
+
+#story-book a.prev-button, #story-book a.next-button { background: url("../../images/game/lore/nav-sprite.gif") no-repeat; font-size:14px; line-height:20px; position:absolute; top:61px; z-index:1; }
+#story-book a.prev-button { background-position:0 -59px; left:107px; padding-left:25px; }
+#story-book a:hover.prev-button { background-position:0 -87px; }
+#story-book a.next-button { background-position:100% -117px; padding-right:26px; right:108px; }
+#story-book a:hover.next-button { background-position:100% -145px; }
+#story-book .topnav-div .page-prev-next { top:62px; }
+#story-book .bottomnav-div .page-prev-next { bottom:14px; }
+#story-book .nav-buttons { cursor:default; position:relative; z-index:1; }
+#story-book .nav-buttons a { background: url("../../images/game/lore/nav-sprite.gif") 0 0 no-repeat; display:inline-block; height:14px; width:14px; }
+#story-book .nav-buttons a:hover { background-position: 0 -19px; }
+#story-book .nav-buttons a.selected { background-position: 0 -37px; }
+#story-book .topnav-div  .nav-buttons { padding-top:66px; }
+#story-book .bottomnav-div  .nav-buttons { padding-top:4px; }
+#story-book .pagination { margin:0 auto; position:relative; text-align:center; width:901px; }
+#story-book .pagination span { color:#bf7c38; font-size:12px; }
+#story-book .pagination span em { font-style:normal; }
+#story-book .bottomnav-div { background: url("../../images/game/lore/bg-paper-bottom2.jpg") 0 0 no-repeat; height:89px; }
+#story-book .bottomnav-div span { display:inline-block; margin-top:38px; }
+#story-book .topnav-div { height:161px; background: url("../../images/game/lore/bg-paper-top2.png") 0 0 no-repeat; }
+#story-book .topnav-div span { display:inline-block; }
+
+#download-credits { background: url("../../images/game/lore/bg-download-credits.jpg") 27px 0 no-repeat; margin:0 auto 0 auto; min-height:120px; padding-top:64px; text-align:center; width:901px; }
+#download-credits .story-title { color:#efc9a0; display:block; font:normal 16px Palatino Linotype, Serif; letter-spacing:2px; margin-top:17px; text-transform:uppercase; }
+#download-credits #chapter-nav { margin-top:8px; }
+#download-credits #chapter-nav a { background: url("../../images/game/lore/nav-sprite.gif") no-repeat; display:inline-block; font:normal 11px/14px Palatino Linotype, Serif; letter-spacing:1px; text-transform:uppercase; }
+#download-credits #chapter-nav a.prev-button { background-position:0 -171px; border-right:1px solid #453627; padding:0 12px 0 15px; }
+#download-credits #chapter-nav a:hover.prev-button { background-position:0 -189px; }
+#download-credits #chapter-nav a.next-button { background-position:100% -208px; padding:0 15px 0 12px; }
+#download-credits #chapter-nav a:hover.next-button { background-position:100% -226px; }
+#download-credits .story-download { background: url("../../images/icons/pdf_download.gif") 0 0 no-repeat; display:inline-block; margin-top:40px; padding-left:24px !important; }
+#download-credits .story-credits, #download-credits > p { color:#6f5447; font-size:11px; line-height:15px; margin-top:31px; }
+
+#download-story { margin-top: 18px; z-index: 2; }
+#download-story .more-info { color: #efc9a0; font-size: 8pt; font-style: italic; }
+#download-story.ui-dropdown .dropdown-wrapper { left: 0; min-width: 100%; right: auto; width: auto; }
+#download-story.ui-dropdown .dropdown-wrapper ul li a.download { background-position: 3px 3px; background-repeat: no-repeat; padding-left: 50px; white-space: nowrap; }
+#download-story.ui-dropdown .dropdown-wrapper ul li a:hover { background-color: #6e3b0d; }
+#download-story.ui-dropdown .dropdown-wrapper ul li a.download.pdf { background-image: url("../../images/icons/pdf_download_large.png"); }
+#download-story.ui-dropdown .dropdown-wrapper ul li a.download.epub { background-image: url("../../images/icons/epub_download_large.png"); }
+#download-story.ui-dropdown .dropdown-wrapper ul li a.download.mobi { background-image: url("../../images/icons/mobi_download_large.png"); }
+
+#story-art { float: right; padding-right: 48px; padding-top: 198px; text-shadow: 0 0 5px black; }
+#story-art a { font-size: 11px; }
+#story-art a:hover { color: #ffffff; }
+#story-art a .arrow  { background-image:url(../../images/media/sprite.png); background-position: -94px -391px; background-repeat: no-repeat; display: block; float: right; height: 12px; margin-left: 8px; margin-top: 2px; width: 12px; }
+#story-art a:hover .arrow { background-position: -120px -391px; }

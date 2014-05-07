@@ -1,0 +1,146 @@
+/* Li Li's Travel Journal */
+/* # General styles */
+.lilis-travel-journal .clearfix:before,
+.lilis-travel-journal .clearfix:after { content: ""; display: table; }
+.lilis-travel-journal .clearfix:after { clear: both; }
+.lilis-travel-journal .clearfix { zoom: 1; }  /* Triggers hasLayout for IE 6/7 */
+#content .content-bot { padding: 0; margin-bottom: 100px; }
+.lilis-travel-journal {}
+.lilis-travel-journal .screenshots { position: relative; }
+.lilis-travel-journal #content-subheader { margin: 0 0 0 30px; }
+.lilis-travel-journal .page-title { color: #efe3d2; font: 60px "Palatino Linotype", Georgia, Times, sans-serif; letter-spacing: -1.5px; margin-top: 20px; text-shadow: 0 0 5px #241209; }
+.lilis-travel-journal .page-introduction { position: relative; z-index: 2; }
+.lilis-travel-journal .page-entry { position: relative; z-index: 2; }
+.lilis-travel-journal .content-left  { float: left;  padding: 40px 0 0 30px; width: 570px; }
+.lilis-travel-journal .content-right { float: right; padding: 40px 30px 0 0; }
+.lilis-travel-journal .inner-content-full,
+.lilis-travel-journal .inner-content-left,
+.lilis-travel-journal .inner-content-right { padding: 40px 30px 0; }
+.lilis-travel-journal .inner-content-left:first-of-type { padding-top: 20px; }
+.lilis-travel-journal .page-subtitle,
+.lilis-travel-journal .page-entry .entry-title { color: #883504; font: 28px "Palatino Linotype", Georgia, Times, sans-serif; position: relative; top: -10px; }
+.lilis-travel-journal .star-divider { font: 36px Arial, sans-serif; margin-top: 30px; text-align: center; }
+
+.lilis-travel-journal .download-pdf { background: url(../../../images/wiki/box-bg.jpg) no-repeat scroll -25px -10px  #211309; border-bottom: 1px solid rgba(77,44,24,0.3); border-left: 1px solid rgba(77,44,24,0.8); border-right: 1px solid rgba(77,44,24,0.3); border-top: 1px solid rgba(77,44,24,0.9); border-radius: 8px; box-shadow: 0 0 15px rgba(0,0,0,0.8); display: block; height: 65px; position: absolute; right: 34px; text-align: center; width: 320px; }
+.lilis-travel-journal .download-pdf .button-text { line-height: 65px; position: relative; z-index: 5; text-align: center; }
+.lilis-travel-journal .download-pdf .button-icon { background: url(../../../images/game/lore/destination-pandaria/lilis-travel-journal/icon-pdf.png) 0 0 no-repeat; display: block; height: 17px; left: -22px; position: absolute; top: -4px; width: 16px; }
+
+.lilis-travel-journal .image-container { box-shadow: 0 0 20px rgba(0,0,0,0.5); display: block; height: 210px; margin-top: 5px; width: 328px; }
+.lilis-travel-journal .image-container:before { background-image: -webkit-radial-gradient(center center, circle farthest-side, #492610 25%, rgba(26,15,8,0.0) 80%); background-image: -moz-radial-gradient(center center, circle farthest-side, #492610 25%, rgba(26,15,8,0.0) 80%); background-image: -ms-radial-gradient(center center, circle farthest-side, #492610 25%, rgba(26,15,8,0.0) 80%); background-image: radial-gradient(circle at center farthest-side, #492610 25%, rgba(26,15,8,0.0) 80%); content: ""; display: block; height: 630px; left: -50px; position: absolute; top: -210px; width: 428px; z-index: -1; }
+.lilis-travel-journal .image-container-frame { background: url(../../../images/game/lore/lore-media-frame.png) no-repeat 0 0; background-color: rgba(0,0,0,0.15); cursor: pointer; display: block; height: 211px; position: relative;width: 328px; }
+.lilis-travel-journal .image-container-frame:hover { background-color: transparent; }
+.lilis-travel-journal .image-container-frame .media-format { background: url(../../../images/game/lore/lore-media-frame.png) no-repeat -346px -123px; display: block; height: 24px; position: absolute; right: 4px; top: 5px; width: 24px; }
+.lilis-travel-journal .image-container-frame:hover .media-format { background-position: -346px -166px; }
+
+.lilis-travel-journal .page-introduction-text { color: #efc9a0; font: 15px Arial, sans-serif; line-height: 24px; margin: 25px 0; }
+.lilis-travel-journal .page-introduction-text.narrow { margin: 25px 122px 25px 0; }
+.lilis-travel-journal .page-introduction-first-text { font-style: italic; }
+
+.lilis-travel-journal .page-entry { }
+.lilis-travel-journal .entry-title { margin: 50px 30px 0; }
+.lilis-travel-journal .page-entry-text { color: #efc9a0; font: 15px Arial, sans-serif; line-height: 24px; margin: 25px 0; }
+.lilis-travel-journal .page-entry-text.narrow { margin: 15px 75px 25px 0; }
+.lilis-travel-journal .page-entry-text:first-of-type { margin-top: 0; }
+
+.lilis-travel-journal .inner-content-left .page-entry-text { float: left; margin: 30px 31px 0 0; width: 575px; }
+.lilis-travel-journal .inner-content-left .page-entry-text:first-of-type { margin-top: 0; }
+.lilis-travel-journal .inner-content-left .extended-column-text { margin-top: 30px; }
+.lilis-travel-journal .inner-content-left .image-container { float: right; }
+
+.lilis-travel-journal .inner-content-right .image-container { float: left; }
+.lilis-travel-journal .inner-content-right .page-entry-text { float: left; margin: 30px 0 0 31px; width: 575px; }
+.lilis-travel-journal .inner-content-right .page-entry-text:first-of-type { margin-top: 0; }
+
+.lilis-travel-journal .first-screenshot { margin-top: 0; }
+
+/*# Page 1 */
+.lilis-travel-journal.page-1 #content .content-top { background: url(../../../images/game/lore/destination-pandaria/lilis-travel-journal/backgrounds/bg-lilis-journal-page-1-top.jpg) no-repeat; }
+.lilis-travel-journal.page-1 .download-pdf { top: 400px; }
+.lilis-travel-journal.page-1 .meet-lili { background:  url(../../../images/game/lore/destination-pandaria/lilis-travel-journal/screenshots/part-1/ss-lilis-journal-01-thumb.jpg) no-repeat; position: absolute; right: 30px; top: 510px; }
+.lilis-travel-journal.page-1 .page-entry .entry-title { margin: 20px 30px; }
+.lilis-travel-journal.page-1 .dawning-span { background:  url(../../../images/game/lore/destination-pandaria/lilis-travel-journal/screenshots/part-1/ss-lilis-journal-02-thumb.jpg) no-repeat;}
+.lilis-travel-journal.page-1 .classroom { background:  url(../../../images/game/lore/destination-pandaria/lilis-travel-journal/screenshots/part-1/ss-lilis-journal-03-thumb.jpg) no-repeat; }
+.lilis-travel-journal.page-1 .shang-xi { background:  url(../../../images/game/lore/destination-pandaria/lilis-travel-journal/screenshots/part-1/ss-lilis-journal-04-thumb.jpg) no-repeat; margin-top: 40px; }
+.ie .lilis-travel-journal.page-1 .shang-xi { margin-top: 50px; }
+.lilis-travel-journal.page-1 .shang-xi:after { background: url(../../../images/game/lore/destination-pandaria/lilis-travel-journal/backgrounds/bg-lilis-journal-page-1-temple.jpg) 0 0 no-repeat; content: ""; display: block; height: 365px; left: -85px; position: absolute; top: -320px; width: 434px; z-index: -2; }
+.lilis-travel-journal .spirit-shu { background:  url(../../../images/game/lore/destination-pandaria/lilis-travel-journal/screenshots/part-1/ss-lilis-journal-05-thumb.jpg) no-repeat; }
+/* # Page 2 */
+.lilis-travel-journal.page-2 #content .content-top { background: url(../../../images/game/lore/destination-pandaria/lilis-travel-journal/backgrounds/bg-lilis-journal-page-2-top.jpg) no-repeat; z-index: 1; }
+.lilis-travel-journal.page-2 #content .content-left {}
+.lilis-travel-journal.page-2 #content .content-right {}
+.lilis-travel-journal.page-2 .inner-content-full:first-of-type { padding: 40px  }
+.lilis-travel-journal.page-2 .page-entry { margin: 0; }
+.lilis-travel-journal.page-2 .page-entry .entry-title { margin: 50px 30px 0; }
+
+.ie .lilis-travel-journal.page-2 .page-entry-text.narrow { margin: 25px 90px 25px 0; }
+.lilis-travel-journal.page-2 .download-pdf { top: 500px; }
+.lilis-travel-journal.page-2 .puzhu-trees { background: url(../../../images/game/lore/destination-pandaria/lilis-travel-journal/screenshots/part-2/ss-lilis-journal-01-thumb.jpg) no-repeat; margin: 40px 0 0 50px; }
+.lilis-travel-journal.page-2 .wusong-villiage { background: url(../../../images/game/lore/destination-pandaria/lilis-travel-journal/screenshots/part-2/ss-lilis-journal-02-thumb.jpg) no-repeat; }
+.lilis-travel-journal.page-2 .two-wise-pandaren { background: url(../../../images/game/lore/destination-pandaria/lilis-travel-journal/screenshots/part-2/ss-lilis-journal-03-thumb.jpg) no-repeat; margin-bottom: 300px; }
+.lilis-travel-journal.page-2 .two-wise-pandaren:after { background: url(../../../images/game/lore/destination-pandaria/lilis-travel-journal/backgrounds/bg-lilis-journal-page-2-temple.jpg) 0 0 no-repeat; content: ""; display: block; height: 365px; left: -30px; position: absolute; top: 170px; width: 434px; z-index: -2; }
+.lilis-travel-journal.page-2 .cart-driver {
+	background: url(../../../images/game/lore/destination-pandaria/lilis-travel-journal/screenshots/part-2/ss-lilis-journal-04-thumb.jpg) no-repeat;
+}
+/* # Page 3 */
+.lilis-travel-journal.page-3 #content .content-top { background: url(../../../images/game/lore/destination-pandaria/lilis-travel-journal/backgrounds/bg-lilis-journal-page-3-top.jpg) no-repeat; z-index: 1; }
+.lilis-travel-journal.page-3 .download-pdf { top: 400px; }
+.lilis-travel-journal.page-3 .dai-lo { background: url(../../../images/game/lore/destination-pandaria/lilis-travel-journal/screenshots/part-3/ss-lilis-journal-01-thumb.jpg) no-repeat; margin: 40px 0 0 50px; }
+.lilis-travel-journal.page-3 .virmen { background: url(../../../images/game/lore/destination-pandaria/lilis-travel-journal/screenshots/part-3/ss-lilis-journal-02-thumb.jpg) no-repeat; }
+.lilis-travel-journal.page-3 .singing-pools { background: url(../../../images/game/lore/destination-pandaria/lilis-travel-journal/screenshots/part-3/ss-lilis-journal-03-thumb.jpg) no-repeat; }
+.lilis-travel-journal.page-3 .enchanted-waters { background: url(../../../images/game/lore/destination-pandaria/lilis-travel-journal/screenshots/part-3/ss-lilis-journal-04-thumb.jpg) no-repeat; }
+.lilis-travel-journal.page-3 .hozen-thieves { background: url(../../../images/game/lore/destination-pandaria/lilis-travel-journal/screenshots/part-3/ss-lilis-journal-05-thumb.jpg) no-repeat; }
+/* # Page 4 */
+.lilis-travel-journal.page-4 #content .content-top { background: url(../../../images/game/lore/destination-pandaria/lilis-travel-journal/backgrounds/bg-lilis-journal-page-4-top.jpg) no-repeat; z-index: 1; }
+.lilis-travel-journal.page-4 .download-pdf { top: 380px; }
+.lilis-travel-journal.page-4 .pei-wu-forest { float: right; margin-top: 420px; }
+
+.lilis-travel-journal .pei-wu-forest { background: url(../../../images/game/lore/destination-pandaria/lilis-travel-journal/screenshots/part-4/ss-lilis-journal-01-thumb.jpg) no-repeat; }
+.lilis-travel-journal .pei-wu-tiger { background: url(../../../images/game/lore/destination-pandaria/lilis-travel-journal/screenshots/part-4/ss-lilis-journal-02-thumb.jpg) no-repeat; }
+.lilis-travel-journal .strongbo { background: url(../../../images/game/lore/destination-pandaria/lilis-travel-journal/screenshots/part-4/ss-lilis-journal-03-thumb.jpg) no-repeat; }
+.lilis-travel-journal .guardian-of-the-elders { background: url(../../../images/game/lore/destination-pandaria/lilis-travel-journal/screenshots/part-4/ss-lilis-journal-04-thumb.jpg) no-repeat; }
+.lilis-travel-journal .shaopai { background: url(../../../images/game/lore/destination-pandaria/lilis-travel-journal/screenshots/part-4/ss-lilis-journal-05-thumb.jpg) no-repeat; }
+
+/* # Page 5  - refactored for editors  from page 5 and on*/
+#category-lilis-travel-journal .page-entry { margin-bottom: 80px; }
+#category-lilis-travel-journal .content-block { margin: 40px 30px; font: 15px Arial, sans-serif; line-height: 24px; }
+#category-lilis-travel-journal .content-block p { margin: 15px 0 25px 0; }
+#category-lilis-travel-journal.lilis-travel-journal .content-right { height: 90px; padding-top: 500px; display: block; width: 450px; float: right; } 
+#category-lilis-travel-journal.lilis-travel-journal .entry-title { margin: 50px 0 40px 0; }
+#category-lilis-travel-journal .background-block { position: absolute; z-index: -2; }
+#category-lilis-travel-journal .background-block-space { display: block; position: relative; }
+#category-lilis-travel-journal .background-block-space.align-left { float: left; }
+#category-lilis-travel-journal .background-block-space.align-right { float: right; margin: 30px 0 30px 30px; }
+.lilis-travel-journal .footer { height: 453px; width: 100%; margin-top: -150px; background: url(../../../images/game/lore/destination-pandaria/lilis-travel-journal/backgrounds/dragon-footer.jpg) no-repeat center 0; }
+.lilis-travel-journal .footer .to-be-continued-text { color: #883504; font: italic 28px "Palatino Linotype", Georgia, Times, sans-serif; position: relative; text-align: center; top: 275px; width: 100%; }
+.lilis-travel-journal .pagination { margin: 70px 30px 0 30px; }
+.lilis-travel-journal .pagination a.next-button, 
+.lilis-travel-journal .pagination a.prev-button { background: url("../../../images/game/lore/nav-sprite.gif") no-repeat; line-height: 20px; font-size: 14px; }
+.lilis-travel-journal .pagination a.next-button { float: right; background-position: 100% -117px; padding-right: 25px; }
+.lilis-travel-journal .pagination a.prev-button { background-position: 0 -59px; padding-left: 25px; }
+
+#category-lilis-travel-journal.page-5 #bg-forest { height: 716px; width: 641px; margin-top: -100px; }
+#category-lilis-travel-journal.page-5 #bg-hatchling { height: 691px; width: 456px; margin-top: -20px;  margin-left: 2px; }
+
+/* # Page 6 */
+#category-lilis-travel-journal.page-6 #bg-hozen { height: 544px; width: 457px; }
+#category-lilis-travel-journal.page-6 #bg-valley { height: 710px; width: 800px; margin-top: -100px; }
+
+/* # Page 7 */
+#category-lilis-travel-journal.page-7 #bg-bandicoon { height: 544px; width: 457px; }
+#category-lilis-travel-journal.page-7 #bg-kunlai { height: 710px; width: 800px; margin-top: -100px; }
+
+/* # Page 8 */
+#category-lilis-travel-journal.page-8 #bg-jinyu { height: 544px; width: 457px; }
+#category-lilis-travel-journal.page-8 #bg-peak { height: 710px; width: 800px; margin-top: -100px; }
+
+/* # Page 9 */
+#category-lilis-travel-journal.page-9 #bg-grommle { height: 544px; width: 457px; }
+#category-lilis-travel-journal.page-9 #bg-vale { height: 710px; width: 800px; margin-top: -100px; }
+
+/* # Page 10 */
+#category-lilis-travel-journal.page-10 #bg-yaungol { height: 544px; width: 457px; }
+#category-lilis-travel-journal.page-10 #bg-townlong { height: 710px; width: 800px; margin-top: -100px; }
+
+/* # Page 11 */
+#category-lilis-travel-journal.page-11 #bg-stormstouts { height: 544px; width: 457px; }
+#category-lilis-travel-journal.page-11 #bg-dreadwastes { height: 710px; width: 800px; margin-top: -100px; }

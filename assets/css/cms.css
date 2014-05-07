@@ -12,9 +12,9 @@
 
 /* Overridden cms styles for common 5 upgrade. todo: clean up all css files, place overriding styles in proper places */
 
-.homepage #content .content-top { padding-top:10px;  background: url("../images/body/home-top.jpg") no-repeat; }
-.homepage #content .content-bot:before, .blog-article #content .content-bot:before { position: absolute; height: 100%; width: 100%; top: 30px; left: 0; background: url("../images/body/shadow.png") repeat-y; display: block; content: ''; }
-.homepage .blog-articles { padding:0 20px;  background: url("../images/body/featured-news-top-bg.jpg") 0 -200px no-repeat; }
+.homepage #content .content-top { padding-top:10px;  background: url("../images/layout/home-top.jpg") no-repeat; }
+.homepage #content .content-bot:before, .blog-article #content .content-bot:before { position: absolute; height: 100%; width: 100%; top: 30px; left: 0; background: url("../images/homepage/shadow.png") repeat-y; display: block; content: ''; }
+.homepage .blog-articles { padding:0 20px;  background: url("../images/layout/featured-news-top-bg.jpg") 0 -200px no-repeat; }
 .news .left-content, .news .right-sidebar { position:relative; }
 .news .left-content { width:645px;  }
 .news.homepage .left-content { background:#2a160e; }
@@ -24,7 +24,7 @@
 .news .left-content .blog-load-more { margin: 20px; }
 .news.homepage .left-content .blog-load-more .load-more { background-color: #1a0f09; }
 .news .blog-articles .article-wrapper .article-content .article-summary { color: #a99877; }
-.news .comments-link { background: url("../images/icons/blog_icons.gif") -16px -13px; }
+.news .comments-link { background: url("../images/layout/cms/blog_icons.gif") -16px -13px; }
 .news .comments-link:hover { background-position: -16px -13px; }
 .news .blog-articles .article-wrapper { margin:0; background:none; }
 .news .blog-articles .article-wrapper .article-content .article-summary{ width:auto; }
@@ -32,15 +32,15 @@
 .news .featured-news .article-wrapper .article-image, .news .blog-articles .article-wrapper .article-image { border:solid 1px #541f09; }
 .news .featured-news .article-wrapper .article-meta, .news .blog-articles .article-wrapper .article-meta { color: #855b47; }
 
-.news .featured-news { position:relative; background: url("../images/body/featured-news-top-bg.jpg") no-repeat; }
+.news .featured-news { position:relative; background: url("../images/layout/featured-news-top-bg.jpg") no-repeat; }
 .bnet-offer-bg { padding:0; }
 .sidebar .sidebar-top { padding:0; }
 .sidebar .sidebar-bot { padding:0; }
 .sidebar .sidebar-loading { padding:100px 25px; top:25px; left:0; }
 
 #content { position:relative; }
-.homepage #content .content-trail { position: absolute; top: 0; left: 0; right: 0; z-index: 35; background: url("../images/body/trail-bar.png") 0 10px no-repeat; }
-.ui-slideshow .mask { background:url("../images/body/slideshow-mask.png"); }
+.homepage #content .content-trail { position: absolute; top: 0; left: 0; right: 0; z-index: 35; background: url("../images/layout/trail-bar.png") 0 10px no-repeat; }
+.ui-slideshow .mask { background:url("../images/layout/slideshow-mask.png"); }
 
 .news .blog-articles .article-wrapper {	border-top: 1px solid #3a2015; 	box-shadow: 0 -1px 0px #1b100d; }
 .header-2, .header-2 a { color:#f5ebd1; }
@@ -71,27 +71,27 @@ a:hover .header-2 { color:#fff; }
 
 #left { width:646px; } /* Wow site is smaller (?!) */
 .featured-news,
-#blog-container .featured-news { background:url(../images/body/featured_bg.jpg) 0 100% no-repeat; padding-left: 25px; }
+#blog-container .featured-news { background:url(../images/homepage/featured_bg.jpg) 0 100% no-repeat; padding-left: 25px; }
 
-#blog-container .featured-news { background-image:url(../images/body/featured_sub_bg.jpg); }
+#blog-container .featured-news { background-image:url(../images/homepage/featured_sub_bg.jpg); }
 .featured-news .featured a .featured-img { -moz-box-shadow:0 0 20px #000; -webkit-box-shadow:0 0 20px #000; box-shadow:0 0 20px #000; -moz-border-radius: 3px; border-radius: 3px; border-color:#372511; }
 .featured-news .featured a:hover .featured-img { border-color: #CD9000; }
 .featured-news .featured-desc { font-size:12px; font-weight: bold; line-height: normal; }
 .sidebar-content .featured-news { background: none; }
 
-#news-updates .news-article { padding-top:40px; padding-left: 25px; padding-bottom:15px; background:url(../images/body/news-bg.jpg) no-repeat; }
-#news-updates .news-article.first-child { padding-top:50px; background-image:url(../images/body/news-bg-first.jpg); }
+#news-updates .news-article { padding-top:40px; padding-left: 25px; padding-bottom:15px; background:url(../images/homepage/news-bg.jpg) no-repeat; }
+#news-updates .news-article.first-child { padding-top:50px; background-image:url(../images/homepage/news-bg-first.jpg); }
 
-.blog-paging { background:url("../images/body/news-bg.jpg") 50% 100%; }
+.blog-paging { background:url("../images/homepage/news-bg.jpg") 50% 100%; }
 
-a.comments-link { background-image:url("../images/icons/blog_icons.gif"); }
+a.comments-link { background-image:url("../images/layout/cms/blog_icons.gif"); }
 .by-line, .byline  { color:#855b47; }
 #news-updates h3 { line-height: 1.08em; }
 #news-updates h3 a { font-size:22px; color:#fff8d6; letter-spacing:-0.03em; font-weight:bold; }
 #news-updates .article-right { width:430px; }
-#news-updates { background:url(../images/body/news-btm.jpg) 0 100% no-repeat #23120B; padding-bottom: 40px; }
+#news-updates { background:url(../images/homepage/news-btm.jpg) 0 100% no-repeat #23120B; padding-bottom: 40px; }
 
-#blog { background-image:url("../images/body/blog_bg.jpg"); background-repeat: no-repeat; padding: 50px 25px 0 25px; min-height:503px; }
+#blog { background-image:url("../images/layout/cms/blog_bg.jpg"); background-repeat: no-repeat; padding: 50px 25px 0 25px; min-height:503px; }
 #blog.damocles-edit { background-color:#1A0F08; }
 
 h3.blog-title { font-size:24px; color:#fdeea4; font-weight:bold; }
@@ -109,7 +109,7 @@ h3.blog-title { font-size:24px; color:#fdeea4; font-weight:bold; }
 .rate-post-wrapper { float:right; clear:both; }
 .rate-post-login { padding:0 10px; }
 
-.rate-option > .button-left, .rate-option .button-right, .rate-option > .rate-down { height:21px; display:block; background-image:url("../images/icons/icon_rating.png"); }
+.rate-option > .button-left, .rate-option .button-right, .rate-option > .rate-down { height:21px; display:block; background-image:url("../images/layout/cms/icon_rating.png"); }
 .rate-option > .button-left { padding-left:20px; background-position:-11px -8px;}
 .rate-option > .rate-down { width:37px;  background-position: -10px -8px; }
 
@@ -136,7 +136,7 @@ h3.blog-title { font-size:24px; color:#fdeea4; font-weight:bold; }
 #content .karma .rate-btn-holder.selected .rate-btn, #content .karma .rate-btn-holder.selected:hover .rate-btn { color:#8f4415; }
 #content .rate-btn, #content .karma .rate-btn-holder.selected:hover .rate-btn { color:#eaa001; }
 
-.rate-option .ui-dropdown .dropdown-wrapper .report-comment a { color: #ffab00; background-image: url("../images/icon/alert_icon.png"); background-repeat:no-repeat; background-position:10px 50%; padding-left:36px; line-height:20px; border-top:solid 1px #573500; }
+.rate-option .ui-dropdown .dropdown-wrapper .report-comment a { color: #ffab00; background-image: url("../images/layout/cms/alert_icon.png"); background-repeat:no-repeat; background-position:10px 50%; padding-left:36px; line-height:20px; border-top:solid 1px #573500; }
 .rate-option .ui-dropdown .dropdown-wrapper .report-comment a:hover { color:#fff; background-color: #471807; }
 
 
@@ -164,7 +164,7 @@ h3.blog-title { font-size:24px; color:#fdeea4; font-weight:bold; }
 #thread .blizzard { border-bottom:none; }
 .mod_panel { border-bottom:1px solid #2d1f16; }
 
-.cms-announcement { background-color: #010308; background-image: url(../images/body/announce_bg.jpg); margin: 20px auto;
+.cms-announcement { background-color: #010308; background-image: url(../images/layout/cms/announce_bg.jpg); margin: 20px auto;
 					-moz-box-shadow:2px 2px 15px #000000; -webkit-shadow:2px 2px 15px #000000; box-shadow:2px 2px 15px #000000; }
 .cms-announcement .announce-content { padding: 20px 20px 20px 85px; }
 .cms-announcement .announce-detail { color: #e9bd7f }
@@ -172,32 +172,32 @@ h3.blog-title { font-size:24px; color:#fdeea4; font-weight:bold; }
 #station-content .right-column .module { width: 285px; }
 
 /*Station*/
-.station-home #content .content-top { background:url(../images/body/bt-lite-bg.jpg) no-repeat; }
+.station-home #content .content-top { background:url(../images/layout/cms/bt-lite-bg.jpg) no-repeat; }
 #station-view { padding-bottom:0; }
 #station-view .readmore { font-size:12px; text-transform:uppercase; color:#f0e29a; padding-top:3px; border-bottom-width:2px; background:url(../images/icons/subsection_bg.gif) 100% 56% no-repeat; }
 #station-view .bt-link.readmore { margin-top:43px; }
 #station-view .bt-lite { padding-top:58px; padding-bottom:32px;  }
-#station-view .bt-mask-l, #station-view .bt-mask-r { background-image:url(../images/body/bt_mask_bg.png); background-position:0 -58px }
+#station-view .bt-mask-l, #station-view .bt-mask-r { background-image:url(../images/layout/cms/bt_mask_bg.png); background-position:0 -58px }
 #station-view .bt-mask-r { background-position:right -58px }
-#station-view .bt-set { background-image:url(../images/body/bt_lite_bg.png); }
+#station-view .bt-set { background-image:url(../images/layout/cms/bt_lite_bg.png); }
 #station-view .bt-set a .desc { color:#004e8a; }
 #station-view .bt-set a .info .char { color:#000; }
 #station-view .bt-set a .info { color:#613916; }
 #station-view .bt-mask-l, #station-view .bt-mask-r { height:230px; }
-#station-view .bt-set a:hover { background-image:url(../images/body/bt_lite_bg.png); }
+#station-view .bt-set a:hover { background-image:url(../images/layout/cms/bt_lite_bg.png); }
 #station-view .bt-set a:nth-child(1):hover { background-position:0 bottom; }
 #station-view .bt-set a:nth-child(2):hover { background-position:-307px bottom; }
 #station-view .bt-set a:nth-child(3):hover { background-position:-614px bottom; }
 
-#station-view .bt-right, #station-view .bt-left {	background-image:url(../images/body/bt_lite_ctrl.gif); top:128px; }
+#station-view .bt-right, #station-view .bt-left {	background-image:url(../images/layout/cms/bt_lite_ctrl.gif); top:128px; }
 
 #station-content, #forum-list { padding-top:0 }
-#station-content { padding:0; background:url('../images/body/bg-community-body2.jpg') repeat-y 0 0 }
-#station-content .station-content-wrapper { background:url('../images/body/bg-community-body3.jpg') no-repeat 0 100% }
-#station-content .station-inner-wrapper { padding:10px 14px; background:url('../images/body/bg-forum.jpg') no-repeat 0 0 }
+#station-content { padding:0; background:url('../images/community/bg-community-body2.jpg') repeat-y 0 0 }
+#station-content .station-content-wrapper { background:url('../images/community/bg-community-body3.jpg') no-repeat 0 100% }
+#station-content .station-inner-wrapper { padding:10px 14px; background:url('../images/layout/cms/bg-forum.jpg') no-repeat 0 0 }
 .forum-parent:first-child { margin-top:0; }
 .forum-parent { color:#71330e; font-size:20px; margin-top:16px; line-height:41px; padding-bottom:0; padding-left: 20px; text-transform:uppercase; letter-spacing: -0.05em; }
-.forum-parent { background: url('../images/body/collapse-expand.png') no-repeat 0 1px; }
+.forum-parent { background: url('../images/layout/cms/collapse-expand.png') no-repeat 0 1px; }
 .forum-parent.collapsed { background-position: 0 -39px }
 .forum-parent:active,
 .forum-parent:hover,
@@ -216,7 +216,7 @@ h3.blog-title { font-size:24px; color:#fdeea4; font-weight:bold; }
 #forum-list { width: 604px; }
 #popular-topics { margin: 0; padding-top:0; }
 #popular-topics .readmore { border-bottom-color:#552b12; font-size: 14px; padding: 0; padding-bottom: 6px; margin-top: 4px; margin-bottom: 6px; background: none; }
-.coc { color:#71401F; margin: 0; text-transform: none; font-size: 11px; width: 290px; background:url("../images/body/code_bg.png"); font-style:italic;  }
+.coc { color:#71401F; margin: 0; text-transform: none; font-size: 11px; width: 290px; background:url("../images/layout/cms/code_bg.png"); font-style:italic;  }
 
 .forum-link .int { width:230px; }
 .forum-link .int-padding { padding:10px 12px 0 0; font-weight:bold; }
@@ -228,11 +228,6 @@ h3.blog-title { font-size:24px; color:#fdeea4; font-weight:bold; }
 .filter-options a { color:#FFAE00; background-color:#2B1507; -moz-border-radius: 3px; padding: 0 10px; height: 30px; line-height: 30px; }
 .filter-options a:hover { color:#fff; background-color:#4E2F1B; }
 .filter-options a.selected  { color:#000; background-color:#FFAE00; font-weight: bold; }
-
-/* Till here for now */
-/* Till here for now */
-/* Till here for now */
-/* Till here for now */
 
 /*Topic List*/
 
@@ -378,10 +373,10 @@ div.forum-options a.active { color:#fff; font-weight: bold; }
 .right-sidebar .sidebar-module .sidebar-title h3 a { color: #FEF092; padding-right: 20px; background: url("../images/icons/next.gif") 100% 50% no-repeat; }
 .right-sidebar .sidebar-module .sidebar-title h3 a:hover { color: #fff; }
 .sidebar-module .sidebar-content { padding: 0; }
-.sidebar-module .sidebar-content.loading { padding: 40px; background: url("/wow/static/images/loaders/canvas-loader.gif") 50% 50% no-repeat }
+.sidebar-module .sidebar-content.loading { padding: 40px; background: url("../images/loaders/canvas-loader.gif") 50% 50% no-repeat }
 .sidebar-module .sidebar-content .empty { color: #C09A67; }
 .sidebar-module .sidebar-all { text-align: right; padding-top: 10px }
-.sidebar-module .sidebar-all a { padding-right: 12px; background: url("/wow/static/images/icons/more-arrows.gif") 100% 2px no-repeat }
+.sidebar-module .sidebar-all a { padding-right: 12px; background: url("../images/icons/more-arrows.gif") 100% 2px no-repeat }
 .sidebar-module .sidebar-all a:hover { background-position: 100% -45px }
 .sidebar-module .sidebar-error { padding: 10px 0 5px 0; text-align: center; color: #C09A67;}
 .sidebar-module .date { color: #71401F; font-size: 11px; }
@@ -445,7 +440,7 @@ a.sidebar-esports:hover { background-position: left bottom; border-color: #ffb10
 .zh-tw #sidebar-under-dev a.sidebar-under-dev { background: url("../images/sidebar/under-dev/under-dev_zh-tw.jpg") no-repeat 0 0; }
 #sidebar-under-dev a.sidebar-under-dev:hover { background-position: left bottom; border-color: #ffb100; }
 	/* Patch Notes */
-#sidebar-under-dev a.latest-patch { display: block; width: 295px; height: 110px; border: 1px solid #372511; background: url("../images/body/patch/latest-patch.jpg") no-repeat 0 0;
+#sidebar-under-dev a.latest-patch { display: block; width: 295px; height: 110px; border: 1px solid #372511; background: url("../images/sidebar/under-dev/latest-patch.jpg") no-repeat 0 0;
 	border-radius: 5px; margin: 10px auto 0 auto; }
 .es-mx #sidebar-under-dev  a.latest-patch { background: url("../images/sidebar/under-dev/latest-patch_es-mx.jpg") no-repeat 0 0; }
 .es-es #sidebar-under-dev a.latest-patch { background: url("../images/sidebar/under-dev/latest-patch_es-es.jpg") no-repeat 0 0; }
@@ -461,7 +456,7 @@ a.sidebar-esports:hover { background-position: left bottom; border-color: #ffb10
 #sidebar-under-dev a.latest-patch:hover { background-position: left bottom; border-color: #ffb100; }
 
 /* Expansion Announcement */
-#sidebar-expansion a.sidebar-expansion { display: block; width: 295px; height: 110px; border: 1px solid #372511; background: url("../images/body/patch/warlords.jpg") no-repeat 0 0;
+#sidebar-expansion a.sidebar-expansion { display: block; width: 295px; height: 110px; border: 1px solid #372511; background: url("../images/sidebar/expansion/warlords.jpg") no-repeat 0 0;
 	border-radius: 5px; margin: 10px auto 0 auto; }
 .zh-cn #sidebar-expansion a.sidebar-expansion { background: url("../images/sidebar/expansion/warlords_zh-cn.jpg") no-repeat 0 0; }
 .zh-tw #sidebar-expansion a.sidebar-expansion { background: url("../images/sidebar/expansion/warlords_zh-tw.jpg") no-repeat 0 0; }
@@ -491,7 +486,7 @@ a.sidebar-esports:hover { background-position: left bottom; border-color: #ffb10
 #sidebar-realm-status .down-realms li { margin: 5px; }
 #sidebar-realm-status .pvp { color: #C33; }
 #sidebar-realm-status .rp { color: #3C3; }
-#sidebar-realm-status .status-icon { background: url("../images/icons/status.png") -1px 0 no-repeat; margin: 0 auto; height: 30px; width: 25px; }
+#sidebar-realm-status .status-icon { background: url("../images/icons/status.html") -1px 0 no-repeat; margin: 0 auto; height: 30px; width: 25px; }
 #sidebar-realm-status .status-icon.up { background-position: -111px 0; }
 
 .sidebar-bot { min-height: 200px; position: relative; }
@@ -526,14 +521,14 @@ body.zh-cn .sidebar-loading { top: 400px; }
 .promo .promo-link:hover { background-position: 0 -250px; }
 
 	/* presale */
-	.promo.promo-presale { background: url("../images/sidebar/pre-sale/en-us.jpg") no-repeat; width: 300px; height: 250px; }
-	.de-de .promo.promo-presale { background: url("../images/sidebar/pre-sale/de-de.jpg") no-repeat; }
-	.es-es .promo.promo-presale { background: url("../images/sidebar/pre-sale/es-es.jpg") no-repeat; }
-	.es-mx .promo.promo-presale { background: url("../images/sidebar/pre-sale/es-mx.jpg") no-repeat; }
-	.fr-fr .promo.promo-presale { background: url("../images/sidebar/pre-sale/fr-fr.jpg") no-repeat; }
-	.it-it .promo.promo-presale { background: url("../images/sidebar/pre-sale/it-it.jpg") no-repeat; }
-	.pl-pl .promo.promo-presale { background: url("../images/sidebar/pre-sale/pl-pl.jpg") no-repeat; }
-	.ru-ru .promo.promo-presale { background: url("../images/sidebar/pre-sale/ru-ru.jpg") no-repeat; }
+	.promo.promo-presale { background: url("../images/sidebar/pre-sale/en-us.html") no-repeat; width: 300px; height: 250px; }
+	.de-de .promo.promo-presale { background: url("../images/sidebar/pre-sale/de-de.html") no-repeat; }
+	.es-es .promo.promo-presale { background: url("../images/sidebar/pre-sale/es-es.html") no-repeat; }
+	.es-mx .promo.promo-presale { background: url("../images/sidebar/pre-sale/es-mx.html") no-repeat; }
+	.fr-fr .promo.promo-presale { background: url("../images/sidebar/pre-sale/fr-fr.html") no-repeat; }
+	.it-it .promo.promo-presale { background: url("../images/sidebar/pre-sale/it-it.html") no-repeat; }
+	.pl-pl .promo.promo-presale { background: url("../images/sidebar/pre-sale/pl-pl.html") no-repeat; }
+	.ru-ru .promo.promo-presale { background: url("../images/sidebar/pre-sale/ru-ru.html") no-repeat; }
 
 	/* activate */
 	.promo.promo-cataclysm-activate { background: url("../images/sidebar/cataclysm-activate/bg.jpg") no-repeat; width: 300px; height: 250px; }
@@ -558,7 +553,7 @@ body.zh-cn .sidebar-loading { top: 400px; }
 #sidebar-links.promo-ad a.promo-authenticator { background: url("../images/sidebar/promos/eu-authenticator.jpg") no-repeat 0 0; color: #eee;}
 #sidebar-links.promo-ad a.promo-authenticator:hover { background-position: 0 -85px; }
 #sidebar-links.promo-ad a .buy-now-cart { display: block; float: left; height: 16px; left: 8px; line-height: 16px; padding-left: 28px; padding-right: 28px; position: relative; top: 51px; text-shadow: 1px 1px 1px #000000;}
-#sidebar-links.promo-ad a.promo-gamescom2013 { margin-bottom: 20px; text-indent: -9999px; background: url("../images/advs/wow-gamescom2013_sidead-en-gb-299x224.png") no-repeat 0 0; color: #eee; height: 112px;}
+#sidebar-links.promo-ad a.promo-gamescom2013 { margin-bottom: 20px; text-indent: -9999px; background: url("../images/sidebar/promos/gamescom/wow-gamescom2013_sidead-en-gb-299x224.png") no-repeat 0 0; color: #eee; height: 112px;}
 #sidebar-links.promo-ad a.promo-gamescom2013:hover { background-position: 0 -112px; }
 
 #sidebar-links .sidebar-link { display: block; font-size: 0; margin: 10px auto 0 auto; background: #000 top no-repeat; border: 1px solid #372511; -moz-box-shadow:0 0 6px #000000; -webkit-box-shadow:0 0 6px #000000; box-shadow:0 0 6px #000000; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
@@ -569,8 +564,8 @@ body.zh-cn .sidebar-link { height:50px; width:302px; }
 /* sotd */
 .sotd { display: block; margin: 15px auto 0 auto; background: #000 50% 50% no-repeat; border: 1px solid #372511; height: 179px; width: 297px;  -moz-box-shadow:0 0 6px #000000; -webkit-box-shadow:0 0 6px #000000; box-shadow:0 0 6px #000000; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
 .sotd .image { display: block; height: 137px; width: 295px; border: 1px solid #000; -moz-border-radius-topleft: 4px; -moz-border-radius-topright: 4px; border-top-left-radius: 4px; border-top-right-radius: 4px; }
-.sotd .caption { padding: 10px; height: 20px; background: url("../images/body/opacity-carousel.png") repeat; -moz-border-radius-bottomleft: 4px; -moz-border-radius-bottomright: 4px; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; }
-.sotd .caption a { background: url("../images/icons/community-index-sprite.png") -90px -838px no-repeat; display:inline-block; font-size:11px; padding-left:13px; }
+.sotd .caption { padding: 10px; height: 20px; background: url("../local-common/images/opacity-carousel.png") repeat; -moz-border-radius-bottomleft: 4px; -moz-border-radius-bottomright: 4px; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; }
+.sotd .caption a { background: url("../images/community/community-index-sprite.png") -90px -838px no-repeat; display:inline-block; font-size:11px; padding-left:13px; }
 .sotd .caption a.view { background-position: 100% -865px; float: right; padding: 0 13px 0 0; }
 .sotd:hover { border-color: #CD9000; }
 

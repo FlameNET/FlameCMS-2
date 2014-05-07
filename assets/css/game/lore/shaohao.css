@@ -1,0 +1,15 @@
+.shaohao-index #content .content-top { background:url(../../../images/game/lore/destination-pandaria/burdens-of-shaohao/bg-home-top.jpg) 0 0 no-repeat; }
+.shaohao-index #content .content-bot .shaohao-hub { padding: 0 25px 0px 25px }
+
+
+.shaohao-index .section-title { margin: 25px 0; margin-top: 35px; }
+.shaohao-index .main-header-desc { margin: 0 0 50px 0; width: 40%; color: #a4704e; line-height: 2em; }
+
+.shaohao-index .video-background { background:url(../../../images/game/lore/destination-pandaria/burdens-of-shaohao/parchment.jpg) 0 0 no-repeat; height: 722px; margin-left: -24px; width: 996px; }
+.shaohao-index .video-border { background:url(../../../images/game/lore/destination-pandaria/burdens-of-shaohao/brushed-border.png) 0 0 no-repeat; height: 572px; left: 20px; position: relative; top: 20px; width: 944px; }
+.shaohao-index .video-embed { height:477px; left: 45px; position: relative; top: 41px; width: 848px; }
+
+.shaohao-index .social-media { color: #a4704e; margin: 25px 15px 10px 15px; }
+
+.shaohao-index #google-plusone, .shaohao-index #facebook-like { float: left; }
+.shaohao-index #google-plusone { height: 36px; margin-top: -8px;}
