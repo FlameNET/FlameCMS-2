@@ -1,4 +1,6 @@
-## Flame.NET
+# ![logo](https://raw.githubusercontent.com/FlameNET/FlameCMS-2/master/install/images/64x264.png)
+
+## *Flame.NET*
 
   [Visit us]: YET TO BE DETERMINED
 
