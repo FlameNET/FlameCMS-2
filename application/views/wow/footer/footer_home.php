@@ -18,10 +18,10 @@
 <a href="" tabindex="100" data-action="Games - Games">Games</a>
 </h3>
 <ul>
-<li><a href="sc2/" data-action="Games - StarCraft® II">StarCraft® II</a></li>
-<li><a href="wow/" data-action="Games - World of Warcraft®">World of Warcraft®</a></li>
-<li><a href="d3/" data-action="Games - Diablo® III">Diablo® III</a></li>
-<li><a href="hearthstone/" data-action="Games - Hearthstone™">Hearthstone™</a></li>
+<li><a href="sc2/" data-action="Games - StarCraftï¿½ï¿½II">StarCraftï¿½ï¿½II</a></li>
+<li><a href="wow/" data-action="Games - World of Warcraftï¿½">World of Warcraftï¿½</a></li>
+<li><a href="d3/" data-action="Games - Diabloï¿½ï¿½III">Diabloï¿½ï¿½III</a></li>
+<li><a href="hearthstone/" data-action="Games - Hearthstoneï¿½">Hearthstoneï¿½</a></li>
 <li><a href="games/classic" data-action="Games - Classic Games">Classic Games</a></li>
 <li><a href="account/download/" data-action="Games - Game Client Downloads">Game Client Downloads</a></li>
 </ul>
@@ -31,7 +31,7 @@
 <a href="account/management/" tabindex="100">Account</a>
 </h3>
 <ul>
-<li><a href="account/support/login-support.html" data-action="Account - Can’t log in?">Can’t log in?</a></li>
+<li><a href="account/support/login-support.html" data-action="Account - Canï¿½t log in?">Canï¿½t log in?</a></li>
 <li><a href="account/creation/tos.html" data-action="Account - Create Account">Create Account</a></li>
 <li><a href="account/management/" data-action="Account - Account Summary">Account Summary</a></li>
 <li><a href="security" data-action="Account - Account Security">Account Security</a></li>
@@ -67,26 +67,26 @@
 	<div class="lower-footer">
 		<div id="copyright">
 			<a href="javascript:;" tabindex="100" id="change-language" class="open">
-			<span>América - Español (AL)</span>
+			<span>Amï¿½rica - Espaï¿½ol (AL)</span>
 			</a>
-			<span>©2014 Blizzard Entertainment, Inc. Todos los derechos reservados.</span>
+			<span>ï¿½2014 Blizzard Entertainment, Inc. Todos los derechos reservados.</span>
 			<a onclick="return Core.open(this);" href="company/about/termsofuse.html" tabindex="100" data-action="Footer - Terms of Use">Condiciones de Uso</a>
 			<a onclick="return Core.open(this);" href="company/legal/" tabindex="100" data-action="Footer - Legal">Legal</a>
-			<a onclick="return Core.open(this);" href="company/about/privacy.html" tabindex="100" data-action="Footer - Privacy Policy">Política de Privacidad</a>
+			<a onclick="return Core.open(this);" href="company/about/privacy.html" tabindex="100" data-action="Footer - Privacy Policy">Polï¿½tica de Privacidad</a>
 			<a onclick="return Core.open(this);" href="company/about/infringementnotice.html" tabindex="100" data-action="Footer - Copyright Infringement">Derechos de autor</a>
 		</div>
 		<div id="international" style="display: block;">
 			<div class="column">
-				<h3>América</h3>
+				<h3>Amï¿½rica</h3>
 				<ul>
 					<li>
-					<?=anchor($this->lang->switch_uri('en'), 'English (US)'); ?>
+					<?=anchor("en", 'English (US)'); ?>
 					</li>
 					<li>
-					<?=anchor($this->lang->switch_uri('es'), 'Español (AL)'); ?>
+					<?=anchor("es", 'Espaï¿½ol (AL)'); ?>
 					</li>
 					<li>
-					<?=anchor($this->lang->switch_uri('pt'), 'Português (AL)'); ?>
+					<?=anchor("ps", 'Portuguï¿½s (AL)'); ?>
 					</li>
 				</ul>
 			</div>
@@ -94,25 +94,25 @@
 				<h3>Europa</h3>
 				<ul>
 					<li>
-					<?=anchor($this->lang->switch_uri('de'), 'Deutsch'); ?>
+					<?=anchor('de', 'Deutsch'); ?>
 					</li>
 					<li>
-					<?=anchor($this->lang->switch_uri('en'), 'English (EU)'); ?>
+					<?=anchor('en', 'English (EU)'); ?>
 					</li>
 					<li>
-					<?=anchor($this->lang->switch_uri('es'), 'Español (EU)'); ?>
+					<?=anchor('es', 'Espaï¿½ol (EU)'); ?>
 					</li>
 					<li>
-					<?=anchor($this->lang->switch_uri('fr'), 'Français'); ?>
+					<?=anchor('fr', 'Franï¿½ais'); ?>
 					</li>
 					<li>
-					<?=anchor($this->lang->switch_uri('it'), 'Italian'); ?>
+					<?=anchor('it', 'Italian'); ?>
 					</li>
 					<li>
-					<?=anchor($this->lang->switch_uri('pt'), 'Português (EU)'); ?>
+					<?=anchor('pt', 'Portuguï¿½s (EU)'); ?>
 					</li>
 					<li>
-					<?=anchor($this->lang->switch_uri('ru'), 'Pycc&#1082;&#1080;&#1081;'); ?>
+					<?=anchor('ru', 'Pycc&#1082;&#1080;&#1081;'); ?>
 					</li>
 				</ul>
 			</div>
@@ -120,15 +120,15 @@
 				<h3>Corea</h3>
 				<ul>
 					<li>
-					<?=anchor($this->lang->switch_uri('ko'), '&#54620;&#44397;&#51032;'); ?>
+					<?=anchor('ko', '&#54620;&#44397;&#51032;'); ?>
 					</li>
 				</ul>
 			</div>
 			<div class="column">
-				<h3>Taiwán</h3>
+				<h3>Taiwï¿½n</h3>
 				<ul>
 					<li>
-					<?=anchor($this->lang->switch_uri('tw'), '&#32321;&#39636;&#20013;&#25991;'); ?>
+					<?=anchor('tw', '&#32321;&#39636;&#20013;&#25991;'); ?>
 					</li>
 				</ul>
 			</div>
@@ -136,7 +136,7 @@
 				<h3>China</h3>
 				<ul>
 					<li>
-					<?=anchor($this->lang->switch_uri('cn'), '&#31616;&#20307;&#20013;&#25991;'); ?>
+					<?=anchor('cn', '&#31616;&#20307;&#20013;&#25991;'); ?>
 					</li>
 				</ul>
 			</div>
@@ -144,7 +144,7 @@
 				<h3>Sureste de Asia</h3>
 				<ul>
 					<li>
-					<?=anchor($this->lang->switch_uri('en'), 'English (US)'); ?>
+					<?=anchor('en', 'English (US)'); ?>
 					</li>
 				</ul>
 			</div>
@@ -159,10 +159,10 @@
 				</a>
 				<div class="product-rating esrb-rating clearfix">
 					<a href="http://www.esrb.org/ratings/ratings_guide.jsp" tabindex="1" rel="external" target="_blank">
-					<img class="esrb-logo" src="<?php echo base_url();?>assets/images/legal/ratings/esrb/es/rp.png" alt="Clasificación de Contenido ESRB: RP&nbsp;(Clasificación pendiente)" title="" width="65" height="97"/>
+					<img class="esrb-logo" src="<?php echo base_url();?>assets/images/legal/ratings/esrb/es/rp.png" alt="Clasificaciï¿½n de Contenido ESRB: RP&nbsp;(Clasificaciï¿½n pendiente)" title="" width="65" height="97"/>
 					</a>
-					<span class="esrb-disclaimer">Contenido no apto para niños.</span>
-					<span class="esrb-disclaimer">Visita www.esrb.org para más información.</span>
+					<span class="esrb-disclaimer">Contenido no apto para niï¿½os.</span>
+					<span class="esrb-disclaimer">Visita www.esrb.org para mï¿½s informaciï¿½n.</span>
 				</div>
 			</div>
 			<div id="blizzard" class="png-fix">
@@ -192,8 +192,8 @@ if (Feedback.pageReferring === '') {
 Feedback.pageReferring = window.location.href;
 }
 Feedback.feedbackError = 'Error';
-Feedback.introError = '¿Encontraste un problema en nuestras páginas? ¡Déjanos saber!';
-Feedback.introFeedback = '¡Envía tus ideas y sugerencias para el sitio web directamente a Battle.net!';
+Feedback.introError = 'ï¿½Encontraste un problema en nuestras pï¿½ginas? ï¿½Dï¿½janos saber!';
+Feedback.introFeedback = 'ï¿½Envï¿½a tus ideas y sugerencias para el sitio web directamente a Battle.net!';
 }
 //]]>
 			</script>
@@ -226,13 +226,13 @@ var jsonSearchHandlerUrl = '//battle.net';
 var Msg = Msg || {};
 Msg.support = {
 ticketNew: 'Ticket {0} was created.',
-ticketStatus: 'Ticket {0}’s status changed to {1}.',
+ticketStatus: 'Ticket {0}ï¿½s status changed toï¿½{1}.',
 ticketOpen: 'Open',
 ticketAnswered: 'Answered',
 ticketResolved: 'Resolved',
 ticketCanceled: 'Cancelled',
 ticketArchived: 'Archived',
-ticketInfo: 'Need Info',
+ticketInfo: 'Needï¿½Info',
 ticketAll: 'View All Tickets'
 };
 Msg.cms = {
@@ -277,10 +277,10 @@ submit: 'Submit',
 cancel: 'Cancel',
 reset: 'Reset',
 viewInGallery: 'View in gallery',
-loading: 'Loading…',
+loading: 'Loadingï¿½',
 unexpectedError: 'An error has occurred',
-fansiteFind: 'Find this on…',
-fansiteFindType: 'Find {0} on…',
+fansiteFind: 'Find this onï¿½',
+fansiteFindType: 'Find {0} onï¿½',
 fansiteNone: 'No fansites available.',
 flashErrorHeader: 'Adobe Flash Player must be installed to see this content.',
 flashErrorText: 'Download Adobe Flash Player',
@@ -291,7 +291,7 @@ Msg.grammar= {
 colon: '{0}:',
 first: 'First',
 last: 'Last',
-ellipsis: '…'
+ellipsis: 'ï¿½'
 };
 Msg.fansite= {
 achievement: 'achievement',
