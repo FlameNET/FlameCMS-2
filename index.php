@@ -205,7 +205,11 @@ if (defined('ENVIRONMENT'))
  * And away we go...
  *
  */
-require_once BASEPATH.'core/CodeIgniter.php';
+require_once BASEPATH.'core/Bootstrap.php';
+
+$Bootstrapper = new Bootstrapper();
+$Bootstrapper->initialize();
+$Bootstrapper->run();
 
 /* End of file index.php */
 /* Location: ./index.php */

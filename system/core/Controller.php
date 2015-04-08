@@ -1,4 +1,5 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+
 /**
  * CodeIgniter
  *
@@ -28,35 +29,38 @@
  * @link		http://codeigniter.com/user_guide/general/controllers.html
  */
 class CI_Controller {
-
-	private static $instance;
+    private $_layout = "";
 
 	/**
 	 * Constructor
 	 */
-	public function __construct()
+	public function __construct($layout = null)
 	{
-		self::$instance =& $this;
-
-		// Assign all the class objects that were instantiated by the
-		// bootstrap file (CodeIgniter.php) to local class variables
-		// so that CI can run as one big super object.
-		foreach (is_loaded() as $var => $class)
-		{
-			$this->$var =& load_class($class);
-		}
-
-		$this->load =& load_class('Loader', 'core');
-
-		$this->load->initialize();
-		
-		log_message('debug', "Controller Class Initialized");
+        $this->_layout = $layout;
+        ob_start();
 	}
 
-	public static function &get_instance()
-	{
-		return self::$instance;
-	}
+    public function render()
+    {
+        $viewData = ob_get_contents();
+        ob_end_clean();
+        return $viewData;
+    }
+
+    public function hasLayout()
+    {
+        return $this->_layout != "";
+    }
+
+    public function getLayout()
+    {
+        return ucfirst($this->_layout);
+    }
+
+    public function setArguments($args)
+    {
+
+    }
 }
 // END Controller class
 
