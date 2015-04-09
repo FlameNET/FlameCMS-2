@@ -14,6 +14,7 @@ include_once BASEPATH."database/DB_utility.php";
 class DatabaseRegistry
 {
     private $_drivers;
+    private $_tableNameMap;
 
     public function __construct($dbSettings)
     {
@@ -29,9 +30,19 @@ class DatabaseRegistry
 
     public function initialize()
     {
-        foreach($this->_drivers as $driver)
+        foreach($this->_drivers as $name => $driver)
         {
             $driver->initialize();
+            $result = $driver->query("SHOW TABLES");
+            $array1 = array_values($result->result_array());
+            $tableNames = array();
+
+            foreach($array1 as $array2)
+            {
+                array_push($tableNames, current($array2));
+            }
+
+            $this->_tableNameMap[$name] = $tableNames;
         }
     }
 
@@ -51,5 +62,16 @@ class DatabaseRegistry
     public function getDatabase($name)
     {
         return $this->_drivers[$name];
+    }
+
+    public function getDatabaseNameForTable($name)
+    {
+        foreach ($this->_tableNameMap as $databaseName => $tableMap)
+        {
+            foreach($tableMap as $tableName)
+                if ($tableName == $name)
+                    return $databaseName;
+        }
+        return null;
     }
 }

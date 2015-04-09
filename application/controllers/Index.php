@@ -15,6 +15,8 @@ class IndexController extends CI_Controller
 
     public function IndexAction()
     {
-        echo "Hello World!";
+        $newsModel = $this->bootstrap->loadModel("news");
+        $newsModel->getNews();
+        $this->bootstrap->loadView("index");
     }
 }

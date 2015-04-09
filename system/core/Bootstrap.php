@@ -94,6 +94,22 @@ class Bootstrapper
         }
     }
 
+    public function loadModel($name)
+    {
+        $this->_loadCoreClass("Model");
+        $modelName = ucfirst($name)."Model";
+
+        if(file_exists(APPPATH."models/".$modelName.".php")){
+            require_once APPPATH."models/".$modelName.".php";
+        }else{
+            throw new ErrorException("The requested model ".$name." could not be located.");
+        }
+
+        $model = new $modelName();
+        $model->setDriver($this->_databaseRegistry->getDatabase($this->_databaseRegistry->getDatabaseNameForTable($model->getTableName())));
+        return $model;
+    }
+
     private function _loadCoreClass($name)
     {
         if(file_exists(BASEPATH."core/".$name.".php")){

@@ -24,32 +24,20 @@
  * @author		ExpressionEngine Dev Team
  * @link		http://codeigniter.com/user_guide/libraries/config.html
  */
-class CI_Model {
+class CI_Model
+{
+    protected $_tableName = "";
+    protected $database = null;
 
-	/**
-	 * Constructor
-	 *
-	 * @access public
-	 */
-	function __construct()
-	{
-		log_message('debug', "Model Class Initialized");
-	}
+    public function getTableName()
+    {
+        return $this->_tableName;
+    }
 
-	/**
-	 * __get
-	 *
-	 * Allows models to access CI's loaded classes using the same
-	 * syntax as controllers.
-	 *
-	 * @param	string
-	 * @access private
-	 */
-	function __get($key)
-	{
-		$CI =& get_instance();
-		return $CI->$key;
-	}
+    public function setDriver($driver)
+    {
+        $this->database = $driver;
+    }
 }
 // END Model Class
 
