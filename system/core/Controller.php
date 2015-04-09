@@ -30,6 +30,8 @@
  */
 class CI_Controller {
     private $_layout = "";
+    protected $bootstrap;
+    protected $arguments;
 
 	/**
 	 * Constructor
@@ -59,8 +61,14 @@ class CI_Controller {
 
     public function setArguments($args)
     {
-
+        $this->arguments = $args;
     }
+
+    public function setBootstrapper($bootstrapper)
+    {
+        $this->bootstrap = $bootstrapper;
+    }
+
 }
 // END Controller class
 

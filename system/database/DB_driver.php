@@ -87,8 +87,6 @@ class CI_DB_driver {
 				$this->$key = $val;
 			}
 		}
-
-		log_message('debug', 'Database Driver Class Initialized');
 	}
 
 	// --------------------------------------------------------------------
@@ -117,8 +115,6 @@ class CI_DB_driver {
 		// No connection resource?  Throw an error
 		if ( ! $this->conn_id)
 		{
-			log_message('error', 'Unable to connect to the database');
-
 			if ($this->db_debug)
 			{
 				$this->display_error('db_unable_to_connect');
@@ -133,7 +129,6 @@ class CI_DB_driver {
 		{
 			if ( ! $this->db_select())
 			{
-				log_message('error', 'Unable to select database: '.$this->database);
 
 				if ($this->db_debug)
 				{
@@ -170,8 +165,6 @@ class CI_DB_driver {
 	{
 		if ( ! $this->_db_set_charset($this->char_set, $this->dbcollat))
 		{
-			log_message('error', 'Unable to set database connection charset: '.$this->char_set);
-
 			if ($this->db_debug)
 			{
 				$this->display_error('db_unable_to_set_charset', $this->char_set);
@@ -253,7 +246,6 @@ class CI_DB_driver {
 		{
 			if ($this->db_debug)
 			{
-				log_message('error', 'Invalid query: '.$sql);
 				return $this->display_error('db_invalid_query');
 			}
 			return FALSE;
@@ -544,7 +536,6 @@ class CI_DB_driver {
 				$this->_trans_status = TRUE;
 			}
 
-			log_message('debug', 'DB Transaction Failure');
 			return FALSE;
 		}
 
