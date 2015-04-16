@@ -6,6 +6,7 @@
  * Time: 20:29
  */
 
+include_once APPPATH."config/config.php";
 include_once APPPATH."config/database.php";
 
 class Bootstrapper
@@ -130,6 +131,6 @@ class Bootstrapper
 
     private function _autoload()
     {
-
+        include_once APPPATH."config/autoload.php";
     }
 }
