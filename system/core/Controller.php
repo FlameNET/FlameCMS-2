@@ -36,7 +36,7 @@ class CI_Controller {
 	/**
 	 * Constructor
 	 */
-	public function __construct($layout = null)
+	public function __construct($layout = "")
 	{
         $this->_layout = $layout;
         ob_start();

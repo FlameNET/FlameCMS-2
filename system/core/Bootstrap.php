@@ -13,6 +13,7 @@ class Bootstrapper
 {
     private $_request;
     private $_databaseRegistry;
+    private $_libraries;
 
     public function __construct()
     {
@@ -51,6 +52,7 @@ class Bootstrapper
         $MethodName = ucfirst($this->_request->getMethodName())."Action";
         $Controller->setArguments($this->_request->getArguments());
         $Controller->setBootstrapper($this);
+        $Controller->postInitialize();
 
         try{
             if(method_exists($Controller, $MethodName)){
@@ -86,6 +88,9 @@ class Bootstrapper
                 foreach ($args as $name => $value) {
                     $$name = $value;
                 }
+
+                $language = $this->getLaguage();
+
                 include_once APPPATH."views/".$view.".phtml";
             } else {
                 throw new InvalidArgumentException("The view ".$view." could not be located");
@@ -107,8 +112,33 @@ class Bootstrapper
         }
 
         $model = new $modelName();
-        $model->setDriver($this->_databaseRegistry->getDatabase($this->_databaseRegistry->getDatabaseNameForTable($model->getTableName())));
+        $model->setDriver($this->_databaseRegistry->getDatabase(
+            $this->_databaseRegistry->getDatabaseNameForTable($model->getTableName())));
         return $model;
+    }
+
+    public function getLibrary($name)
+    {
+        if(isset($this->_libraries[$name]))
+            return $this->_libraries[$name];
+        else
+            return null;
+    }
+
+    public function getLanguageTag()
+    {
+        $session = $this->getLibrary("Session");
+        $languageTag = $session->read("LanguageTag");
+        if($languageTag != null)
+            return $languageTag;
+        else
+            return "english";
+    }
+
+    public function setLanguageTag($tag)
+    {
+        $session = $this->getLibrary("Session");
+        $session->write("LanguageTag", $tag);
     }
 
     private function _loadCoreClass($name)
@@ -132,5 +162,26 @@ class Bootstrapper
     private function _autoload()
     {
         include_once APPPATH."config/autoload.php";
+        foreach ($GLOBALS["autoload"]["libraries"] as $library)
+        {
+            include_once BASEPATH."core/".$library.".php";
+            $ClassName = "CI_".$library;
+            $this->_libraries[$ClassName] = new $ClassName();
+        }
+    }
+
+    private function getLaguage()
+    {
+        include_once BASEPATH."core/Language.php";
+        $tag = $this->getLanguageTag();
+
+        if(file_exists(APPPATH."language/".$tag.".php")) {
+            $languageName = "CI_".ucfirst($tag)."_Language";
+            $laguage = new $languageName();
+            $laguage->loadMarkers();
+            return $laguage;
+        } else {
+            return null;
+        }
     }
 }
