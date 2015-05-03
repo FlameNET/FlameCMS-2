@@ -1,17 +1,3 @@
-<?php
-/*
- * Copyright (C) 2014 Luis Cortés <https://qualtiva.com>
- *
- * Do not edit or add to this file if you wish to upgrade Qualtiva to newer
- * versions in the future. If you wish to customize Qualtiva for your
- * needs please refer to http://www.qualtiva.com for more information.
- *
- * @author Luis Cortés <luis@qualtiva.com>
- * @copyright 2013 Qualtiva
- * International Registered Trademark & Property of Qualtiva
- *
- */
-?>
 <!-- DO NOT TOUCH -->
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" class="en-gb">
 <head xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
@@ -79,7 +65,8 @@ _gaq.push(['_trackPageview', '/account/creation/tos.html[/account/creation/start
 (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=
 '../../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);})
 (window,document,'script','dataLayer','GTM-589KTQ');
-</script> <div id="layout-top">
+</script>
+<div id="layout-top">
 <div class="wrapper">
 <div id="header">
 <div id="search-bar">
@@ -102,10 +89,10 @@ _gaq.push(['_trackPageview', '/account/creation/tos.html[/account/creation/start
 <div id="service">
 <ul class="service-bar">
 <li class="service-cell service-home">
-<a href="http://us.battle.net/" tabindex="50" accessKey="1" title="Battle.net" data-action="Battle.net Home"> </a>
+<a href="http://us.battle.net/" tabindex="50" accessKey="1" title="Battle.net" data-action="Battle.net Home">ï¿½</a>
 </li>
 <li class="service-cell service-welcome">
-<a href="https://us.battle.net/login/es/?ref=https://us.battle.net/account/creation/tos.html&amp;app=bam" onclick="return Login.open()">Inicia sesión</a> o <a href="tos.html">Crea una cuenta</a>
+<a href="https://us.battle.net/login/es/?ref=https://us.battle.net/account/creation/tos.html&amp;app=bam" onclick="return Login.open()">Inicia sesiï¿½n</a> o <a href="tos.html">Crea una cuenta</a>
 </li>
 <li class="service-cell service-shop">
 <a href='https://us.battle.net/shop/' class="service-link" data-action="Shop">Tienda</a>
@@ -120,14 +107,14 @@ _gaq.push(['_trackPageview', '/account/creation/tos.html[/account/creation/start
 <ul class="support-nav">
 <li>
 <a href="http://us.battle.net/support/" tabindex="55" class="support-category" id="support-nav-kb" data-action="Support - Knowledge Center">
-<strong class="support-caption">Artículos de asistencia</strong>
+<strong class="support-caption">Artï¿½culos de asistencia</strong>
 Explorar base de datos
 </a>
 </li>
 <li>
 <a href="https://us.battle.net/support/ticket/status" tabindex="55" class="support-category" id="support-nav-tickets" data-action="Support - Your Support Tickets">
 <strong class="support-caption">Tus consultas</strong>
-Ver historial completo de tus consultas (debes iniciar sesión).
+Ver historial completo de tus consultas (debes iniciar sesiï¿½n).
 </a>
 </li>
 </ul>
@@ -175,16 +162,16 @@ shim.style.display = 'block';
 </li>
 </ul>
 <div class="explore-links">
-<h2 class="explore-caption">Más</h2>
+<h2 class="explore-caption">Mï¿½s</h2>
 <ul>
-<li><a href="http://us.battle.net/what-is/" tabindex="55" data-action="Explore - ¿Qué es Battle.net?">¿Qué es Battle.net?</a></li>
+<li><a href="http://us.battle.net/what-is/" tabindex="55" data-action="Explore - ï¿½Quï¿½ es Battle.net?">ï¿½Quï¿½ es Battle.net?</a></li>
 <li><a href="https://us.battle.net/account/parental-controls/index.html" tabindex="55" data-action="Explore - Control paterno">Control paterno</a></li>
 <li><a href="http://us.battle.net/security/" tabindex="55" data-action="Explore - Seguridad de cuentas">Seguridad de cuentas</a></li>
-<li><a href="http://jobs.blizzard.com/?utm_campaign=Blizzard_Jobs&amp;utm_source=Battle_net&amp;utm_medium=Explore" tabindex="55" data-action="Explore - ¡Trabaja en Blizzard!">¡Trabaja en Blizzard!</a></li>
-<li><a href="https://us.battle.net/account/support/password-reset.html" tabindex="55" data-action="Explore - ¿No puedes iniciar sesión?">¿No puedes iniciar sesión?</a></li>
+<li><a href="http://jobs.blizzard.com/?utm_campaign=Blizzard_Jobs&amp;utm_source=Battle_net&amp;utm_medium=Explore" tabindex="55" data-action="Explore - ï¿½Trabaja en Blizzard!">ï¿½Trabaja en Blizzard!</a></li>
+<li><a href="https://us.battle.net/account/support/password-reset.html" tabindex="55" data-action="Explore - ï¿½No puedes iniciar sesiï¿½n?">ï¿½No puedes iniciar sesiï¿½n?</a></li>
 <li><a href="https://us.battle.net/account/download/" tabindex="55" data-action="Explore - Descarga de juegos">Descarga de juegos</a></li>
-<li><a href="https://us.battle.net/account/management/claim-code.html" tabindex="55" data-action="Explore - Canjear códigos">Canjear códigos</a></li>
-<li><a href="http://us.battle.net/games/classic" tabindex="55" data-action="Explore - Juegos clásicos">Juegos clásicos</a></li>
+<li><a href="https://us.battle.net/account/management/claim-code.html" tabindex="55" data-action="Explore - Canjear cï¿½digos">Canjear cï¿½digos</a></li>
+<li><a href="http://us.battle.net/games/classic" tabindex="55" data-action="Explore - Juegos clï¿½sicos">Juegos clï¿½sicos</a></li>
 </ul>
 </div>
 <span class="clear"><!-- --></span>
@@ -205,35 +192,35 @@ shim.style.display = 'block';
 <li class="explore-game explore-game-wow">
 <a href="http://us.battle.net/wow/" tabindex="55" data-action="Explore - wow">
 <span class="explore-game-inner">
-<strong class="explore-caption">World of Warcraft®</strong>
+<strong class="explore-caption">World of Warcraftï¿½</strong>
 </span>
 </a>
 </li>
 <li class="explore-game explore-game-d3">
 <a href="http://us.battle.net/d3/" tabindex="55" data-action="Explore - d3">
 <span class="explore-game-inner">
-<strong class="explore-caption">Diablo® III</strong>
+<strong class="explore-caption">Diabloï¿½ï¿½III</strong>
 </span>
 </a>
 </li>
 <li class="explore-game explore-game-sc2">
 <a href="http://us.battle.net/sc2/" tabindex="55" data-action="Explore - sc2">
 <span class="explore-game-inner">
-<strong class="explore-caption">StarCraft® II</strong>
+<strong class="explore-caption">StarCraftï¿½ï¿½II</strong>
 </span>
 </a>
 </li>
 <li class="explore-game explore-game-hs">
 <a href="http://us.battle.net/hearthstone/" tabindex="55" data-action="Explore - hs">
 <span class="explore-game-inner">
-<strong class="explore-caption">Hearthstone™</strong>
+<strong class="explore-caption">Hearthstoneï¿½</strong>
 </span>
 </a>
 </li>
 <li class="explore-game explore-game-heroes">
 <a href="http://www.heroesofthestorm.com/es-es" tabindex="55" data-action="Explore - heroes">
 <span class="explore-game-inner">
-<strong class="explore-caption">Heroes of the Storm™</strong>
+<strong class="explore-caption">Heroes of the Stormï¿½</strong>
 </span>
 </a>
 </li>
@@ -252,7 +239,7 @@ App.resetCookie('browserWarning');
 </script>
 <!--[if lt IE 8]> <div id="browser-warning" class="warning warning-red">
 <div class="warning-inner2">
-No estás utilizando la última versión de tu navegador.<br />
+No estï¿½s utilizando la ï¿½ltima versiï¿½n de tu navegador.<br />
 <a href="http://us.blizzard.com/support/article/browserupdate">Actualizar</a> o <a href="http://www.google.com/chromeframe/?hl=es-ES" id="chrome-frame-link">instalar Google Chrome Frame</a>.
 <a href="#close" class="warning-close" onclick="App.closeWarning('#browser-warning', 'browserWarning'); return false;"></a>
 </div>
@@ -285,7 +272,7 @@ return false;
 <noscript>
 <div id="javascript-warning" class="warning warning-red">
 <div class="warning-inner2">
-Debes tener activado JavaScript para utilizar esta página.
+Debes tener activado JavaScript para utilizar esta pï¿½gina.
 </div>
 </div>
 </noscript>
