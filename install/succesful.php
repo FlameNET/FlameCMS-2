@@ -15,10 +15,12 @@ include("config.php");
 	<div id="body">
 	<p>Trying to connect to database...</p>
 	<?php
+	define('BASEPATH2', 'install_updated');
+	define('BASEPATH', dirname('../'));
 	// Create connection
 	define('__ROOT__', dirname(dirname(__FILE__))); 
-	require_once(__ROOT__.'/application/config/database.php'); 
 	
+	require_once(__ROOT__.'/application/config/database.php'); 
 	$con=mysqli_connect($db["website"]["hostname"],$db["website"]["username"],$db["website"]["password"],$db["website"]["database"]);
 
 	// Check connection
