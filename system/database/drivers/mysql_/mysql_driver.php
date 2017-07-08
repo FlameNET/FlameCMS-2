@@ -16,7 +16,7 @@
 // ------------------------------------------------------------------------
 
 /**
- * MySQLi Database Adapter Class - MySQLi only works with PHP 5
+ * MySQL Database Adapter Class
  *
  * Note: _DB is an extender class that the app controller
  * creates dynamically based on whether the active record
@@ -30,22 +30,14 @@
  */
 class CI_DB_mysql_driver extends CI_DB {
 
-	var $dbdriver = 'mysqli';
+	var $dbdriver = 'mysql';
 
 	// The character used for escaping
-	var $_escape_char = '`';
+	var	$_escape_char = '`';
 
 	// clause and character used for LIKE escape sequences - not used in MySQL
 	var $_like_escape_str = '';
 	var $_like_escape_chr = '';
-
-	/**
-	 * The syntax to count rows is slightly different across different
-	 * database engines, so this string appears in each driver and is
-	 * used for the count_all() and count_all_results() functions.
-	 */
-	var $_count_string = "SELECT COUNT(*) AS ";
-	var $_random_keyword = ' RAND()'; // database specific random keyword
 
 	/**
 	 * Whether to use the MySQL "delete hack" which allows the number
@@ -54,11 +46,17 @@ class CI_DB_mysql_driver extends CI_DB {
 	 */
 	var $delete_hack = TRUE;
 
+	/**
+	 * The syntax to count rows is slightly different across different
+	 * database engines, so this string appears in each driver and is
+	 * used for the count_all() and count_all_results() functions.
+	 */
+	var $_count_string = 'SELECT COUNT(*) AS ';
+	var $_random_keyword = ' RAND()'; // database specific random keyword
+
 	// whether SET NAMES must be used to set the character set
 	var $use_set_names;
 	
-	// --------------------------------------------------------------------
-
 	/**
 	 * Non-persistent database connection
 	 *
@@ -69,13 +67,10 @@ class CI_DB_mysql_driver extends CI_DB {
 	{
 		if ($this->port != '')
 		{
-			return @mysqli_connect($this->hostname, $this->username, $this->password, $this->database, $this->port);
-		}
-		else
-		{
-			return @mysqli_connect($this->hostname, $this->username, $this->password, $this->database);
+			$this->hostname .= ':'.$this->port;
 		}
 
+		return @mysql_connect($this->hostname, $this->username, $this->password, TRUE);
 	}
 
 	// --------------------------------------------------------------------
@@ -88,7 +83,12 @@ class CI_DB_mysql_driver extends CI_DB {
 	 */
 	function db_pconnect()
 	{
-		return $this->db_connect();
+		if ($this->port != '')
+		{
+			$this->hostname .= ':'.$this->port;
+		}
+
+		return @mysql_pconnect($this->hostname, $this->username, $this->password);
 	}
 
 	// --------------------------------------------------------------------
@@ -104,7 +104,7 @@ class CI_DB_mysql_driver extends CI_DB {
 	 */
 	function reconnect()
 	{
-		if (mysqli_ping($this->conn_id) === FALSE)
+		if (mysql_ping($this->conn_id) === FALSE)
 		{
 			$this->conn_id = FALSE;
 		}
@@ -120,7 +120,7 @@ class CI_DB_mysql_driver extends CI_DB {
 	 */
 	function db_select()
 	{
-		return @mysqli_select_db($this->conn_id, $this->database);
+		return @mysql_select_db($this->database, $this->conn_id);
 	}
 
 	// --------------------------------------------------------------------
@@ -128,26 +128,26 @@ class CI_DB_mysql_driver extends CI_DB {
 	/**
 	 * Set client character set
 	 *
-	 * @access	private
+	 * @access	public
 	 * @param	string
 	 * @param	string
 	 * @return	resource
 	 */
-	function _db_set_charset($charset, $collation)
+	function db_set_charset($charset, $collation)
 	{
 		if ( ! isset($this->use_set_names))
 		{
-			// mysqli_set_charset() requires MySQL >= 5.0.7, use SET NAMES as fallback
-			$this->use_set_names = (version_compare(mysqli_get_server_info($this->conn_id), '5.0.7', '>=')) ? FALSE : TRUE;
+			// mysql_set_charset() requires PHP >= 5.2.3 and MySQL >= 5.0.7, use SET NAMES as fallback
+			$this->use_set_names = (version_compare(PHP_VERSION, '5.2.3', '>=') && version_compare(mysql_get_server_info(), '5.0.7', '>=')) ? FALSE : TRUE;
 		}
 
 		if ($this->use_set_names === TRUE)
 		{
-			return @mysqli_query($this->conn_id, "SET NAMES '".$this->escape_str($charset)."' COLLATE '".$this->escape_str($collation)."'");
+			return @mysql_query("SET NAMES '".$this->escape_str($charset)."' COLLATE '".$this->escape_str($collation)."'", $this->conn_id);
 		}
 		else
 		{
-			return @mysqli_set_charset($this->conn_id, $charset);
+			return @mysql_set_charset($charset, $this->conn_id);
 		}
 	}
 
@@ -176,8 +176,7 @@ class CI_DB_mysql_driver extends CI_DB {
 	function _execute($sql)
 	{
 		$sql = $this->_prep_query($sql);
-		$result = @mysqli_query($this->conn_id, $sql);
-		return $result;
+		return @mysql_query($sql, $this->conn_id);
 	}
 
 	// --------------------------------------------------------------------
@@ -304,16 +303,16 @@ class CI_DB_mysql_driver extends CI_DB {
 		if (is_array($str))
 		{
 			foreach ($str as $key => $val)
-			{
+	   		{
 				$str[$key] = $this->escape_str($val, $like);
-			}
+	   		}
 
-			return $str;
-		}
+	   		return $str;
+	   	}
 
-		if (function_exists('mysqli_real_escape_string') AND is_object($this->conn_id))
+		if (function_exists('mysql_real_escape_string') AND is_resource($this->conn_id))
 		{
-			$str = mysqli_real_escape_string($this->conn_id, $str);
+			$str = mysql_real_escape_string($str, $this->conn_id);
 		}
 		elseif (function_exists('mysql_escape_string'))
 		{
@@ -343,7 +342,7 @@ class CI_DB_mysql_driver extends CI_DB {
 	 */
 	function affected_rows()
 	{
-		return @mysqli_affected_rows($this->conn_id);
+		return @mysql_affected_rows($this->conn_id);
 	}
 
 	// --------------------------------------------------------------------
@@ -356,7 +355,7 @@ class CI_DB_mysql_driver extends CI_DB {
 	 */
 	function insert_id()
 	{
-		return @mysqli_insert_id($this->conn_id);
+		return @mysql_insert_id($this->conn_id);
 	}
 
 	// --------------------------------------------------------------------
@@ -455,7 +454,7 @@ class CI_DB_mysql_driver extends CI_DB {
 	 */
 	function _error_message()
 	{
-		return mysqli_error($this->conn_id);
+		return mysql_error($this->conn_id);
 	}
 
 	// --------------------------------------------------------------------
@@ -468,7 +467,7 @@ class CI_DB_mysql_driver extends CI_DB {
 	 */
 	function _error_number()
 	{
-		return mysqli_errno($this->conn_id);
+		return mysql_errno($this->conn_id);
 	}
 
 	// --------------------------------------------------------------------
@@ -555,6 +554,25 @@ class CI_DB_mysql_driver extends CI_DB {
 
 	// --------------------------------------------------------------------
 
+
+	/**
+	 * Replace statement
+	 *
+	 * Generates a platform-specific replace string from the supplied data
+	 *
+	 * @access	public
+	 * @param	string	the table name
+	 * @param	array	the insert keys
+	 * @param	array	the insert values
+	 * @return	string
+	 */
+	function _replace($table, $keys, $values)
+	{
+		return "REPLACE INTO ".$table." (".implode(', ', $keys).") VALUES (".implode(', ', $values).")";
+	}
+
+	// --------------------------------------------------------------------
+
 	/**
 	 * Insert_batch statement
 	 *
@@ -575,24 +593,6 @@ class CI_DB_mysql_driver extends CI_DB {
 
 
 	/**
-	 * Replace statement
-	 *
-	 * Generates a platform-specific replace string from the supplied data
-	 *
-	 * @access	public
-	 * @param	string	the table name
-	 * @param	array	the insert keys
-	 * @param	array	the insert values
-	 * @return	string
-	 */
-	function _replace($table, $keys, $values)
-	{
-		return "REPLACE INTO ".$table." (".implode(', ', $keys).") VALUES (".implode(', ', $values).")";
-	}
-	
-	// --------------------------------------------------------------------
-
-	/**
 	 * Update statement
 	 *
 	 * Generates a platform-specific update string from the supplied data
@@ -609,7 +609,7 @@ class CI_DB_mysql_driver extends CI_DB {
 	{
 		foreach ($values as $key => $val)
 		{
-			$valstr[] = $key." = ".$val;
+			$valstr[] = $key . ' = ' . $val;
 		}
 
 		$limit = ( ! $limit) ? '' : ' LIMIT '.$limit;
@@ -626,6 +626,7 @@ class CI_DB_mysql_driver extends CI_DB {
 	}
 
 	// --------------------------------------------------------------------
+
 
 	/**
 	 * Update_Batch statement
@@ -678,6 +679,7 @@ class CI_DB_mysql_driver extends CI_DB {
 	}
 
 	// --------------------------------------------------------------------
+
 
 	/**
 	 * Truncate statement
@@ -744,14 +746,16 @@ class CI_DB_mysql_driver extends CI_DB {
 	 */
 	function _limit($sql, $limit, $offset)
 	{
-		$sql .= "LIMIT ".$limit;
-
-		if ($offset > 0)
+		if ($offset == 0)
 		{
-			$sql .= " OFFSET ".$offset;
+			$offset = '';
+		}
+		else
+		{
+			$offset .= ", ";
 		}
 
-		return $sql;
+		return $sql."LIMIT ".$offset.$limit;
 	}
 
 	// --------------------------------------------------------------------
@@ -765,12 +769,11 @@ class CI_DB_mysql_driver extends CI_DB {
 	 */
 	function _close($conn_id)
 	{
-		@mysqli_close($conn_id);
+		@mysql_close($conn_id);
 	}
-
 
 }
 
 
-/* End of file mysqli_driver.php */
-/* Location: ./system/database/drivers/mysqli/mysqli_driver.php */
+/* End of file mysql_driver.php */
+/* Location: ./system/database/drivers/mysql/mysql_driver.php */
